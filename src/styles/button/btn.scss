@@ -1,0 +1,22 @@
+@charset "utf-8";
+.btn {
+	@extend .use-nowrap;
+	@extend .use-center;
+	position: relative;
+	display:inline-block;
+	outline:none;
+	line-height: $btn-line-height;
+	user-select: none;
+	overflow:visible;
+	box-shadow: 0 0 0 transparent;
+	vertical-align: middle;
+	transition: all 0.2s;
+	border: solid pr(1px);
+	cursor: pointer;
+	&[class*='circle-'] {
+		padding: 0;
+	}
+	>.sicon{
+		margin-top: pr(-.5px);
+	}
+}

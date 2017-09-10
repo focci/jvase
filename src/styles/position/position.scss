@@ -1,0 +1,50 @@
+@charset "utf-8";
+.to-top-left, .to-top-right, .to-top-center,
+.to-center, .to-center-left, .to-center-right,
+.to-bottom-left, .to-bottom-center, .to-bottom-right,
+.to-top-covered, .to-right-covered, .to-bottom-covered, .to-left-covered{
+  position: absolute;
+}
+.to-top-left, .to-top-right, .to-top-center{
+	top: 0;
+}
+.to-top-left, .to-center-left, .to-bottom-left{
+	left: 0;
+}
+.to-top-right, .to-center-right, .to-bottom-right{
+	right: 0;
+}
+.to-top-center, .to-center, .to-bottom-center{
+	left: 50%;
+}
+.to-center-left, .to-center-right, .to-center{
+	top: 50%;
+}
+.to-center-left, .to-center-right{
+	transform: translateY(-50%);
+}
+.to-center{
+	transform: translate(-50%, -50%);
+}
+.to-bottom-left, .to-bottom-center, .to-bottom-right{
+	bottom: 0;
+}
+.to-bottom-center, .to-top-center{
+	transform: translateX(-50%);
+}
+//
+.to-top-covered, .to-right-covered, .to-bottom-covered, .to-left-covered{
+	@extend .covered;
+}
+.to-top-covered{
+	bottom: auto;
+}
+.to-right-covered{
+	left: auto;
+}
+.to-bottom-covered{
+	top: auto;
+}
+.to-left-covered{
+	right: auto;
+}

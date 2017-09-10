@@ -1,0 +1,44 @@
+@charset "utf-8";
+.slider {
+	>.slider-active {
+		background-color: $slider-active-bgc;
+		transition: width 0.3s;
+		z-index: 3;
+		text-align: right;
+		>span {
+			width: $slider-height;
+			display: inline-block;
+			background-color: transparent !important;
+			margin: pr(-18px) pr(-18px) 0;
+			cursor: pointer;
+			position: relative;
+			&:before{
+				content: '';
+				display: block;
+				width: pr(14px);
+				height: pr(14px);
+				background-color: $slider-active-bgc;
+				border-radius: 50%;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: pr(-7px) 0 0 pr(-7px);
+				transition: all 0.2s;
+			}
+			&:hover:before, &.active:before {
+				width: pr(21px);
+				height: pr(21px);
+				margin: pr(-11px) 0 0 pr(-11px);
+			}
+			>.tooltip {
+				@extend .to-center;
+				padding: pr(6px) pr(8px);
+				font-size: pr(12px);
+				font-style: normal;
+				margin: 0;
+				top: pr(-14px);
+			}
+		}
+
+	}
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+@mixin set-badge-style (
+	$bgc: $badge-bgc,			// 默认背景色
+	$color: $badge-color,		// 文字颜色
+	$name: ''
+){
+	.badge#{$name} {
+		background-color: $bgc;
+		color: $color;
+	}
+}

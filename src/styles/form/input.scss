@@ -1,0 +1,24 @@
+@charset "utf-8";
+.input{
+	transition: border-color ease-in-out 0.2s;
+	background-color: #fff;
+	width: 100%;
+	max-width: 100%;
+	border: solid $form-input-border-size $form-input-border-color;
+	z-index: 0;
+	vertical-align: middle;
+	position: relative;
+	&::placeholder {
+		color: #999;
+	}
+	&:not(:disabled):hover, &:not(:disabled).use-hover {
+		border-color: $form-input-hover-border-color;
+	}
+	&:focus, &.use-active {
+		border-color: $form-input-active-border-color;
+	}
+}
+textarea.input {
+	height: auto;
+	width: 100%;
+}

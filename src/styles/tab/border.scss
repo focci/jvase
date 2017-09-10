@@ -1,0 +1,20 @@
+.tabs.use-border {
+	>li.use-active >a{
+		border: solid $tab-border-size $tab-border-color;
+		border-radius: $border-radius $border-radius 0 0;
+		border-bottom-color: #fff;
+	}
+	&.use-vleft, &.use-vright {
+		>li.use-active >a{
+			border-bottom: solid $tab-border-size $tab-border-color;
+		}
+	}
+	&.use-vleft >li.use-active >a{
+		border-right-color: #fff;
+		border-radius: $border-radius 0 0 $border-radius;
+	}
+	&.use-vright li.use-active >a{
+		border-left-color: #fff;
+		border-radius: 0 $border-radius $border-radius 0;
+	}
+}

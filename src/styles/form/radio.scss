@@ -1,0 +1,7 @@
+@charset "utf-8";
+.radio {
+	@extend .checkbox;
+	>span:before, >span:after{
+		border-radius: 50%;
+	}
+}

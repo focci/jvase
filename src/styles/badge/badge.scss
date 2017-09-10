@@ -1,0 +1,13 @@
+@charset "utf-8";
+.badge{
+	@extend .use-pill;
+	@extend .use-nowrap;
+	display: inline-block;
+	vertical-align: middle;
+	min-width: pr(21px);
+	padding: $badge-padding;
+	height: $badge-height;
+	line-height: $badge-line-height;
+	margin: $badge-margin;
+	font-size: $badge-font-size;
+}

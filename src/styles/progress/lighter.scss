@@ -1,0 +1,40 @@
+@charset "utf-8";
+.progress.use-lighter {
+	@extend .progress.use-small;
+}
+.progress.use-lighter >.progress-bar {
+	animation: none;
+	background-image: none;
+	text-indent: -9999px;
+	position: relative;
+	overflow:hidden;
+
+	&:after {
+		content: '';
+		height: pr(4px);
+		background-image: linear-gradient(
+			90deg,
+			transparent 25%,
+			#fff 75% #fff,
+			transparent 75%
+		);
+		position: absolute;
+		top: pr(-2px);
+		border-bottom: solid pr(2px) #fff;
+		box-shadow: 0 0 pr(6px) pr(1px) #fff;
+		@include opacity(0.6);
+		animation: lightermove 2s infinite ease-in-out;
+	}
+}
+@include set-progress-size(pr(4px), '.lighter');
+@keyframes lightermove {
+	0% {
+		left: 0%; width: 0;
+	}
+	50% {
+		width: 100%;
+	}
+	100% {
+		left: 100%; width: 0;
+	}
+}

@@ -1,0 +1,16 @@
+.layout-footer {
+	background-color:$layout-footer-bgc;
+}
+.layout-footer-fixed >.layout-footer {
+	@extend .to-bottom-covered;
+	@extend .use-fixed;
+}
+
+.layout-footer-covered.layout-footer-fixed >.layout-footer,
+.layout-slidebar-hide >.layout-footer
+{
+	margin-left: 0 !important;
+}
+.layout-slidebar-hide >.layout-footer {
+	margin-right: 0 !important;
+}

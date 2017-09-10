@@ -1,0 +1,7 @@
+@charset "utf-8";
+@import 'tooltip';
+
+@include set-tooltip-style('.use-danger', $c-danger, $c-danger-light);
+@include set-tooltip-style('.use-warn', $c-warn, $c-warn-light);
+@include set-tooltip-style('.use-info', $c-info, $c-info-light);
+@include set-tooltip-style('.use-success', $c-success, $c-success-light);

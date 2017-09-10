@@ -1,0 +1,23 @@
+@charset "utf-8";
+@keyframes stripeMove{
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: pr(30px) 0;
+	}
+}
+.progress.use-stripe >.progress-bar{
+	background-image: linear-gradient(
+		135deg,
+		rgba(255,255,255,.12) 25%,
+		transparent 25%,
+		transparent 50%,
+		rgba(255,255,255,.12) 50%,
+		rgba(255,255,255,.12) 75%,
+		transparent 75%,
+		transparent
+	);
+	background-size: pr(30px) pr(30px);
+	animation: stripeMove 1s infinite linear;
+}

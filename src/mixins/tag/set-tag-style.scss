@@ -1,0 +1,29 @@
+@charset "utf-8";
+@mixin set-tag-style(
+	$name: '',
+	$bgc: $tag-bgc,
+	$fcolor: '',
+	$radius: ''
+) {
+	.tag#{$name} {
+		background-color: $bgc;
+		@if( $fcolor !='' ) {
+			color: $fcolor;
+		}
+		@if( $radius !='' ) {
+			border-radius: $radius;
+		}
+		&.use-ribbon-left:before {
+			border-top-color: darken($bgc, 15%);
+		}
+		&.use-ribbon-right:before {
+			border-top-color: darken($bgc, 15%);
+		}
+		&.use-sticker-left:before {
+			border-right-color: $bgc;
+		}
+		&.use-sticker-right:before {
+			border-left-color: $bgc;
+		}
+	}
+}

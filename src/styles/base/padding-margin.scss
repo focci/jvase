@@ -1,0 +1,15 @@
+$mar-size: (
+	0,pr(5px),pr(10px),pr(15px),pr(20px),pr(25px),pr(30px),
+	pr(35px),pr(40px),pr(45px),pr(50px),pr(55px),pr(60px)
+);
+@for $i from 1 through length($mar-size) {
+	// Padding & Margin
+	@each $gd in ("-left", "-right", "-top", "-bottom", "") {
+		.pad#{$gd}-#{$i * 5 - 5} {
+			padding#{$gd}: nth($mar-size, $i) !important;
+		}
+		.mar#{$gd}-#{$i * 5 - 5} {
+			margin#{$gd}: nth($mar-size, $i) !important;
+		}
+	}
+}

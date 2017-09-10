@@ -1,0 +1,8 @@
+@charset "utf-8";
+.tag{
+	display: inline-block;
+	white-space: nowrap;
+	vertical-align: top;
+	position: relative;
+	color: $tag-font-color;
+}

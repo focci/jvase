@@ -1,0 +1,12 @@
+.menu, .navbar-collapse >.navbar-nav{
+	display: block;
+	padding: 0;
+	>li{
+		list-style: none;
+		>a{
+			display: block;
+			text-decoration: none;
+			padding: pr(5px) 0;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@charset "utf-8";
+// 响应式表格
+@media screen and (max-width:767px) {
+	.table-responsive {
+		overflow-x: auto;
+		margin-bottom: $table-margin-bottom;
+		overflow-y: hidden;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		>.table {
+			margin-bottom: 0;
+			>thead>tr>th, >tbody>tr>th, >thead>tr>td, >tbody>tr>td{
+				white-space: nowrap;
+			}
+		}
+	}
+}

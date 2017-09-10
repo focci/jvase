@@ -1,0 +1,36 @@
+@charset "utf-8";
+@mixin set-input-size(
+	$fontSize: $form-input-font-size,
+	$paddingVer: $form-input-padding-ver,
+	$paddingHor: $form-input-padding-hor,
+	$height: $form-input-height,
+	$lineHeight: $form-input-line-height,
+	$name: ''
+){
+	.input#{$name}, .select#{$name} >.input {
+		font-size: $fontSize;
+		padding: $paddingVer $paddingHor;
+		height: $height;
+		line-height: $lineHeight;
+		&~.sicon{
+			width: $height !important;
+			height: $height !important;
+		}
+	}
+	.select#{$name} {
+		>select {
+			padding-right: $height !important;
+		}
+		&:after{
+			width: $height * .28;
+			height: $height * .28;
+			right: $height * .2;
+		}
+	}
+	.use-icon-left >.input#{$name} {
+		padding-left: $height;
+	}
+	.use-icon-right >.input#{$name} {
+		padding-right: $height;
+	}
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+@mixin set-icon-size($size, $name: '') {
+	.sicon#{$name} {
+		width: $size;
+		height: $size;
+	}
+
+	.sicon#{$name} >i,
+	
+	// Form
+	.use-icon-left >.input#{$name}~.sicon>i,
+	.use-icon-right >.input#{$name}~.sicon>i,
+	.use-icon-left >.input~.sicon#{$name}>i,
+	.use-icon-right >.input~.sicon#{$name}>i,
+
+	// Button
+	.btn#{$name} >.sicon >i,
+	.btn >.sicon#{$name} >i {
+		font-size: $size;
+	}
+
+	@if( $name == '' ) {
+		.use-icon-left >.input~.sicon.use-normal>i,
+		.use-icon-right >.input~.sicon.use-normal>i,
+		.btn >.sicon.use-normal >i{
+			font-size: $size !important;
+		}
+	}
+}

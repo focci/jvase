@@ -1,0 +1,29 @@
+@charset "utf-8";
+.use-icon-left, .use-icon-right {
+	position: relative;
+	background-color: #fff;
+	>.input {
+		z-index: 1;
+		background-color: transparent;
+		&:focus~.sicon:not(.use-sicon-btn) {
+			color: $c-gray-dark;
+		}
+	}
+	>.input-sicon-left, >.input-sicon-right{
+		position: absolute;
+		top: 0;
+		z-index: 0;
+		color: $c-gray-light;
+		&.use-sicon-btn {
+			z-index: 2;
+			cursor: pointer;
+			color: $c-gray-dark;
+		}
+	}
+}
+.use-icon-left >.input-sicon-left{
+	left: 0;
+}
+.use-icon-right >.input-sicon-right{
+	right: 0;
+}

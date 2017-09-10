@@ -1,0 +1,19 @@
+@charset "utf-8";
+.use-sticker-left:before, .use-sticker-right:before {
+	border: solid transparent;
+}
+.use-sticker-left:after, .use-sticker-right:after {
+	width: $tag-sticker-dot-size;
+	height: $tag-sticker-dot-size;
+	border-radius: 50%;
+	background-color: #fff;
+	top: 50%;
+	margin-top: - $tag-sticker-dot-size/2;
+	box-shadow: 0 0 pr(1px) rgba(0,0,0,.2) inset;
+}
+.use-sticker-left:after {
+	left: - $tag-sticker-dot-size;
+}
+.use-sticker-right:after {
+	right: - $tag-sticker-dot-size;
+}

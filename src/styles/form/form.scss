@@ -1,0 +1,31 @@
+@charset "utf-8";
+.form-item, .form-label, .form-ctrl{
+	display: block;
+	position: relative;
+}
+.form-items {
+	@extend .use-clear;
+	font-size: 0;
+	>.form-item {
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+.form-item {
+	margin-bottom:$form-item-margin-bottom;
+	padding-left: $form-item-padding-hor;
+	padding-right: $form-item-padding-hor;
+	>.form-ctrl, >.form-label {
+		font-size: $form-label-font-size;
+	}
+	>.form-ctrl {
+		margin: 0;
+		>.input{
+			vertical-align: top;
+		}
+	}
+	>.form-label {
+		color: $c-black;
+		padding: $form-label-padding;
+	}
+}

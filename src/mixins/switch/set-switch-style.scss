@@ -1,0 +1,25 @@
+@charset "utf-8";
+@mixin set-switch-style(
+	$name: '',							// 类名
+	$onbgc: $switch-on-bgc,				// 开启时背景颜色
+	$offbgc: $switch-off-bgc,			// 关闭后背景颜色
+	$ctrlbgc: $switch-control-bgc,		// 控制点背景颜色
+	$labelc: $switch-font-color 		// 文字颜色
+){
+	.switch#{$name} {
+		background-color: $switch-on-bgc;
+		@if( $labelc != '' ) {
+			color: $labelc;
+		}
+		@if( $ctrlbgc != '' ) {
+			&:before {
+				background-color: $ctrlbgc;
+			}
+		}
+		@if( $offbgc != '' ) {
+			&.use-off{
+				background-color: $switch-off-bgc;
+			}
+		}
+	}
+}

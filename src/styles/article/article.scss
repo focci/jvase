@@ -1,0 +1,20 @@
+@charset "utf-8";
+.article{
+	display: block;
+	>.article-title, >.article-meta, .article-lead, >p {
+		margin-bottom: pr(21px);
+	}
+	>.article-meta, .article-lead, >p {
+		color: #999;
+		margin-top: pr(21px);
+		line-height: 1.5;
+	}
+	>.article-lead {
+		font-size: pr(21px);
+		color: $c-black;
+		line-height: 1.3 !important;
+	}
+	>p{
+		color: $c-steel;
+	}
+}

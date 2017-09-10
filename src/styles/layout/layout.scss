@@ -1,0 +1,12 @@
+.layout {
+	&.use-header >.layout-header, &.use-footer >.layout-footer {
+		display: block;
+	}
+}
+.layout-header,.layout-footer {
+	position: relative;
+	display: none;
+}
+.layout-header,.layout-footer,.layout-content,.layout-slidebar {
+	transition: all 0.2s;
+}

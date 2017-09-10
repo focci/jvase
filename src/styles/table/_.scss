@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import 'table';
+@import 'responsive';
+@import 'border';
+@import 'hover';
+@import 'divider';
+
+// 设置尺寸
+@include set-table-size('.use-large', $table-item-padding-lg);
+@include set-table-size('.use-small', $table-item-padding-sm);
+
+@include set-table-style('.use-default', $table-hover-bgc, $font-color);
+@include set-table-style('.use-success', $c-success-light, $c-success);
+@include set-table-style('.use-warn', $c-warn-light, $c-warn);
+@include set-table-style('.use-info', $c-info-light, $c-info);
+@include set-table-style('.use-danger', $c-danger-light, $c-danger);

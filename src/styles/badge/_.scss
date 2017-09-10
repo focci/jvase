@@ -1,0 +1,8 @@
+@charset "utf-8";
+@import 'badge';
+
+@include set-badge-style();
+@include set-badge-style($c-danger, $c-white, '.use-danger');
+@include set-badge-style($c-warn, $c-white, '.use-warn');
+@include set-badge-style($c-info, $c-white, '.use-info');
+@include set-badge-style($c-success, $c-white, '.use-success');

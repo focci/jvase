@@ -1,0 +1,17 @@
+@charset "utf-8";
+@each $cl in ( (xs $grid-sm - 1px), (sm $grid-md - 1px), (md $grid-lg - 1px)) {
+	@media ( max-width: nth($cl, 2) ) {
+		.hidden-#{nth($cl, 1)} {
+			display: none !important;
+		}
+		.visible-#{nth($cl, 1)}-inline {
+			display: inline !important;
+		}
+		.visible-#{nth($cl, 1)}-block {
+			display: block !important;
+		}
+		.visible-#{nth($cl, 1)}-inline-block {
+			display: inline-block !important;
+		}
+	}
+}

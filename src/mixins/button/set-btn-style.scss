@@ -1,0 +1,79 @@
+@charset "utf-8";
+@mixin set-btn-style(
+	$name: '',						// 类名
+	$bgc: $btn-bgc,					// 背景颜色
+	$color: $btn-color,				// 字体颜色
+	$borderc: $btn-border-color		// 边框颜色
+) {
+	.btn#{$name} {
+		background-color: $bgc;
+		border-color: $borderc;
+		color: $color;
+		&:not([disabled]):hover,
+		// &:not([disabled]):focus,
+		&.hover:not([disabled]) {
+			@if( $name != '' ) {
+				background-color: darken($borderc, 10%);
+				border-color: darken($borderc, 10%);
+				color: $bgc;
+			}
+			@else {
+				border-color: darken($borderc, 15%);
+				color: $color;
+			}
+		}
+		// &:not([disabled]):focus {
+		// 	border-color: darken($borderc, 8%);
+		// 	@if( $name != '' ) {
+		// 		color: $bgc;
+		// 	}
+		// 	@else {
+		// 		color: $color;
+		// 		background-color: #f2f2f2;
+		// 	}
+		// }
+		&:not([disabled]):active,
+		&.use-active:not([disabled]) {
+			@if( $name != '' ) {
+				background-color: darken($borderc, 15%);
+			}
+			@else {
+				border-color: darken($borderc, 5%);
+				background-color: #f2f2f2;
+			}
+		}
+		&.use-invert {
+			background-color: $borderc;
+			border: none;
+			@if( $name != '' ) {
+				color: $bgc;
+			}
+			@else {
+				color: $color;
+			}
+			&:not([disabled]):hover,
+			// &:not([disabled]):focus,
+			&.hover:not([disabled]) {
+				background-color: darken($borderc, 10%);
+				@if( $name != '' ) {
+					color: $bgc;
+				}
+				@else {
+					color: $color;
+				}
+			}
+			&:not([disabled]):active,
+			&.use-active:not([disabled]) {
+				background-color: darken($borderc, 15%);
+			}
+		}
+		&.btn-3d {
+			border-radius: 1000rem;
+			box-shadow: 0 $btn-3d-size pr(1px) darken($borderc, 20%);
+			&:not([disabled]):active,
+			&.use-active:not([disabled]) {
+				box-shadow:0 0 0 $borderc;
+			}
+		}
+	}
+}

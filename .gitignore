@@ -1,0 +1,12 @@
+*.exe
+*.scc
+*.xml
+*.suo
+*.v11.suo
+*.suo
+*.deleteme
+*.nupkg
+*.nuspec
+*.bat
+/.sass-cache/*
+/node_modules/*

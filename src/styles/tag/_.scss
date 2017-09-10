@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import 'tag';
+@import 'use-ribbon';
+@import 'use-sticker';
+
+@include set-tag-style();
+@include set-tag-style('.use-success', $c-success, $c-white);
+@include set-tag-style('.use-warn', $c-warn, $c-white);
+@include set-tag-style('.use-info', $c-info, $c-white);
+@include set-tag-style('.use-danger', $c-danger, $c-white);
+
+@include set-tag-size();
+@include set-tag-size('.use-small', pr(21px), 0 pr(3.5px), pr(12px));
+@include set-tag-size('.use-medium', pr(35px), 0 pr(14px), pr(17.5px));
+@include set-tag-size('.use-large', pr(42px), 0 pr(21px), pr(21px));

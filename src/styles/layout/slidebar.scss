@@ -1,0 +1,23 @@
+.layout-slidebar {
+	background-color:$layout-slidebar-bgc;
+	position: fixed;
+	display: none;
+	overflow: auto;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.layout-slidebar-pull-left, .layout-slidebar-pull-right{
+	>.layout-slidebar {
+		display: block;
+	}
+}
+.layout-slidebar-pull-right >.layout-slidebar {
+	left: auto;
+	right: 0;
+}
+.use-header.layout-slidebar-covered.layout-slidebar-pull-left >.layout-slidebar,
+.use-header.layout-slidebar-covered.layout-slidebar-pull-right >.layout-slidebar{
+	margin-top: 0;
+}

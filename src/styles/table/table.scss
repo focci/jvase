@@ -1,0 +1,22 @@
+@charset "utf-8";
+.table {
+	width: 100%;
+	margin-bottom: $table-margin-bottom;
+	display: table;
+
+	> thead > tr> th {
+		text-align: left;
+		padding: $table-item-padding;
+		font-weight: normal;
+		color: $table-header-color;
+		font-size: $table-header-font-size;
+		border-bottom: solid pr(1px) $table-border-color;
+		font-weight: bold;
+	}
+
+	> tbody > tr > td {
+		transition: background-color ease-in-out 0.4s;
+		padding: $table-item-padding;
+		display: table-cell;
+	}
+}

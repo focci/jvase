@@ -1,0 +1,12 @@
+$font-size-list: (
+	pr(12px),pr(14px),pr(16px),pr(18px),pr(20px),
+	pr(22px),pr(24px),pr(26px),pr(28px),pr(30px),
+	pr(32px),pr(34px),pr(36px),pr(38px),pr(40px),
+	pr(42px),pr(44px),pr(46px),pr(48px),pr(50px),
+	pr(52px),pr(54px),pr(56px),pr(58px),pr(60px)
+);
+@for $i from 1 through length($font-size-list) {
+	.font-#{12 + ($i - 1) * 2} {
+		font-size: nth($font-size-list, $i)!important;
+	}
+}

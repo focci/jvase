@@ -1,0 +1,19 @@
+@charset "utf-8";
+@mixin set-close-style($color, $name: '') {
+	.close#{$name} {
+		&.use-invert {
+			background-color: $color;
+			&:hover {
+				background-color: darken($color, 10%);
+			}
+		}
+		&:before, &:after {
+			border-bottom: pr(2px) solid $color;
+		}
+		&:hover {
+			&:before, &:after {
+				border-color: darken($color, 10%);
+			}
+		}
+	}
+}

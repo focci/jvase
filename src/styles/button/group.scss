@@ -1,0 +1,51 @@
+@charset "utf-8";
+.btn-group, .btn-group >btn {
+	position: relative;
+	display: inline-block;
+}
+.btn-group {
+	@extend .use-clear;
+	font-size: 0;
+	padding-left: pr(1px);
+	vertical-align: middle;
+	>.btn{
+		margin-left: pr(-1px);
+		&:hover {
+			z-index: 1;
+			color: inherit;
+		}
+	}
+}
+@include set-group-radius();
+@include set-group-radius('.use-pill', 1000rem);
+
+.btn-group-block {
+	@extend .btn-group;
+	display: inline-block;
+	padding: pr(1px) 0 0;
+	>.btn {
+		display: block !important;
+	}
+	>.btn{
+		display: block;
+		margin: pr(-1px) 0 0;
+	}
+}
+
+.btn-group-justified {
+	@extend .btn-group;
+	display: table;
+	padding-left: 0;
+	width: 100%;
+	>.btn {
+		display: table-cell !important;
+		&:not(:last-child) {
+			&:not(:hover),:not(:focus) {
+				border-right-color: transparent;
+			}
+			&:hover + .btn {
+				border-left-color: transparent;
+			}
+		}
+	}
+}

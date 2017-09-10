@@ -1,0 +1,11 @@
+@charset "utf-8";
+@mixin set-input-style(
+	$borderColor: '',
+	$name: ''
+){
+	.input#{$name}{
+		&, &:focus, &.active, &:hover, &.hover {
+			border-color: $borderColor;
+		}
+	}
+}

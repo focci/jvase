@@ -1,0 +1,6 @@
+@charset "utf-8";
+@mixin set-grid-row-gap($gap, $name: '') {
+	.grid#{$name} >.row {
+		@include mar-ver($gap);
+	}
+}

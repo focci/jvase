@@ -1,0 +1,8 @@
+@charset "utf-8";
+@import 'progress';
+@import 'lighter';
+@import 'stripe';
+
+@include set-progress-size();
+@include set-progress-size(pr(28px), '.use-large');
+@include set-progress-size(pr(4px), '.use-small');

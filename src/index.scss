@@ -1,0 +1,16 @@
+/**
+ * !SiKas v1.0.2 (http://sikas.org)
+ * Copyright 2017
+ * Licensed under MIT
+ */
+@import 'fn/_';
+@import 'config';
+@import 'mixins/_';
+@import 'styles/_';
+
+.version{
+	color: $c-steel-light;
+	&:before{
+		content: 'Jvase - v1.0.2'
+	}
+}

@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import 'form';
+@import 'inline';
+@import 'checkbox';
+@import 'radio';
+@import 'select';
+@import 'input';
+@import 'addons';
+@import 'sicon';
+@import 'disabled';
+
+@include set-input-style($c-warn, '.use-warn');
+@include set-input-style($c-info, '.use-info');
+@include set-input-style($c-success, '.use-success');
+@include set-input-style($c-danger, '.use-danger');
+
+@include set-input-size(pr(24px), pr(10px), pr(28px), pr(63px), 1.75, '.use-large');
+@include set-input-size(pr(18px), pr(10px), pr(21px), pr(49px), 1.556, '.use-medium');
+@include set-input-size();
+@include set-input-size(pr(12px), 0, pr(7px), pr(21px), 1, '.use-small');

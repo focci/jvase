@@ -1,0 +1,24 @@
+@charset "utf-8";
+@mixin set-btn-size(
+	$name: '',						// 类名
+	$fsize: $btn-font-size,			// 字体大小
+	$paddingHor: $btn-padding-hor,	// 垂直Padding
+	$paddingVer: $btn-padding-ver,	// 水平Padding
+	$height: $btn-height,			// Height
+	$lineHeight: $btn-line-height	// line-height
+) {
+	.btn#{$name} {
+		height: $height;
+		line-height: $lineHeight;
+		padding: $paddingHor $paddingVer;
+		font-size: $fsize;
+		&.btn-square {
+			padding-left: $paddingHor !important;
+			padding-right: $paddingHor !important;
+		}
+		>.sicon {
+			width: $height - $paddingHor * 2 !important;
+			height: $height - $paddingHor * 2 !important;
+		}
+	}
+}

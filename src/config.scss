@@ -1,0 +1,232 @@
+@charset "utf-8";
+// Color
+// -------------------------------------------------------------------
+$c-main: #2eb3ff;									// 	主色调
+																
+$c-danger: #f44336;									// 	| 辅
+$c-warn: #ffab40;									// 	| 助
+$c-info: #21baf3;									// 	| 色
+$c-success: #15cf7e;								// 	| 
+$c-success-light: #f1ffef;							// 	| 
+$c-warn-light: #fffaef;								// 	| 
+$c-danger-light: #fef0ef;							// 	| 
+$c-info-light: #edfcfc;								// 	| 
+																		
+$c-black-light: #4e5773;							// 	| 中
+$c-black: #3a4156;									// 	| 性
+$c-black-dark: #222735;								// 	| 色
+													// 	|
+$c-steel-light: #9097ae;							// 	|
+$c-steel: #7e869e;									// 	|
+$c-steel-dark: #6a728c;								// 	|
+													// 	|
+$c-gray-light: #ccd1e1;								// 	|
+$c-gray: #b2b6c6;									// 	|
+$c-gray-dark: #a2a7b8;								// 	|
+													// 	|
+$c-silver-dark: #e8ebef;							// 	|
+$c-silver: #f2f2f2;									// 	|
+$c-white: #fff;										// 	|
+
+// 全局设置
+// -------------------------------------------------------------------
+$font-family: ProximaNova, BlinkMacSystemFont, 		// 默认字体
+	"Microsoft Yahei", "Helvetica Neue", 
+	"Segoe UI", Roboto, Tahoma, Arial, sans-serif;
+$font-size: 14px;									// 字体大小 (g)
+$font-color: $c-black-light;						// 字体颜色 (g)
+$line-height: 1.5;									// line-height (g)
+
+$border-radius: pr(3px);							// 圆角 (g)
+$border-color: $c-silver-dark;						// 边框颜色 (g)
+
+// base
+// -------------------------------------------------------------------
+$header-color: $c-black-dark;						// Header(h1,h2,...)字体颜色
+// Header(h1,h2,...)字体大小
+$header-size: (pr(42px), pr(35px), pr(28px), pr(21px), pr(16px), pr(14px));
+
+$disabled-color: #9ba1b4;							// 禁用字体颜色
+$disabled-bgc: #f5f5f5;								// 禁用背景
+
+// alert
+// -------------------------------------------------------------------
+$alert-bgc: #f6f6f6;								// 背景
+$alert-padding:pr(14px);							// padding
+
+// badge
+// -------------------------------------------------------------------
+$badge-bgc: $c-gray-dark;							// 背景
+$badge-color: $c-white;								// 字体颜色
+$badge-height: pr(17.5px);							// 高度
+$badge-line-height: 1;								// line-height
+$badge-font-size: 85.7%;							// 字体大小
+$badge-padding: pr(1.75px) pr(7px);					// padding
+$badge-margin: 0 pr(3.5px);							// margin
+
+// button
+// -------------------------------------------------------------------
+$btn-padding-hor: pr(6px);							// 按钮垂直Padding
+$btn-padding-ver: pr(28px);							// 按钮水平Padding
+$btn-line-height: $line-height;						// line-height
+$btn-height: pr(35px);								// height
+$btn-bgc: $c-white;									// 按钮默认背景颜色
+$btn-color: $c-black-light;							// 按钮默认字体颜色
+$btn-font-size: pr(14px);							// 按钮默认字体大小
+$btn-border-color: $c-gray-light;					// 按钮边框
+$btn-3d-size: pr(7px);								// 3D阴影大小
+$btn-shadow-base: pr(2px);							// 阴影大小
+
+// comment
+// -------------------------------------------------------------------
+$comment-avantar-width: pr(42px);					// 头像宽度
+$comment-avantar-height: pr(42px);					// 头像高度
+$comment-item-padding: pr(7px) pr(14px);			// padding
+$comment-item-primary-color: #f6f6f6;				// 背景颜色
+$comment-item-margin: pr(7px) 0 0;					// margin
+$comment-title-margin: pr(4px) 0;					// Title Margin
+$comment-title-font-size: pr(16px);					// Title 字体大小
+$comment-body-padding: pr(7px) 0;					// 评论内容padding
+$comment-body-color: $c-steel-dark;					// 评论内容颜色
+$comment-meta-color: $c-gray-dark;					// 附属信息颜色
+
+// form
+// -------------------------------------------------------------------
+$form-item-margin-bottom: pr(7px);					// .form-item margin-bottom值
+$form-item-padding-hor: pr(7px);					// .form-item padding-left与padding-right值设置
+
+$form-checkbox-size: pr(18px);						// checkbox、radio尺寸
+$form-checkbox-border-size: pr(1px);					// checkbox、radio 边框大小
+$form-checkbox-padding-left: pr(21px);				// checkbox、radio padding-left
+$form-checkbox-height: pr(21px);					// checkbox、radio 高度
+
+$form-input-height: pr(35px);						// 高度
+$form-input-padding-ver: pr(6px);					// 垂直padding
+$form-input-padding-hor: pr(14px);					// 水平padding
+$form-input-border-size: pr(1px);					// 边框尺寸
+$form-input-border-color: $c-gray-light;			// 边框颜色
+$form-input-active-border-color: $c-main;			// Active状态时边框颜色
+// Hover状态时边框颜色
+$form-input-hover-border-color: darken($form-input-border-color, 15%);
+$form-input-font-size: pr(14px);					// 字体大小
+$form-input-line-height: $line-height;				// line-height
+
+$form-label-padding: pr(7px) 0;						// Label padding值
+$form-label-font-size: pr(14px);					// Label 字体大小
+$form-label-color: $c-black;						// Label 颜色
+$form-label-inline-padding-right: pr(14px);			// Label inline时padding-right值
+
+// grid
+// -------------------------------------------------------------------
+$grid-border-color: $c-silver-dark;
+$grid-columns: 12;									// 默认列数
+$grid-row-gap: pr(10px);							// 行间距
+$grid-col-gap: pr(10px);							// 行间距
+$grid-lg: 1200px;									// 大屏幕设备 >= 1200px
+$grid-md: 992px;									// 中屏幕设备 >= 992px
+$grid-sm: 768px;									// 平板 >=768px
+
+// icon
+// -------------------------------------------------------------------
+
+
+// navbar
+// -------------------------------------------------------------------
+$navbar-height: pr(60px);
+
+// layout
+// -------------------------------------------------------------------
+$layout-header-height: pr(60px);					// Header 高度
+$layout-header-bgc: $c-main;						// Header 背景色
+$layout-content-bgc: $c-white;						// 内容区域背景色
+$layout-slidebar-width: pr(260px);					// Menu 默认宽度
+$layout-slidebar-narrow-width: pr(70px);			// Menu 窄边宽度
+$layout-slidebar-bgc: $c-white;						// Menu 背景颜色
+$layout-footer-height: pr(40px);					// Footer 高度
+$layout-footer-bgc: $c-silver;						// Footer 背景色
+
+// list
+// -------------------------------------------------------------------
+
+// pagination
+// -------------------------------------------------------------------
+$pagination-margin: pr(14px) 0;						// Margin
+$pagination-item-padding: pr(7px);					// 项padding
+$pagination-item-line-height: $line-height;			// 项line-height
+$pagination-item-height: pr(35px);					// 项高度
+$pagination-item-color: $c-steel;					// 项文字颜色
+$pagination-item-active-color: $c-black;			// 当前页文字颜色
+$pagination-item-border-color: $c-silver-dark;		// 默认边框颜色
+$pagination-item-font-size: pr(14px);				// 字体大小
+
+// pannel
+// -------------------------------------------------------------------
+
+// position
+// -------------------------------------------------------------------
+
+// progress
+// -------------------------------------------------------------------
+$progress-height: pr(14px);							// 默认高度
+$progress-bgc: $c-silver;							// 背景颜色
+$progress-bar-bgc: $c-main;							// Bar背景颜色
+
+// slider
+// -------------------------------------------------------------------
+$slider-height:pr(42px);							// 高度
+$slider-bgc: $c-silver-dark;						// 背景颜色
+$slider-active-bgc: $c-main;						// 活动区域背景颜色
+
+// switch
+// -------------------------------------------------------------------
+$switch-default-width: pr(35px);					// 最小宽度
+$switch-height: pr(21px);							// 高度
+$switch-font-color: rgba(255,255,255,.95);			// 文字颜色
+$switch-font-size: pr(14px);						// 文字大小
+$switch-on-bgc: $c-main;							// 开启背景颜色
+$switch-off-bgc: $c-gray-dark;						// 关闭背景颜色
+$switch-control-gap: pr(2px);						// 控制点间隔
+$switch-control-bgc: $c-silver;						// 控制点背景颜色
+// tab
+// -------------------------------------------------------------------
+
+$tab-border-color: #d4d4d5;							// 边框颜色
+$tab-border-size: pr(1px);							// 边框大小
+$tab-font-size: pr(14px);							// 字体大小
+$tab-item-padding: pr(12px) pr(21px);				// padding
+$tab-item-color: $c-steel;							// 文字颜色
+$tab-item-actived-color: $c-black;					// Actived文字颜色
+$tab-item-actived-border-color: $c-main;			// Actived边框颜色
+
+// table
+// -------------------------------------------------------------------
+$table-margin-bottom: pr(21px);						// table margin-bottom
+$table-header-color: $c-steel-dark;					// Header文字颜色
+$table-header-font-size: pr(14px);					// Header文字大小
+$table-border-color: $border-color;					// 分隔线或者边框颜色
+$table-item-padding: pr(12px) pr(10px);				// td,th padding
+$table-item-padding-lg: pr(18px) pr(10px);			// td,th .large padding
+$table-item-padding-sm: pr(7px) pr(10px);			// td,th .small padding
+$table-hover-bgc: #f6f6f6;							// 鼠标经过tr时背景颜色
+
+// tag
+// -------------------------------------------------------------------
+$tag-height: pr(28px);								// height
+$tag-padding: 0 pr(7px);							// padding
+$tag-font-size: pr(12px);							// 字体大小
+$tag-bgc: $c-silver-dark;							// 背景颜色
+$tag-font-color: $c-steel;							// 字体颜色
+$tag-sticker-dot-size: pr(6px);						// Sticker 圆圈大小
+
+// tooltip
+// -------------------------------------------------------------------
+$tooltip-trangle-size: pr(10px);					// 箭头大小
+$tooltip-padding: pr(7px) pr(10px);					// Padding
+$tooltip-border-size: pr(1px);						// 边框大小
+$tooltip-color: $c-steel-dark;						// 文字颜色
+$tooltip-bgc-color: #fff;							// 背景颜色
+$tooltip-border-color: #ddd;						// 边框颜色
+$tooltip-invert-color: rgba(255,255,255,.9);		// 反转后文字颜色
+$tooltip-invert-bgc: $c-black;						// 反转后背景颜色
+$tooltip-invert-light-bgc: #f2f2f2;					// 反转后浅背景颜色
+$tooltip-box-shadow: pr(1px) pr(1px) pr(4px) rgba(0,0,0,0.1);

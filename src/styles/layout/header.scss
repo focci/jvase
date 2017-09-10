@@ -1,0 +1,11 @@
+.layout-header {
+	background-color:$layout-header-bgc;
+}
+.layout-header-fixed-top >.layout-header {
+	@extend .to-top-covered;
+	@extend .use-fixed;
+}
+.layout-slidebar-hide >.layout-header {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}

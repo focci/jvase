@@ -7,8 +7,9 @@
     "url": "git+https://github.com/focci/jvase.git"
   },
   "keywords": [
-    "gulp-tempos",
-    "tempos"
+    "jvase",
+    "css",
+    "framework"
   ],
   "dependencies": {
     "autoprefixer": "^6.2.1",

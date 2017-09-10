@@ -16,7 +16,7 @@ var	del = require('del');
 gulp.task('styles', function() {
 	return sass('./src/index.scss')
 		.pipe(concat('jvase.css'))
-		.pipe(postcss([
+		.pipe(postcss([ 
 			autoprefixer({
 				browsers: [
 					'last 2 versions',

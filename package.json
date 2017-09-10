@@ -1,9 +1,9 @@
 {
-  "name": "Jvase",
-  "private": true,
+  "name": "jvase",
+  "private": false,
   "version": "1.0.2",
-  "description": "Jvase is a CSS framework",
-  "keywords": ["Jvase", "css"],
+  "description": "Jvase is a CSS framework. only CSS!",
+  "keywords": ["jvase", "css"],
   "dependencies": {
     "autoprefixer": "^6.2.1",
     "del": "^2.2.0",

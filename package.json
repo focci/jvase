@@ -1,9 +1,15 @@
 {
   "name": "jvase",
-  "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Jvase is a CSS framework. only CSS!",
-  "keywords": ["jvase", "css"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/focci/jvase.git"
+  },
+  "keywords": [
+    "gulp-tempos",
+    "tempos"
+  ],
   "dependencies": {
     "autoprefixer": "^6.2.1",
     "del": "^2.2.0",
@@ -18,7 +24,13 @@
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "Focci",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/focci/jvase/issues"
+  },
+  "homepage": "https://github.com/focci/jvase#readme"
 }

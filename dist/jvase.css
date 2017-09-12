@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
- * !SiKas v1.0.2 (http://sikas.org)
+ * !Jvase v1.0.3
  * Copyright 2017
  * Licensed under MIT
  */
@@ -3733,4 +3733,4 @@ textarea.input {
 .version {
   color: #9097ae; }
   .version:before {
-    content: "Jvase - v1.0.2"; }
+    content: "Jvase - v1.0.3"; }

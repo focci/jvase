@@ -1,20 +1,9 @@
 {{ extend './partial/layout' }}
 
 {{#def.content 
-    <div class="doc-box" id="docContainer"></div>
+    <div class="doc-box pad-50" id="docContainer"></div>
     <script src="./scripts/zepto.min.js"></script>
     <script src="./scripts/marked.js"></script>
-    <script>
-        function getData(name, callback) {
-            $.get('./post/'+name+'.md', function(res) {
-                callback(res);
-            })
-        }
-        window.onhashchange = function() {
-            console.log(location.hash)
-        };
-        getData('base', function(res) {
-            console.log(res);
-        });
-    </script>
+    <script src="./scripts/highlight.pack.js"></script>
+    <script src="./scripts/do.js"></script>
 #}}

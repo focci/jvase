@@ -1,4 +1,4 @@
-<div class="layout-slidebar pad-45">
+<div class="layout-slidebar pad-45 {{- hideSlide ? 'use-hide' : ''}}">
 	<h5 class="mar-top-0 mar-bottom-30">文档 <small>(Documentation)</small></h5>
 	
     {{ for( var i = 0, len = SubMenu.length; i<len; i++) { }}

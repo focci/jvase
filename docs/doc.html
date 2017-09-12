@@ -13,10 +13,11 @@
     <meta content="undefined" name="keywords" />
     <meta content="undefined" name="description" />
     <link rel="stylesheet" href="../dist/jvase.min.css">
+    <link rel="stylesheet" href="./styles/default.min.css">
 </head>
 <body>
-    <div class="layout use-header layout-slidebar-pull-left layout-header-fixed-top">
-        <div class="layout-slidebar pad-45">
+    <div class="layout use-header layout-header-fixed-top layout-slidebar-pull-left">
+        <div class="layout-slidebar pad-45 ">
 	<h5 class="mar-top-0 mar-bottom-30">文档 <small>(Documentation)</small></h5>
 	
     
@@ -120,7 +121,7 @@
                 <img src="https://raw.githubusercontent.com/focci/asset/master/img/jvase-logo.png" alt="">
             </a>
         </div>
-        <div class="navbar-collapse">
+        <div class="navbar-collapse use-pull-right">
             <ul class="navbar-nav">
             
                 <li><a href="index.html">首页 (Home)</a></li>
@@ -133,27 +134,14 @@
 </div>
         <div class="layout-content">
              
-    <div class="doc-box" id="docContainer"></div>
+    <div class="doc-box pad-50" id="docContainer"></div>
     <script src="./scripts/zepto.min.js"></script>
     <script src="./scripts/marked.js"></script>
-    <script>
-        function getData(name, callback) {
-            $.get('./post/'+name+'.md', function(res) {
-                callback(res);
-            })
-        }
-        window.onhashchange = function() {
-            console.log(location.hash)
-        };
-        getData('base', function(res) {
-            console.log(res);
-        });
-    </script>
+    <script src="./scripts/highlight.pack.js"></script>
+    <script src="./scripts/do.js"></script>
 
         </div>
-        <div class="layout-footer">
-    Footer
-</div>
+        
     </div>
 </body>
 </html>

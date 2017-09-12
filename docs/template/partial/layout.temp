@@ -13,15 +13,18 @@
     <meta content="{{- keywords}}" name="keywords" />
     <meta content="{{- description}}" name="description" />
     <link rel="stylesheet" href="../dist/jvase.min.css">
+    <link rel="stylesheet" href="./styles/default.min.css">
 </head>
 <body>
-    <div class="layout use-header layout-slidebar-pull-left layout-header-fixed-top">
+    <div class="layout use-header layout-header-fixed-top {{- !hideSlide ? 'layout-slidebar-pull-left' : ''}}">
         {{ include './partial/slide' }}
         {{ include './partial/header' }}
         <div class="layout-content">
             {{ #use.content }}
         </div>
-        {{ include './partial/footer' }}
+        {{ if(hasFooter) { }}
+            {{ include './partial/footer' }}
+        {{ } }}
     </div>
 </body>
 </html>

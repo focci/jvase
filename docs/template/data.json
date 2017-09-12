@@ -2,11 +2,15 @@
     "menu": {
         "index": {
             "title": "首页",
-            "eng": "Home"
+            "eng": "Home",
+            "hasFooter": true,
+            "hideSlide": true
         },
         "doc": {
             "title": "文档",
-            "eng": "Documentation"
+            "eng": "Documentation",
+            "hasFooter": false,
+            "hideSlide": false
         }
     },
     "reflect": [

@@ -1,16 +1,19 @@
-// Load plugins
 var gulp = require('gulp');
 var	sass = require('gulp-ruby-sass');
 var	autoprefixer = require('autoprefixer');
 var	nano = require('gulp-cssnano');
 var	postcss = require('gulp-postcss');
-var	cssnext  = require('postcss-cssnext');
-var	imagemin = require('gulp-imagemin');
 var	concat = require('gulp-concat');
 var rename = require('gulp-rename');
+var tempos = require('gulp-tempos');
+var data = require('gulp-data');
+var fs = require('fs');
+var path = require('path');
+var assign = require('object-assign');
 var	notify = require('gulp-notify');
-var	base64 = require('gulp-base64');
-var	del = require('del');
+
+var path = path.resolve(__dirname, './docs/template/data.json');
+var res = JSON.parse( fs.readFileSync(path) );
 
 // Styles
 gulp.task('styles', function() {
@@ -28,9 +31,7 @@ gulp.task('styles', function() {
 					'iOS 7'
 				]
 			})
-			// ,cssnext
 		]))
-		.pipe(base64())
 		.pipe(gulp.dest('./dist'))
 		.pipe(rename({
 			suffix: '.min'
@@ -43,31 +44,25 @@ gulp.task('styles', function() {
 	);
 });
 
-// Images
-gulp.task('images', function() {
-	return gulp.src('./src/images/**/*')
-		.pipe(imagemin({
-			optimizationLevel: 7,
-			progressive: true,
-			interlaced: true
+gulp.task('doc', function() {
+	return gulp.src('./docs/template/*.temp')
+		.pipe(data((file) => {
+			return assign(res.menu[ file.relative.replace(/\.temp$/, '') ], {
+				Menus: res.menu,
+				SubMenu: res.reflect
+			});
 		}))
-		.pipe(gulp.dest('./dist/images'))
-		.pipe(notify({
-			message: 'Images task complete'
-		}));
+		.pipe(tempos(null, {
+			extname: '.html'
+		}))
+		.pipe(gulp.dest('./docs'));
 });
+gulp.start('doc');
 
-// Clean
-gulp.task('clean', function() {
-	return del(['./dist/*.css']);
-});
-
-// Default task
 gulp.task('default', function() {
-	gulp.start('styles');
+	gulp.start(['styles', 'doc']);
 });
 
-// Watch
 gulp.task('watch', function() {
-    gulp.watch('./src/**/*.*', ['default']);
+    gulp.watch('./src/**/*.*', ['styles']);
 });

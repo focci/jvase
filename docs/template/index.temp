@@ -1,0 +1,5 @@
+{{ extend './partial/layout' }}
+
+{{#def.content 
+    <h1>Index</h1>
+#}}

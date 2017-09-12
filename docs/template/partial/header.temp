@@ -1,0 +1,16 @@
+<div class="layout-header">
+    <div class="navbar">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">
+                <img src="https://raw.githubusercontent.com/focci/asset/master/img/jvase-logo.png" alt="">
+            </a>
+        </div>
+        <div class="navbar-collapse">
+            <ul class="navbar-nav">
+            {{ for(let key in Menus) { }}
+                <li><a href="{{- key}}.html">{{- Menus[key].title}} ({{- Menus[key].eng}})</a></li>
+            {{ } }}
+            </ul>
+        </div>
+    </div>
+</div>

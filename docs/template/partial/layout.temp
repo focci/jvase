@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{- title}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta content="{{- keywords}}" name="keywords" />
+    <meta content="{{- description}}" name="description" />
+    <link rel="stylesheet" href="../dist/jvase.min.css">
+</head>
+<body>
+    <div class="layout use-header layout-slidebar-pull-left layout-header-fixed-top">
+        {{ include './partial/slide' }}
+        {{ include './partial/header' }}
+        <div class="layout-content">
+            {{ #use.content }}
+        </div>
+        {{ include './partial/footer' }}
+    </div>
+</body>
+</html>

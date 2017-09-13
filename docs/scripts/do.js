@@ -4,12 +4,12 @@
     var body = $('body');
 
     // Slide
-    $.get('./post/layout_slidebar.md', function(res) {
+    request('./post/layout_slidebar.md', function(res) {
         $('#slidebar').html( marked(res) );
     });
 
     // Menu
-    $.get('./post/layout_menu.md', function(res) {
+    request('./post/layout_menu.md', function(res) {
         $('#nav-header').html( marked(res) );
     });
 
@@ -21,6 +21,15 @@
         this.__slideactive__ = !this.__slideactive__;
         $(this).prev('pre').stop()[fn](100);
     });
+
+    function request(url, success, err) {
+        $.ajax({
+            url: url,
+            dataType: 'text',
+            success: success,
+            error: err
+        });
+    }
 
     function Caches() {
         this._data = {};
@@ -61,8 +70,11 @@
         var res, path;        
         path = './post/'+name+'.md';
         if( !(res = caches.get(path)) ) {
-            $.get(path, function(data) {
+            container.html('<div class="pad-30 use-center">Loading...</div>');
+            request(path, function(data) {
                 requestCB(data, path);
+            }, function() {
+                container.html('<div class="alert use-danger use-center">The request timeout or URL address is incorrect!</div>');
             });
         }
         else {

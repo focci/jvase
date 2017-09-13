@@ -4,12 +4,12 @@
     var body = $('body');
 
     // Slide
-    $.get('./post/_slidebar.md', function(res) {
+    $.get('./post/layout_slidebar.md', function(res) {
         $('#slidebar').html( marked(res) );
     });
 
     // Menu
-    $.get('./post/_menu.md', function(res) {
+    $.get('./post/layout_menu.md', function(res) {
         $('#nav-header').html( marked(res) );
     });
 
@@ -77,7 +77,7 @@
         var hash;
         win.onhashchange = function() {
             hash = /#(\w+)/.exec(location.hash);
-            run( hash ? hash[1] : '_error' );  
+            run( hash ? hash[1] : 'layout_error' );  
         };
 
         hash = /#(\w+)/.exec(location.hash);

@@ -42,3 +42,18 @@
     cursor: pointer;
     user-select: none;
 }
+.jvase-slider >ul {
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.jvase-slider >ul >li{
+    list-style: none;
+}
+.jvase-slider >ul >li >a{
+    color: #7e869e;
+    display: block;
+    padding: .3rem 0;
+}
+.jvase-slider >ul >li >a:hover{
+    color: #222735;
+}

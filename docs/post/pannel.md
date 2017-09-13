@@ -1,18 +1,10 @@
 # 面板 (Pannel)
 用于弹出性对话框，也可用于对描述性内容进行展示
+***
 
 ## 用法介绍
-pannel的创建是十分简单的，创建一个 `.pannel` 元素，然后再在里面依次添加 `.pannel-top-btn`、`.pannel-header`、`.pannel-body`、`.pannel-footer` 即可(内部元素可以根据需要任意取舍).
-```
-<div class="pannel">
-    <div class="pannel-top-btn"><!--功能性按钮--></div>
-    <h4 class="pannel-header"><!--标题--></h4>
-    <div class="pannel-body"><!--内容--></div>
-    <div class="pannel-footer"><!--Footer--></div>
-</div>
-```
+Pannel的创建是十分简单的，创建一个 `.pannel` 元素，然后再在里面依次添加 `.pannel-top-btn`、`.pannel-header`、`.pannel-body`、`.pannel-footer` 即可.
 
-可以通过 `.z-depth-*` 对Modal添加阴影，使用方式请查看<a href="/doc/base.html">基础(Base)中有关阴影的描述</a>.</p>
 ```
 <div class="use-center pad-40 bgc-steel-light">
     <div class="pannel z-depth-3">
@@ -72,15 +64,8 @@ pannel的创建是十分简单的，创建一个 `.pannel` 元素，然后再在
 ```
 
 ## 状态</h2>
-		<p添加类 `.pannel-state` 到 `.pannel-body` 上，然后在里面添加类名为 `.pannel-state-icons` 的 `&ltspan&gt;` 标签</p>
-```
-	<div class="pannel">
-	    <div class="pannel-body pannel-state">
-	        <span class="pannel-state-icons"><!--Awesome图标--></span>
-	        ....
-	    </div>
-	</div>
-```
+添加类 `.pannel-state` 到 `.pannel-body` 上，然后在里面添加类名为 `.pannel-state-icons` 的 `<span>` 标签
+
 ```
 <div class="tag mar-top-15 mar-bottom-15">成功</div>
 <div class="use-center pad-40 bgc-steel-light">

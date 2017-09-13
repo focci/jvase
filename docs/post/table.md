@@ -1,17 +1,10 @@
 # 表格 (Table)
 简单快速的创建不同样式的表格.
-
+***
 
 ## 用法介绍
 添加类 `.table` 到 `<table>` 元素
-```
-<table class="table">
-    <thead></thead>
-    <tbody></tbody>
-</table>
-```
 
-默认显示效果如下
 ```
 <table class="table">
     <thead>
@@ -62,10 +55,6 @@
 
 ## 行/列分隔条
 添加 `.use-divider`(行分隔条)、`.use-colbar`(列分隔条) 到 `<table>` 元素
-```
-<table class="table use-divider"></table>
-<table class="table use-colbar"></table>
-```
 ```
 <div class="table-responsive use-inline-block col-md-5 col-xs-12">
     <table class="table use-divider">
@@ -216,9 +205,6 @@
 
 ## 边框
 添加 `.use-border` 到 `<table>`.
-```
-<table class="table use-border"></table>
-```
 ```
 <table class="table use-border">
     <thead>
@@ -417,10 +403,6 @@
 ## 尺寸
 添加 `.use-large` 到 `<table>` 元素便可以实现大行距表格；添加 `.use-small` 到 `<table>` 元素便可以实现小行距表格
 ```
-<table class="table use-large"></table>
-<table class="table use-small"></table>
-```
-```
 <div class="table-responsive use-inline-block col-md-5 col-xs-12">
     <table class="table use-divider use-border use-large">
         <thead>
@@ -520,9 +502,6 @@
 ## Hover / Active
 添加 `.use-hover` 到 `<table>` 元素，鼠标经过 `<td>` 时显示背景；如果向 `<tr>` 添加 `.use-acitve` 类将直接添加背景颜色.
 ```
-<table class="table use-hover"></table>
-```
-```
 <div class="table-responsive use-inline-block col-md-5 col-xs-12">
     <table class="table use-divider use-hover">
         <thead>
@@ -621,10 +600,6 @@
 
 ## 奇(偶)数行背景
 添加 `.use-*-odd`(奇数行) 或者 `.use-*-even`(偶数行) 到 `<table>` 元素，其中 * 可以是 `default`、`success`、`warn`、`info`、`danger`.
-```
-<table class="table use-*-odd"></table>
-<table class="table use-*-even"></table>
-```
 ```
 <div class="table-responsive use-inline-block col-md-5 col-xs-12">
     <table class="table use-divider use-border use-default-even">
@@ -823,8 +798,3 @@
 
 ## 响应式表格
 在 `<table>` 元素的外层，添加类名为 `.table-responsive` 的块元素.<br/>响应式表格在设备显示宽度小于768px时才生效，其特点就是内容不会换行，如果表格超出外层宽度，则会自动产生滚动条.
-```
-<div class="table-responsive"><table class="table"></table></div>
-```
-
-</div>

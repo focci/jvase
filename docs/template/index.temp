@@ -1,5 +1,6 @@
 {{ extend './partial/layout' }}
 
 {{#def.content 
-    <h1>Index</h1>
+    <div class="home-box" id="docContainer"></div>
+    <script>__detailname__ = 'index';</script>
 #}}

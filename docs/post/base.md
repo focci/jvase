@@ -1,6 +1,6 @@
 # 基础(Base)
 初始化各类及标签样式，以及一些常用类
-<hr>
+***
 
 ## Header
 `h1` ... `h6` 所有标题标签，在标题内可以通过 `<small>` 标签来标记副标题.
@@ -19,57 +19,57 @@
 <div class="grid">
     <div class="row">
         <div class="col-sm-3 col-sm-offset-1">
-            <div class="z-depth-1 pad-15 mar-15 use-center">.z-depth-1</div>
+            <div class="z-depth-1 pad-15 mar-15">.z-depth-1</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-1-top pad-15 mar-15 use-center">.z-depth-1-top</div>
+            <div class="z-depth-1-top pad-15 mar-15">.z-depth-1-top</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-1-bottom pad-15 mar-15 use-center">.z-depth-1-bottom</div>
+            <div class="z-depth-1-bottom pad-15 mar-15">.z-depth-1-bottom</div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-3 col-sm-offset-1">
-            <div class="z-depth-2 pad-15 mar-15 use-center">.z-depth-2</div>
+            <div class="z-depth-2 pad-15 mar-15">.z-depth-2</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-2-top pad-15 mar-15 use-center">.z-depth-2-top</div>
+            <div class="z-depth-2-top pad-15 mar-15">.z-depth-2-top</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-2-bottom pad-15 mar-15 use-center">.z-depth-2-bottom</div>
+            <div class="z-depth-2-bottom pad-15 mar-15">.z-depth-2-bottom</div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-3 col-sm-offset-1">
-            <div class="z-depth-3 pad-15 mar-15 use-center">.z-depth-3</div>
+            <div class="z-depth-3 pad-15 mar-15">.z-depth-3</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-3-top pad-15 mar-15 use-center">.z-depth-3-top</div>
+            <div class="z-depth-3-top pad-15 mar-15">.z-depth-3-top</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-3-bottom pad-15 mar-15 use-center">.z-depth-3-bottom</div>
+            <div class="z-depth-3-bottom pad-15 mar-15">.z-depth-3-bottom</div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-3 col-sm-offset-1">
-            <div class="z-depth-4 pad-15 mar-15 use-center">.z-depth-4</div>
+            <div class="z-depth-4 pad-15 mar-15">.z-depth-4</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-4-top pad-15 mar-15 use-center">.z-depth-4-top</div>
+            <div class="z-depth-4-top pad-15 mar-15">.z-depth-4-top</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-4-bottom pad-15 mar-15 use-center">.z-depth-4-bottom</div>
+            <div class="z-depth-4-bottom pad-15 mar-15">.z-depth-4-bottom</div>
         </div>
     </div>
     <div class="row pad-bottom-60">
         <div class="col-sm-3 col-sm-offset-1">
-            <div class="z-depth-5 pad-15 mar-15 use-center">.z-depth-5</div>
+            <div class="z-depth-5 pad-15 mar-15">.z-depth-5</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-5-top pad-15 mar-15 use-center">.z-depth-5-top</div>
+            <div class="z-depth-5-top pad-15 mar-15">.z-depth-5-top</div>
         </div>
         <div class="col-sm-3">
-            <div class="z-depth-5-bottom pad-15 mar-15 use-center">.z-depth-5-bottom</div>
+            <div class="z-depth-5-bottom pad-15 mar-15">.z-depth-5-bottom</div>
         </div>
     </div>
 </div>
@@ -142,24 +142,24 @@
 通过为 `<img>` 元素添加以下相应的类，可以让图片呈现不同的形状(圆角、圆、外边框).
 ```
 <div class="use-inline-block mar-right-15">
-    <img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs=" class="use-radius" />
+    <img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif" class="use-radius" />
     <div class="use-center pad-top-10 text-gray">.use-radius</div>
 </div>
 <div class="use-inline-block mar-right-15">
-    <img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs=" class="use-circle" />
+    <img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif" class="use-circle" />
     <div class="use-center pad-top-10 text-gray">.use-circle</div>
 </div>
 <div class="use-inline-block">
-    <img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs=" class="thumb" />
+    <img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif" class="thumb" />
     <div class="use-center pad-top-10 text-gray">.thumb</div>
 </div>
 ```
 
 ## 胶囊&圆角
-通过添加类 `.use-pill` , 可以实现两端呈半圆形的胶囊形状，添加类 `.use-radius` 可实现圆角效果(圆角大小默认为4px).
+通过添加类 `.use-pill` , 可以实现两端呈半圆形的胶囊形状，添加类 `.use-radius` 可实现圆角效果(圆角大小默认为3px).
 ```
 <div class="use-pill use-inline-block bgc-gray-light pad-15" style="width: 100px;"></div>
-<div class="use-radius use-inline-block bgc-gray-light pad-15" style="width: 100px;"></div>
+<div class="use-radius use-inline-block bgc-gray-light pad-15 mar-left-30" style="width: 100px;"></div>
 ```
 
 ## 被删除的文本
@@ -204,18 +204,18 @@ Jvase 演示文本 <em>Jvase 演示文本</em>
 <div class="grid">
     <div class="row">
         <div class="col-xs-6 col-sm-6">
-            <div class="bgc-silver-dark pad-10 use-left" style="height:41px;">左对齐 `.use-left`</div>
+            <div class="bgc-silver-dark pad-10 use-left" style="height:41px;">左对齐 .use-left</div>
         </div>
         <div class="col-xs-6 col-sm-6">
-            <div class="bgc-silver-dark pad-10 use-center" style="height:41px;">居中对齐 `.use-center`</div>
+            <div class="bgc-silver-dark pad-10 use-center" style="height:41px;">居中对齐 .use-center</div>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-6 col-sm-6">
-            <div class="bgc-silver-dark pad-10 use-right" style="height:41px;">右对齐 `.use-right`</div>
+            <div class="bgc-silver-dark pad-10 use-right" style="height:41px;">右对齐 .use-right</div>
         </div>
         <div class="col-xs-6 col-sm-6">
-            <div class="bgc-silver-dark pad-10 use-justify" style="height:41px;">两端对齐 `.use-justify`</div>
+            <div class="bgc-silver-dark pad-10 use-justify" style="height:41px;">两端对齐 .use-justify</div>
         </div>
     </div>
 </div>
@@ -243,22 +243,16 @@ Jvase 演示文本 <em>Jvase 演示文本</em>
 ## 改变大小写
 通过这几个类 (`.use-lowercase`、`.use-uppercase`、`.use-capitalize`) 可以改变文本的大小写
 ```
-<div class="pad-top-10">
-    Jvase Demo -> <span class="use-lowercase">Jvase Demo</span> 全部小写 (use-lowercase)
-</div>
-<div class="pad-top-10">
-    Jvase Demo -> <span class="use-uppercase">Jvase Demo</span> 全部大写 (use-uppercase)
-</div>
-<div class="pad-top-10">
-    siKas demo -> <span class="use-capitalize">siKas demo</span> 每个单词开头大写 (use-capitalize)
-</div>
+<p>Jvase Demo -> <span class="use-lowercase">Jvase Demo</span> 全部小写 (use-lowercase)</p>
+<p>Jvase Demo -> <span class="use-uppercase">Jvase Demo</span> 全部大写 (use-uppercase)</p>
+<p>siKas demo -> <span class="use-capitalize">siKas demo</span> 每个单词开头大写 (use-capitalize)</p>
 ```
 
 ## 引用
 在文档中引用其他来源的内容，将任何 HTML 元素包裹在 `<blockquote>` 中即可表现为引用样式.
 ```
 <blockquote class="blockquote-right">
-    <p>引用(blockquote) 标题
+    <p>引用(blockquote) 标题</p>
     <footer>
         引用(blockquote) 内容 在你的文档中引用其他来源的内容<br/>
         内容在右边，添加类 `.blockquote-right`
@@ -266,7 +260,7 @@ Jvase 演示文本 <em>Jvase 演示文本</em>
 </blockquote>
 <hr>
 <blockquote>
-    <p>引用(blockquote) 标题
+    <p>引用(blockquote) 标题</p>
     <footer>引用(blockquote) 内容 在你的文档中引用其他来源的内容</footer>
 </blockquote>
 ```
@@ -328,9 +322,7 @@ Jvase 演示文本 <em>Jvase 演示文本</em>
 ## Pre
 标签 `<pre>` 用来表示计算机的源代码
 ```
-<pre><script>
-    console.log('Jvase');
-</script></pre>
+<pre>console.log('pre')</pre>
 ```
 
 ## 透明度
@@ -377,3 +369,24 @@ Jvase 演示文本 <em>Jvase 演示文本</em>
 <div class="font-60">font-60 (=60px)</div>
 ```
 
+## 其它
+
+| 类标签                     | 说明                     |
+| -----------------------   |:-------------------------:|
+| `<hr>`                    | 分隔                      |
+| `.covered`                | 铺满(position: absolute; top: 0; right: 0; left: 0; bottom: 0;)                      |
+| `.mask`                   | 遮罩(继承 <code>.covered</code> 所有样式，同时新增: opacity: 0.3; z-index: 999; background-color: #000;)                      |
+| `.pull-left`              | float: left               |
+| `.pull-right`             | float: right              |
+| `.use-hide`               | display: none             |
+| `.use-block`              | display: block            |
+| `.use-inline-block`       | display: inline-block     |
+| `.use-inline`             | display: inline           |
+| `.use-invisible`          | visibility:hidden         |
+| `.use-clear`              | 清除浮动                   |
+| `.use-nowrap`             | 不换行(white-space: nowrap)|
+| `.use-circle`             | border-radius: 50%        |
+| `.use-fullwidth`          | width:100%                |
+| `.use-absolute`           | position: absolute        |
+| `.use-relative`           | position: relative        |
+| `.use-ellipsis`           | 文本超出显示省略号          |

@@ -1,36 +1,25 @@
 # 评论 (Comment)
-评论由头像、评论元信息、评论内容组成。主要用于用户的留言或者反馈.</p>
+评论由头像、评论元信息、评论内容组成。主要用于用户的留言或者反馈.
+***
 
 ## 用法介绍
-添加 `.comment` 到块元素 `<div>`，然后在块元素里面添加Comment项 `.comment-item`，Comment每一项里面包括：头像、头信息、标题、附属信息、内容.</p>
-```
-<div class="comment">
-    <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><!--头像--></a>
-        <div class="comment-header">
-            <h4 class="comment-title"><!--标题--></h4>
-            <p class="comment-meta"><!--附属信息--></p>
-        </div>
-        <div class="comment-body"><!--内容--></div>
-    </div>
-</div>
-```
+添加 `.comment` 到块元素 `<div>`，然后在块元素里面添加Comment项 `.comment-item`，Comment每一项里面包括：头像、头信息、标题、附属信息、内容.
 
 ```
 <div class="comment">
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">大部分的夜</h4>
+            <h4 class="comment-title">大山</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
     </div>
 
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">印度洋</h4>
+            <h4 class="comment-title">哪些花儿</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
@@ -43,27 +32,27 @@
 ```
 <div class="comment">
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">大部分的夜</h4>
+            <h4 class="comment-title">大山</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
 
         <div class="comment">
             <div class="comment-item comment-primary">
-                <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+                <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
                 <div class="comment-header">
-                    <h4 class="comment-title">大部分的夜</h4>
+                    <h4 class="comment-title">大山</h4>
                     <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
                 </div>
                 <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
             </div>
 
             <div class="comment-item">
-                <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+                <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
                 <div class="comment-header">
-                    <h4 class="comment-title">印度洋</h4>
+                    <h4 class="comment-title">哪些花儿</h4>
                     <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
                 </div>
                 <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
@@ -72,9 +61,9 @@
     </div>
 
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">印度洋</h4>
+            <h4 class="comment-title">哪些花儿</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
@@ -87,18 +76,18 @@
 ```
 <div class="comment body-offset">
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">大部分的夜</h4>
+            <h4 class="comment-title">大山</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
     </div>
 
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">印度洋</h4>
+            <h4 class="comment-title">哪些花儿</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
@@ -111,18 +100,18 @@
 ```
 <div class="comment body-offset header-inline">
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">大部分的夜</h4>
+            <h4 class="comment-title">大山</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
     </div>
 
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">印度洋</h4>
+            <h4 class="comment-title">哪些花儿</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
@@ -135,18 +124,18 @@
 ```
 <div class="comment body-offset">
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img class="use-circle" src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img class="use-circle" src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">大部分的夜</h4>
+            <h4 class="comment-title">大山</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
     </div>
 
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img class="use-circle" src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img class="use-circle" src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">印度洋</h4>
+            <h4 class="comment-title">哪些花儿</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="javascript:;">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
@@ -158,30 +147,30 @@
 以下是一个完整的评论应用模块，包括输入评论等.
 ```
 <div class="pad-15 bgc-silver clear">
-    <a href="#publishcomment" class="btn use-info use-invert pull-right">发表评论</a>
+    <a href="#publishcomment" class="btn use-info use-invert use-pull-right">发表评论</a>
     <p class="mar-top-10 mar-bottom-0">共 <span class="text-danger">365</span> 条评论</p>
 </div>
 <div class="comment">
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">大部分的夜</h4>
+            <h4 class="comment-title">大山</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="#publishcomment">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
     </div>
 
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
-            <h4 class="comment-title">印度洋</h4>
+            <h4 class="comment-title">哪些花儿</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="#publishcomment">回复</a></p>
         </div>
         <div class="comment-body">红海早过了。船在印度洋面上开驶着。但是太阳依然不饶人地迟落早起，侵占去大部分的夜。夜仿佛纸浸了油，变成半透明体；它给太阳拥抱住了，分不出身来，也许是给太阳陶醉了，所以夕照晚霞隐褪后的夜色也带着酡红。</div>
     </div>
 
     <div class="comment-item">
-        <a href="javascript:;" class="comment-avantar"><img src="data:image/gif;base64,R0lGODlheAB4AIAAALW1xf///yH5BAAHAP8ALAAAAAB4AHgAAAKQhI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusraelIAADs="></a>
+        <a href="javascript:;" class="comment-avantar"><img src="https://raw.githubusercontent.com/focci/asset/master/img/demo.gif"></a>
         <div class="comment-header">
             <h4 class="comment-title">夕照晚霞</h4>
             <p class="comment-meta">评论于 2014-7-12 15:30 <a href="#publishcomment">回复</a></p>
@@ -191,7 +180,7 @@
 </div>
 <hr>
 
-<div class="center">
+<div class="use-center">
     <a href="javascript:;" class="javascript:;">查看更多评论(362)</a>
 </div>
 <hr>

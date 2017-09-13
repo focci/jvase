@@ -1,24 +1,87 @@
 (function(win) {
-    function highlight() {
-        
-        $('pre > code').each(function(key, it) {
-            hljs.highlightBlock(it);
-        });
-    }
+    var caches = new Caches();
+    var container = $('#docContainer');
+    var body = $('body');
 
-    function run() {
-        var RHASHSTART = /^#/, hashs = location.hash;
-        if( !RHASHSTART.test(hashs) ) {
-            hashs = '#Introduction';
+    // Slide
+    $.get('./post/_slidebar.md', function(res) {
+        $('#slidebar').html( marked(res) );
+    });
+
+    // Menu
+    $.get('./post/_menu.md', function(res) {
+        $('#nav-header').html( marked(res) );
+    });
+
+    container.delegate('.view-code', 'click', function() {
+        var fn = 'slideUp';
+        if( !this.__slideactive__ ) {
+            fn = 'slideDown';
         }
-        hashs = hashs.replace(/#/, '').toLowerCase();
+        this.__slideactive__ = !this.__slideactive__;
+        $(this).prev('pre').stop()[fn](100);
+    });
 
-        $.get('./post/'+hashs+'.md', function(res) {
-            document.getElementById('docContainer').innerHTML = marked(res);
-            highlight();
-        })
+    function Caches() {
+        this._data = {};
+        this.get = function(key) {
+            return this._data[key];
+        }
+        this.set = function(key, val) {
+            this._data[key] = val;
+        }
     }
-    
-    win.onhashchange = run;
-    run();
+
+    function requestCB(res, path) {
+        res = $('<div>').append( marked(res, path) );
+        $('pre > code', res).each(function(key, it) {
+            var parent = $(it).parent();
+            var htmls = it.innerHTML.replace(/\&lt\;/g, '<').replace(/\&gt\;/g, '>');
+            var wraper = $('<div class="code-wraper"></div>');
+            parent.before(wraper);
+            hljs.highlightBlock(it);
+            wraper.append('<div class="example">'+htmls+'</div>').append(parent)
+            .append('<a class="view-code text-main">VIEW CODE</a>');
+        });
+
+        // 为table添加样式
+        $('table', res).each(function() {
+            var cur = $(this);
+            if( !cur.parent('.example').length ) {
+                cur.addClass('table use-colbar use-divider use-border');
+            }
+        });
+
+        res = res.html();
+        container.html( res );
+        caches.set(path, res);
+    }
+
+    function run(name) {
+        var res, path;        
+        path = './post/'+name+'.md';
+        if( !(res = caches.get(path)) ) {
+            $.get(path, function(data) {
+                requestCB(data, path);
+            });
+        }
+        else {
+            container.html(res);
+        }
+        body.scrollTop(0);
+    }
+
+    var pn = __detailname__;
+
+    if( 'introduction' === pn ) {
+        var hash;
+        win.onhashchange = function() {
+            hash = /#(\w+)/.exec(location.hash);
+            run( hash ? hash[1] : '_error' );  
+        };
+
+        hash = /#(\w+)/.exec(location.hash);
+        pn = hash ? hash[1] : pn;
+    }
+    run( pn );
 })(this);

@@ -1,5 +1,7 @@
 # 按钮 (Button)
 创建多风格的按钮
+***
+
 ## 用法介绍
 添加类 `.btn` 至行内元素(比如: a、button).
 ```
@@ -7,7 +9,7 @@
 <a href="javascript:;" class="btn">LINK</a>
 ```
 ## 风格
-不同颜色的按钮，有着不同的意义，Sikas默认提供其它4种不同风格的按钮: `.use-success`、`.use-warn`、`.use-info`、`.use-danger`		
+不同颜色的按钮，有着不同的意义，Jvase 默认提供其它4种不同风格的按钮: `.use-success`、`.use-warn`、`.use-info`、`.use-danger`		
 ```
 <button class="btn use-success">SUCCESS</button>
 <button class="btn use-warn">WARN</button>
@@ -15,7 +17,7 @@
 <button class="btn use-danger">DANGER</button>
 ```
 
-反转效果，添加 `.use-invert` 即可实现
+反转效果，添加类 `.use-invert` 即可实现
 
 ```
 <button class="btn use-invert">DEFAULT</button>
@@ -24,20 +26,22 @@
 <button class="btn use-invert use-info">INFO</button>
 <button class="btn use-invert use-danger">DANGER</button>
 ```
-圆角 `.use-radius`、圆 `.circle-*`、胶囊 `.use-pill`、正方形 `.use-square`、拉伸 `.use-fullwidth` 按钮，有关圆形按钮的使用，请查看[基础有关圆的介绍](/doc/base.html).
+圆角(`.use-radius`)、圆(`.circle-*`)、胶囊(`.use-pill`)、正方形(`.use-square`)、拉伸(`.use-fullwidth`)按钮，有关圆形按钮的使用，请查看[基础有关圆的介绍](#base).
 ```
 <button class="btn use-radius">圆角按钮</button>
 <button class="btn use-pill">胶囊按钮</button>
+
 <button class="btn btn-square">
     <span class="sicon"><i class="fa fa-user"></i></span>
 </button>
 <button class="btn circle-35">
 	<span class="sicon"><i class="fa fa-user"></i></span>
 </button>
+
 <button class="btn mar-top-5 use-fullwidth">拉伸按钮</button>
 ```
 ## 尺寸
-Sikas内置了两种尺寸的按钮(除了默认按钮尺寸), 分别为 `.use-large`、`.use-medium`、`.use-small`.
+Jvase 内置了其它三种尺寸的按钮, 分别为 `.use-large`、`.use-medium`、`.use-small`.
 ```
 <button class="btn use-large mar-bottom-10">LARGE</button>
 <button class="btn use-medium mar-bottom-10">MEDIUM</button>
@@ -57,10 +61,10 @@ Sikas内置了两种尺寸的按钮(除了默认按钮尺寸), 分别为 `.use-l
 ## 投影
 添加类 `.btn-shadow` 即可实现有投影效果的按钮.
 ```
-<div class="pad-35 center">
-    <button class="btn btn-shadow">有投影的按钮</button>
-    <button class="btn use-warn use-invert btn-shadow mar-left-15">有投影的按钮</button>
-</div>
+
+<button class="btn btn-shadow">有投影的按钮</button>
+<button class="btn use-warn use-invert btn-shadow mar-left-15">有投影的按钮</button>
+
 ```
 ## 3D按钮
 添加类 `.btn-3d` 即可实现3D按钮效果.
@@ -72,7 +76,7 @@ Sikas内置了两种尺寸的按钮(除了默认按钮尺寸), 分别为 `.use-l
 <button class="btn use-invert mar-bottom-20 use-danger btn-3d">DANGER</button>
 ```
 ## 按钮组
-用 `.btn-group` 若干个 `.btn` 包裹起来，便实现了按钮组.
+用 `.btn-group` 类把若干个 `.btn` 包裹起来，便实现了按钮组.
 ```
 <div class="btn-group">
     <a href="javascript:;" class="btn">BUTTON</a>
@@ -128,7 +132,7 @@ Sikas内置了两种尺寸的按钮(除了默认按钮尺寸), 分别为 `.use-l
 </button>
 ```
 
-`.sicon` 可以通过 `.use-large`、`.use-medium`、`.use-small` 来控制大小，请查看<a href="/doc/icon.html">图标 (doc/icon)</a>相关介绍
+`.sicon` 可以通过 `.use-large`、`.use-medium`、`.use-small` 来控制大小，请查看[图标 (doc/icon)](#icon)相关介绍
 
 ```
 <button class="btn use-large mar-bottom-10">
@@ -146,74 +150,75 @@ Sikas内置了两种尺寸的按钮(除了默认按钮尺寸), 分别为 `.use-l
 ```
 		
 各尺寸的按钮允许图标大小
-```
+
 <div class="table-responsive">
-<table class="table use-divider use-border">
-    <thead>
-        <tr>
-            <th>按钮尺寸</th>
-            <th>允许图标大小</th>
-            <th>预览</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td width="30%">`.btn .use-small`</td>
-            <td width="30%">`.sicon .use-small`</td>
-            <td>
-            	<button class="btn btn-square use-small">
-				    <span class="sicon"><i class="fa fa-user"></i></span>
-				</button>
-			</td>
-        </tr>
-        <tr>
-            <td width="30%">`.btn`</td>
-            <td width="30%">`.sicon .use-normal`、`.sicon .use-small`</td>
-            <td>
-            	<button class="btn btn-square">
-				    <span class="sicon"><i class="fa fa-user"></i></span>
-				</button>
-            	<button class="btn btn-square">
-				    <span class="sicon use-small"><i class="fa fa-user"></i></span>
-				</button>
-			</td>
-        </tr>
-        <tr>
-            <td width="30%">`.btn .use-medium`</td>
-            <td width="30%">`.sicon .use-medium`、`.sicon .use-normal`、<br/>`.sicon .use-small`</td>
-            <td>
-            	<button class="btn btn-square use-medium">
-				    <span class="sicon"><i class="fa fa-user"></i></span>
-				</button>
-				<button class="btn btn-square use-medium">
-				    <span class="sicon use-normal"><i class="fa fa-user"></i></span>
-				</button>
-				<button class="btn btn-square use-medium">
-				    <span class="sicon use-small"><i class="fa fa-user"></i></span>
-				</button>
-			</td>
-        </tr>
-        <tr>
-            <td width="30%">`.btn .use-large`</td>
-            <td width="30%">`.sicon .use-large`、`.sicon .use-medium`、<br/>`.sicon .use-normal`、`.sicon .use-small`</td>
-            <td>
-            	<button class="btn btn-square use-large">
-				    <span class="sicon"><i class="fa fa-user"></i></span>
-				</button>
-				<button class="btn btn-square use-large">
-				    <span class="sicon use-medium"><i class="fa fa-user"></i></span>
-				</button>
-				<button class="btn btn-square use-large">
-				    <span class="sicon use-normal"><i class="fa fa-user"></i></span>
-				</button>
-				<button class="btn btn-square use-large">
-				    <span class="sicon use-small"><i class="fa fa-user"></i></span>
-				</button>
-			</td>
-        </tr>
-    </tbody>
-</table>
-```
+    <table class="table use-divider use-border">
+        <thead>
+            <tr>
+                <th>按钮尺寸</th>
+                <th>允许图标大小</th>
+                <th>预览</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td width="30%">`.btn .use-small`</td>
+                <td width="30%">`.sicon .use-small`</td>
+                <td>
+                    <button class="btn btn-square use-small">
+                        <span class="sicon"><i class="fa fa-user"></i></span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">`.btn`</td>
+                <td width="30%">`.sicon .use-normal`、`.sicon .use-small`</td>
+                <td>
+                    <button class="btn btn-square">
+                        <span class="sicon"><i class="fa fa-user"></i></span>
+                    </button>
+                    <button class="btn btn-square">
+                        <span class="sicon use-small"><i class="fa fa-user"></i></span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">`.btn .use-medium`</td>
+                <td width="30%">`.sicon .use-medium`、`.sicon .use-normal`、<br/>`.sicon .use-small`</td>
+                <td>
+                    <button class="btn btn-square use-medium">
+                        <span class="sicon"><i class="fa fa-user"></i></span>
+                    </button>
+                    <button class="btn btn-square use-medium">
+                        <span class="sicon use-normal"><i class="fa fa-user"></i></span>
+                    </button>
+                    <button class="btn btn-square use-medium">
+                        <span class="sicon use-small"><i class="fa fa-user"></i></span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">`.btn .use-large`</td>
+                <td width="30%">`.sicon .use-large`、`.sicon .use-medium`、<br/>`.sicon .use-normal`、`.sicon .use-small`</td>
+                <td>
+                    <button class="btn btn-square use-large">
+                        <span class="sicon"><i class="fa fa-user"></i></span>
+                    </button>
+                    <button class="btn btn-square use-large">
+                        <span class="sicon use-medium"><i class="fa fa-user"></i></span>
+                    </button>
+                    <button class="btn btn-square use-large">
+                        <span class="sicon use-normal"><i class="fa fa-user"></i></span>
+                    </button>
+                    <button class="btn btn-square use-large">
+                        <span class="sicon use-small"><i class="fa fa-user"></i></span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 ## 禁用
 添加类 `.use-disabled` 到 `.btn`, 或者添加 `type="disabled"`属性.
 ```

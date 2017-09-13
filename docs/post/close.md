@@ -1,13 +1,10 @@
 # 关闭 (Close)
-创建一个关闭Icon(按钮)
+创建一个关闭按钮
+***
 
 ## 用法介绍
 
 添加类 `.close` 到一个 `<a>` 标签或者 `<button>` 标签
-```
-<a href="javascript:;" class="close"></a>
-```
-
 ```
 <a href="javascript:;" class="close"></a>
 ```

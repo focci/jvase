@@ -44,7 +44,7 @@ $border-color: $c-silver-dark;						// 边框颜色 (g)
 // -------------------------------------------------------------------
 $header-color: $c-black-dark;						// Header(h1,h2,...)字体颜色
 // Header(h1,h2,...)字体大小
-$header-size: (pr(42px), pr(35px), pr(28px), pr(21px), pr(16px), pr(14px));
+$header-size: (pr(35px), pr(28px), pr(21px), pr(18px), pr(16px), pr(14px));
 
 $disabled-color: #9ba1b4;							// 禁用字体颜色
 $disabled-bgc: #f5f5f5;								// 禁用背景
@@ -96,7 +96,7 @@ $form-item-margin-bottom: pr(7px);					// .form-item margin-bottom值
 $form-item-padding-hor: pr(7px);					// .form-item padding-left与padding-right值设置
 
 $form-checkbox-size: pr(18px);						// checkbox、radio尺寸
-$form-checkbox-border-size: pr(1px);					// checkbox、radio 边框大小
+$form-checkbox-border-size: pr(1px);				// checkbox、radio 边框大小
 $form-checkbox-padding-left: pr(21px);				// checkbox、radio padding-left
 $form-checkbox-height: pr(21px);					// checkbox、radio 高度
 

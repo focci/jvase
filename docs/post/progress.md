@@ -1,8 +1,9 @@
 # 进度条 (Progress)
 显示加载进度
+***
 
 ## 用法介绍
-添加类 `.progress` 到类似 `&ltdiv&gt;` 的块元素，然后在里面添加 `.progress-bar` 元素，通过设置其长度百分比，就可以显示progress的进度.
+添加类 `.progress` 到类似 `<div>` 的块元素，然后在里面添加 `.progress-bar` 元素，通过设置其长度百分比，就可以显示progress的进度.
 ```
 <div class="progress">
     <span class="progress-bar" style="width: 40%;">40%</span>

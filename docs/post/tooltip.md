@@ -1,13 +1,10 @@
 # 气泡 (Tooltip)
 常用于鼠标触发的提示
+***
 
 ## 用法介绍
-添加类 `.tooltip` 到一个 `&lt;div&gt;` 块元素，接着指定箭头方向，比如 `.use-left-top` 表示箭头位于左上方.
+添加类 `.tooltip` 到一个 `<div>` 块元素，接着指定箭头方向，比如 `.use-left-top` 表示箭头位于左上方，要实现圆角效果，请添加类 `.use-radius` 到 `.tooltip`
 
-要实现圆角效果，请添加类 `.use-radius` 到 `.tooltip`
-```
-<div class="tooltip use-left-top">...</div>
-```
 ```
 <div class="tooltip use-relative use-left-top">
     <b>Tooltip</b><br/>
@@ -24,9 +21,6 @@
 
 反转分为两种 `.use-invert` 拥有很深的背景颜色，而 `.use-invert-light` 为浅背景色.
 ```
-<div class="tooltip use-invert use-left-top">...</div>
-```
-```
 <div class="use-relative mar-right-15 tooltip use-invert-light use-left-top">
     <b>Tooltip</b> (use-invert-light)<br/>
     <span>箭头方向: use-left-top</span>
@@ -39,7 +33,8 @@
 
 ## 箭头位置
 Jvase 内置了12种箭头位置不同的 `.tooltip`, 鼠标移到按钮上显示相应效果.
-<div class="center pad-60">
+```
+<div class="center">
 	<div class="btn use-hover mar-bottom-20">
 		<span>use-top-left</span>
 		<div class="tooltip hover-block use-invert use-top-left left to-center" style="top: 70px;">
@@ -129,9 +124,6 @@ Jvase 内置了12种箭头位置不同的 `.tooltip`, 鼠标移到按钮上显�
 
 ## 风格
 tooltip默认内置了4种不同风格，分别是 `.use-success`、`.use-warn`、`.use-danger`、`.use-info`.
-```
-<div class="tooltip use-success use-left-top">...</div>
-```
 ```
 <div class="tooltip mar-10 use-relative use-left-top use-danger">
     <b>Tooltip</b><br/>

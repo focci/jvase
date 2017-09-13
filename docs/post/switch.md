@@ -1,14 +1,10 @@
-#开关 (Switch)
+# 开关 (Switch)
 用于真/假切换，两种不同状态的控制
+***
 
 ## 用法介绍
-添加类 `.switch` 至行 `&lt;div&gt;`，然后在添加开启与关闭状态下的文字 `.switch-on-label` 与 `.switch-off-label`，当然也可以不添加文字.
-```
-<div class="switch">
-    <span class="switch-on-label"><!--开启时文字--></span>
-    <span class="switch-off-label"><!--关闭时文字--></span>
-</div>
-```
+添加类 `.switch` 至行 `<div>`，然后在添加开启与关闭状态下的文字 `.switch-on-label` 与 `.switch-off-label`，当然也可以不添加文字.
+
 ```
 <div class="switch">
     <span class="switch-on-label">ON</span>
@@ -20,9 +16,6 @@
 ## 关闭状态
 添加类 `.use-off` 至 `.switch`
 ```
-<div class="switch use-off"></div>
-```
-```
 <div class="switch use-off">
     <span class="switch-on-label">ON</span>
     <span class="switch-off-label">OFF</span>
@@ -33,10 +26,6 @@
 ## 圆角与胶囊
 添加类 `.use-radius` 或者 `.use-pill` 至 `.switch`
 ```
-<div class="switch use-radius"></div>
-<div class="switch use-pill"></div>
-```
-```
 <div class="switch use-radius">
     <span class="switch-on-label">ON</span>
     <span class="switch-off-label">OFF</span>
@@ -46,11 +35,7 @@
 
 ## 尺寸
 内置了三种不同尺寸的开关 `.use-large`、`.use-medium`、`.use-small`
-```
-<div class="switch use-large"></div>
-<div class="switch use-medium"></div>
-<div class="switch use-small"></div>
-```
+
 ```
 <div class="switch use-large">
     <span class="switch-on-label">ON</span>
@@ -99,9 +84,7 @@
 
 ## 禁用
 添加类 `.use-disabled` 禁用开关
-```
-<div class="switch use-disabled"></div>
-```
+
 ```
 <div class="switch use-disabled">
     <span class="switch-on-label">ON</span>
@@ -114,4 +97,3 @@
 <div class="switch use-disabled"></div>
 <div class="switch use-off use-disabled"></div>
 ```
-</div>

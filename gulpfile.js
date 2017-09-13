@@ -6,14 +6,17 @@ var	postcss = require('gulp-postcss');
 var	concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var tempos = require('gulp-tempos');
-var data = require('gulp-data');
-var fs = require('fs');
-var path = require('path');
-var assign = require('object-assign');
 var	notify = require('gulp-notify');
-
-var path = path.resolve(__dirname, './docs/template/data.json');
-var res = JSON.parse( fs.readFileSync(path) );
+var fs = require('fs');
+var data = require('gulp-data');
+var config = {
+	index: {
+		slideFlag: false	// 是否显示左边菜单
+	},
+	doc: {
+		slideFlag: true
+	}
+};
 
 // Styles
 gulp.task('styles', function() {
@@ -47,18 +50,17 @@ gulp.task('styles', function() {
 gulp.task('doc', function() {
 	return gulp.src('./docs/template/*.temp')
 		.pipe(data((file) => {
-			return assign(res.menu[ file.relative.replace(/\.temp$/, '') ], {
-				Menus: res.menu,
-				SubMenu: res.reflect
-			});
+			return config[ file.relative.replace('.temp', '') ];
 		}))
 		.pipe(tempos(null, {
 			extname: '.html'
 		}))
-		.pipe(gulp.dest('./docs'));
+		.pipe(gulp.dest('./docs'))
+		.pipe(notify({
+			message: 'Doc task complete'
+		}));
 });
 gulp.start('doc');
-
 gulp.task('default', function() {
 	gulp.start(['styles', 'doc']);
 });

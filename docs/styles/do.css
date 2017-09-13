@@ -1,0 +1,44 @@
+.doc-box{
+    padding: 3rem;
+    max-width: 960px;
+}
+.doc-box >h1, .doc-box >h2{
+    color: #4e5773;
+}
+.doc-box >h2 {
+    margin-top: 3rem;
+}
+.code-wraper{
+    margin: 2rem auto 4rem auto;
+    padding: 2rem 2rem 4rem;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    box-shadow:0 0 2px rgba(0,0,0,.05);
+    position:relative;
+}
+.code-wraper >pre{
+    display: none;
+    border-top: solid 1px #eee;
+    margin: 2rem -2rem -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #fcfcfc;
+}
+.code-wraper >pre >code{
+    background-color: transparent;
+    padding-left: 0;
+}
+.code-wraper >.view-code{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    border-top: solid 1px #eee;
+    padding: .3rem 0;
+    background-color: #f9f9f9;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}

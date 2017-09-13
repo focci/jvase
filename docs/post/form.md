@@ -1,44 +1,19 @@
 # 表单 (Form)
 创建多种样式的表单.
+***
 
 ## 用法介绍
-添加包括以下类的子元素至 `<form>`元素.
-<div class="table-responsive">
-	<table class="table use-border use-divider">
-	    <thead>
-	        <tr>
-	            <th>样式名称</th>
-	            <th>描述</th>
-	        </tr>
-	    </thead>
-	    <tbody>
-	        <tr>
-	            <td width="200">`.input`</td>
-	            <td>添加至 `<input>`、`<select>`、`<textarea>`元素</td>
-	        </tr>
-	        <tr>
-	            <td>`.radio`</td>
-	            <td>添加至 `<input type="radio">`元素</td>
-	        </tr>
-	        <tr>
-	            <td>`.checkbox`</td>
-	            <td>添加至 `<input type="checkbox">`元素</td>
-	        </tr>
-	    </tbody>
-	</table>
-</div>
-表单结构如下
-```
-<form class="form"> <!--表单-->
-    <div class="form-item"> <!--每一行容器，用于设置间距-->
-        <label class="form-label"><!--项名称--></label>
-        <div class="form-ctrl"> <!--项容器，用于存放输入框或者提示等-->
-            <input type="text" class="input" placeholder="用户名">
-        </div>
-    </div>
-</form>
-```
+`<form>` 包含以下子元素.
+
+| 样式名称		| 描述			|
+| -------------| :-------------: |
+| `.input`     | 添加至 `<input>`、`<select>`、`<textarea>`元素 |
+| `.radio`     | 添加至 `<input type="radio">`元素 |
+| `.checkbox`  | 添加至 `<input type="checkbox">`元素 |
+
+一个常见的表单
 <div class="z-depth-1 pad-25 col-xs-12">
+```
 <form class="form">
     <div class="form-items">
         <div class="form-item col-xs-8">
@@ -103,16 +78,10 @@
         </div>
     </div>
 </form>
-</div>
 ```
 
 ## 风格
 针对 `<input>`、`<textarea>`、`<select>` 元素内置了4种不同风格.
-```
-<input type="text" class="input use-success"/>
-<select class="input use-success"></select>
-<textarea class="input use-success"></textarea>
-```
 
 ```
 <form class="form col-xs-12 col-md-6">
@@ -140,12 +109,7 @@
 ```
 
 ## 尺寸
-可以通过添加类 `.use-large`、`.use-medium`、`.use-small` 到 `<input>` 来重置大小.
-```
-<input type="text" class="input use-large"/>
-<select class="input use-medium"></select>
-<textarea class="input use-small"></textarea>
-```
+可以通过添加类 `.use-large`、`.use-medium`、`.use-small` 到 `<input type="text">` 或者 `<select>` 来设置尺寸.
 ```
 <form class="form col-xs-12 col-md-6">
     <div class="form-item">
@@ -214,10 +178,6 @@
 ## 圆角&胶囊
 在 `.input` 上添加类 `.use-radius` 或者 `.use-pill` 即可.
 ```
-<input type="text" class="input use-radius"/>
-<input type="text" class="input use-pill"/>
-```
-```
 <form class="form">
     <div class="form-item form-inline">
         <div class="form-ctrl mar-bottom-15">
@@ -259,11 +219,6 @@
 ```
 
 如果要在表单组件上实现圆角或者胶囊形状，需要在 `.form-addons` 上添加 `.use-pill` 或者 `.use-radius`
-```
-<form class="form">
-    <div class="form-item form-addons use-pill"></div>
-</form>
-```
 ```
 <form class="form">
     <div class="form-item form-addons use-pill">
@@ -308,18 +263,7 @@
 ```
 
 ## 图标
-只针对 `.input` 设置了图标功能，使用方式如下：
-```
-<form class="form">
-    <div class="form-item">
-        <div class="form-ctrl use-icon-left use-icon-right">
-            <!--.use-icon-left、use-icon-right 指定是否有居左或者居右的图标-->
-            <input type="text" class="input use-large" placeholder="User" /> <!--.input 必须放在最前面-->
-            <span class="sicon input-sicon-left"><i class="fa fa-user"></i></span> <!--.input-sicon-left 居左图标-->
-            <span class="sicon input-sicon-right"><i class="fa fa-check"></i></span> <!--.use-sicon-right 居右图标-->
-        </div>
-    </div>
-</form>
+为 `<input type="text">` 添加前置/后置图标
 ```
 <form class="form col-xs-12 col-md-6">
     <div class="form-item">
@@ -360,127 +304,18 @@
     </div>
 </form>
 ```
+
 图标允许尺寸说明
-```
-<div class="table-responsive">
-			<table class="table use-divider use-border">
-			    <thead>
-			        <tr>
-			            <th width="20%">尺寸</th>
-			            <th width="30%">允许图标大小</th>
-			            <th>预览</th>
-			        </tr>
-			    </thead>
-			    <tbody>
-			        <tr>
-			            <td>`.input .use-small`</td>
-			            <td>`.sicon .use-small`</td>
-			            <td>
-			            	<form class="form">
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input use-small" placeholder="User" />
-							        	<span class="sicon input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							</form>
-						</td>
-			        </tr>
-			        <tr>
-			            <td>`.input`</td>
-			            <td>`.sicon .use-normal`、`.sicon .use-small`</td>
-			            <td>
-			            	<form class="form">
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input" placeholder="User" />
-							        	<span class="sicon use-small input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input" placeholder="User" />
-							        	<span class="sicon input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							</form>
-						</td>
-			        </tr>
-			        <tr>
-			            <td>`.input .use-medium`</td>
-			            <td>`.sicon .use-medium`、`.sicon .use-normal`、<br>`.sicon .use-small`</td>
-			            <td>
-			            	<form class="form">
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input use-medium" placeholder="User" />
-							        	<span class="sicon use-small input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input use-medium" placeholder="User" />
-							        	<span class="sicon use-normal input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input use-medium" placeholder="User" />
-							        	<span class="sicon input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							</form>
-						</td>
-			        </tr>
-			        <tr>
-			            <td>`.input .use-large`</td>
-			            <td>`.sicon .use-large`、`.sicon .use-medium`、<br>`.sicon .use-normal`、`.sicon .use-small`</td>
-			            <td>
-			            	<form class="form">
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input use-large" placeholder="User" />
-							        	<span class="sicon use-small input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input use-large" placeholder="User" />
-							        	<span class="sicon use-normal input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input use-large" placeholder="User" />
-							        	<span class="sicon use-medium input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							    <div class="form-item">
-							        <div class="form-ctrl use-icon-left">
-							        	<input type="text" class="input use-large" placeholder="User" />
-							        	<span class="sicon input-sicon-left"><i class="fa fa-user"></i></span>
-							        </div>
-							    </div>
-							</form>
-						</td>
-			        </tr>
-			    </tbody>
-			</table>
-```
+
+|尺寸|允许图标大小|
+|----------|:----------------:|
+|`.input.use-small`|`.sicon.use-small`|
+|`.input`|`.sicon.use-normal`、`.sicon.use-small`|
+|`.input.use-medium`|`.sicon.use-medium`、`.sicon.use-normal`、`.sicon.use-small`|
+|`.input.use-large`|`.sicon.use-large`、`.sicon.use-medium`、<br>`.sicon.use-normal`、`.sicon.use-small`|
 
 ## 图标按钮
 在图标(`.sicon`)上添加 `.use-sicon-btn` 类.
-```
-<form class="form">
-    <div class="form-item">
-        <div class="form-ctrl use-icon-right">
-            <input type="text" class="input use-large" placeholder="User" />
-            <!-- .use-sicon-btn -->
-            <span class="sicon input-sicon-right use-sicon-btn"><i class="fa fa-check"></i></span>
-        </div>
-    </div>
-</form>
-```
 ```
 <form class="form col-xs-12 col-md-6">
     <div class="form-item">
@@ -494,12 +329,7 @@
 ```
 
 ## 表单组件
-可以将 `.input`、`.btn` 糅合在一起，只需在 `.form-item` 上添加类 `.form-addons` 即可.
-```
-<form class="form">
-    <div class="form-item form-addons"></div>
-</form>
-```
+可以将 `.input`、`.btn` 整合在一起，只需在 `.form-item` 上添加类 `.form-addons` 即可.
 ```
 <form class="form">
     <div class="form-item form-addons">
@@ -539,18 +369,7 @@
 
 ## 禁用
 在 `<input>`、`<textarea>`、`<select>` 添加 `disabled` 即可.
-```
-<input type="text" class="input" disabled="disabled" />
-<label class="radio"><input type="radio" name="a" disabled="disabled"/> <span>Radio</span></label>
-<label class="checkbox"><input type="checkbox" name="b" disabled="disabled"/> <span>Checkbox</span></label>
 
-<select class="input" disabled="disabled">
-    <option value="">中华人民共和国</option>
-    <option value="">其它国家</option>
-</select>
-
-<textarea class="input" rows="4" disabled="disabled"></textarea>
-```
 ```
 <div class="z-depth-1 pad-25">
     <ul class="list">
@@ -566,8 +385,8 @@
         <li class="pad-bottom-10">
     	    <div class="select">
     	    	<select class="input" disabled>
-    	    	    <option value="">中华人民共和国</option>
-    	    	    <option value="">其它国家</option>
+    	    	    <option value="">滑冰</option>
+    	    	    <option value="">画画</option>
     	    	</select>
     	    </div>
         </li>

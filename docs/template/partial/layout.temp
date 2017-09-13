@@ -14,17 +14,19 @@
     <meta content="{{- description}}" name="description" />
     <link rel="stylesheet" href="../dist/jvase.min.css">
     <link rel="stylesheet" href="./styles/default.min.css">
+    <link rel="stylesheet" href="./styles/do.css">
 </head>
 <body>
-    <div class="layout use-header layout-header-fixed-top {{- !hideSlide ? 'layout-slidebar-pull-left' : ''}}">
+    <div class="layout use-header layout-header-fixed-top {{- slideFlag ? 'layout-slidebar-pull-left' : ''}}">
         {{ include './partial/slide' }}
         {{ include './partial/header' }}
-        <div class="layout-content">
+        <div class="layout-content text-steel-dark">
             {{ #use.content }}
         </div>
-        {{ if(hasFooter) { }}
-            {{ include './partial/footer' }}
-        {{ } }}
     </div>
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/marked.js"></script>
+    <script src="./scripts/highlight.pack.js"></script>
+    <script src="./scripts/do.js"></script>
 </body>
 </html>

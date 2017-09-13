@@ -1,17 +1,19 @@
 # 标签 (Tag)
 标记重要内容或者需要着重提示的文字.
+***
 
 ## 用法介绍
-添加类 `.tag` 到 `&lt;span&gt;` 或者 `&lt;a&gt;`(链接) 即可.
-要实现圆角效果，请添加类 `.use-radius` 到 `.tag`
-```
-<span class="tag">...</span>
-```
+添加类 `.tag` 到 `<span>` 或者 `<a>`即可，要实现圆角效果，请添加类 `.use-radius` 到 `.tag`
+
 ```
 <span class="tag">TAG</span>
-<span class="tag"><em class="sicon use-small"><i class="fa fa-user"></i></em> ICON TAG</span>
+<span class="tag">
+    <em class="sicon use-small"><i class="fa fa-user"></i></em> ICON TAG
+</span>
 <a class="tag" href="javascript:;">LINK TAG</a>
-<span class="tag">CLOSE TAG<em class="sicon use-small"><i class="close use-small"></i></em></span>
+<span class="tag">CLOSE TAG
+    <em class="sicon use-small"><i class="close use-small"></i></em>
+</span>
 ```
 
 ## 风格
@@ -21,27 +23,30 @@
 <span class="tag use-info">INFO</span>
 <span class="tag use-warn">WARN</span>
 <span class="tag use-danger">DANGER</span>
-<span class="tag use-info"><em class="sicon use-small"><i class="fa fa-user"></i></em> 图标</span>
+<span class="tag use-info">
+    <em class="sicon use-small"><i class="fa fa-user"></i></em> 图标
+</span>
 ```
 
 ## 尺寸
 除了默认尺寸，还提供其它三种尺寸规格 `.use-small`、`.use-medium`、`.use-large`.
 ```
 <span class="tag use-large">
-	<em class="sicon"><i class="fa fa-user"></i></em> LARGE</span>
+	<em class="sicon"><i class="fa fa-user"></i></em> LARGE
+</span>
 <span class="tag use-medium">
-	<em class="sicon"><i class="fa fa-user"></i></em> MEDIUM</span>
+	<em class="sicon"><i class="fa fa-user"></i></em> MEDIUM
+</span>
 <span class="tag">
-	<em class="sicon use-small"><i class="fa fa-user"></i></em> DEFAULT</span>
+	<em class="sicon use-small"><i class="fa fa-user"></i></em> DEFAULT
+</span>
 <span class="tag use-small">
-	<em class="sicon use-small"><i class="fa fa-user"></i></em> SMALL</span>
+	<em class="sicon use-small"><i class="fa fa-user"></i></em> SMALL
+</span>
 ```
 
 ## 丝带
 添加类 `.use-ribbon-left` 或者 `.use-ribbon-right` 至 `.tag` 即可。
-```
-<span class="tag use-ribbon-left">...</span>
-```
 ```
 <div class="bgc-gray-light relative use-inline-block mar-30 pad-30" style="width: 200px; height: 100px;">
     <span class="tag use-ribbon-left" style="margin-left:-44px;">LEFT RIBBON</span>
@@ -69,20 +74,20 @@
 ## 贴纸标签
 添加类 `.use-sticker-left` 或者 `.use-sticker-right` 至 `.tag` 即可。
 ```
-<span class="tag use-sticker-left">...</span>
-```
-```
 <span class="tag use-sticker-left">LEFT STICKER</span>
 <span class="tag use-sticker-right">RIGHT STICKER</span>
 <span class="tag use-info use-sticker-left">LEFT STICKER</span>
 <span class="tag use-info use-sticker-right">RIGHT STICKER</span>
 <hr>
+
 <span class="tag use-success use-sticker-left">LEFT STICKER</span>
 <span class="tag use-success use-sticker-right">RIGHT STICKER</span>
 <hr>
+
 <span class="tag use-medium use-danger use-sticker-left">LEFT STICKER</span>
 <span class="tag use-medium use-danger use-sticker-right">RIGHT STICKER</span>
 <hr>
+
 <span class="tag use-large use-warn use-sticker-left">LEFT STICKER</span>
 <span class="tag use-large use-warn use-sticker-right">RIGHT STICKER</span>
 ```

@@ -11,9 +11,11 @@ var fs = require('fs');
 var data = require('gulp-data');
 var config = {
 	index: {
+		title: 'Jvase',
 		slideFlag: false	// 是否显示左边菜单
 	},
 	doc: {
+		title: 'Documentation Jvase',
 		slideFlag: true
 	}
 };

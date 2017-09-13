@@ -70,7 +70,7 @@
         var res, path;        
         path = './post/'+name+'.md';
         if( !(res = caches.get(path)) ) {
-            container.html('<div class="pad-30 use-center">Loading...</div>');
+            container.html('<div class="alert">Loading...</div>');
             request(path, function(data) {
                 requestCB(data, path);
             }, function() {

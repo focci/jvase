@@ -42,7 +42,6 @@ $border-color: $c-silver-dark;						// 边框颜色 (g)
 
 // base
 // -------------------------------------------------------------------
-$header-color: $c-black-dark;						// Header(h1,h2,...)字体颜色
 // Header(h1,h2,...)字体大小
 $header-size: (pr(35px), pr(28px), pr(21px), pr(18px), pr(16px), pr(14px));
 
@@ -132,11 +131,12 @@ $grid-sm: 768px;									// 平板 >=768px
 
 // navbar
 // -------------------------------------------------------------------
-$navbar-height: pr(60px);
+$navbar-height: pr(56px);
+$navbar-header-navbar-brand-height: pr(30px);		// Avadar高度
 
 // layout
 // -------------------------------------------------------------------
-$layout-header-height: pr(60px);					// Header 高度
+$layout-header-height: pr(56px);					// Header 高度
 $layout-header-bgc: $c-main;						// Header 背景色
 $layout-content-bgc: $c-white;						// 内容区域背景色
 $layout-slidebar-width: pr(260px);					// Menu 默认宽度
@@ -147,6 +147,17 @@ $layout-footer-bgc: $c-silver;						// Footer 背景色
 
 // list
 // -------------------------------------------------------------------
+
+
+// hero
+// -------------------------------------------------------------------
+$hero-bgc: $c-main;                                 // 背景
+$hero-font-color: #fff;                             // 字体颜色
+$hero-body-padding: pr(42px) pr(21px);              // padding
+$hero-body-max-width: pr(1358px);                   // max-width
+$hero-body-medium-padding: pr(126px);               // 中等大小Hero .hero-body padding
+$hero-body-large-padding: pr(196px);                // Large Hero .hero-body padding
+
 
 // pagination
 // -------------------------------------------------------------------

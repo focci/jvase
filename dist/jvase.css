@@ -904,7 +904,6 @@ blockquote {
   font-size: 4.28571rem !important; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #222735;
   font-weight: normal;
   margin-bottom: 0.71429rem;
   margin-top: 1.5rem;
@@ -2728,12 +2727,12 @@ textarea.input {
   margin-right: 18.57143rem; }
 
 .layout > .layout-header {
-  height: 4.28571rem; }
+  height: 4rem; }
 
 .use-header.layout-slidebar-pull-left > .layout-slidebar,
 .use-header.layout-slidebar-pull-right > .layout-slidebar,
 .layout-header-fixed-top > .layout-header ~ .layout-content {
-  margin-top: 4.28571rem; }
+  margin-top: 4rem; }
 
 .layout > .layout-footer {
   height: 2.85714rem; }
@@ -2793,6 +2792,34 @@ textarea.input {
       display: block;
       text-decoration: none;
       padding: 0.35714rem 0; }
+
+.navbar .navbar-header {
+  float: left;
+  padding: 0.92857rem 1rem;
+  line-height: 2.14286rem;
+  overflow: hidden; }
+  .navbar .navbar-header img {
+    max-height: 2.14286rem; }
+
+.hero {
+  display: block;
+  background-color: #2eb3ff;
+  color: #fff; }
+  .hero > .hero-body {
+    padding: 3rem 1.5rem;
+    max-width: 97rem;
+    margin: 0 auto; }
+
+.hero.use-medium > .hero-body {
+  padding-top: 9rem;
+  padding-bottom: 9rem; }
+
+.hero.use-large > .hero-body {
+  padding-top: 14rem;
+  padding-bottom: 14rem; }
+
+.use-fullheight {
+  min-height: 100vh; }
 
 .pagination {
   padding: 0;

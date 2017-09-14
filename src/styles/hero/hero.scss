@@ -1,0 +1,11 @@
+.hero {
+    display: block;
+    background-color: $hero-bgc;
+    color: $hero-font-color;
+
+    >.hero-body {
+        padding: $hero-body-padding;
+        max-width: $hero-body-max-width;
+        margin: 0 auto;
+    }
+}

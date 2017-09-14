@@ -1,2 +1,3 @@
-* [首页 (Home)](index.html)
-* [文档 (Documentation)](doc.html)
+* [首页](index.html)
+* [文档](doc.html)
+* [GitHub](https://github.com/focci/jvase)

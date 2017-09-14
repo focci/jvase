@@ -3,15 +3,9 @@
 ***
 
 ## 主色调
-<div class="grid">
-	<div class="row">
-		<div class="col-xs-3">
-			<div class="bgc-main pad-10">
-				<h5 class="nowrap text-white">主色调</h5>
-				<p class="text-white opacity-8">#00c6a9</p>
-			</div>
-		</div>
-	</div>
+<div class="bgc-main pad-10">
+	<h5 class="nowrap text-white">主色调</h5>
+	<p class="text-white opacity-8">#00c6a9</p>
 </div>
 	
 ## 辅助色

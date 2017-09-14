@@ -12,8 +12,8 @@
     <div class="hero bgc-white text-steel">
         <div class="hero-body use-center">
             <p>
-                <a href="https://github.com//focci/jvase/archive/master.zip" class="btn use-medium use-pill use-success use-invert">下载Jvase</a>
-                <a href="doc.html" class="btn mar-left-15 use-medium use-pill">文档</a>
+                <a href="https://github.com//focci/jvase/archive/master.zip" class="btn use-medium use-pill use-success use-invert mar-bottom-10">下载Jvase</a>
+                <a href="doc.html" class="btn use-medium use-pill mar-bottom-10">文档</a>
             </p>
             <p class="pad-top-40">Jvase 是一套灵活、渐进式的CSS库，开发者可以很方便地通过添加类来实现不同风格的界面。</p>
             <hr/>
@@ -57,7 +57,7 @@
         <div class="hero-body">
             <div class="grid">
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                         Jvase By <a href="https://github.com/focci">Focci</a><br/>
                         Source code licensed MIT. <br/>
 
@@ -67,7 +67,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <img src="https://raw.githubusercontent.com/focci/asset/master/pay/alipay.jpg" width="100"/>
                     </div>
-                    <div class="col-xs-6 pad-top-20 text-steel">
+                    <div class="col-xs-12 col-sm-6 pad-top-20 text-steel">
                         <span class="font-60">”</span><br/>
                         每一个人都在默默地奋斗着，无论痛苦与欢乐，<br/>
                         致那些痛苦且还在奋斗中的人们！

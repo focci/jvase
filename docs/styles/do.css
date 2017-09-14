@@ -2,11 +2,12 @@
     padding: 3rem;
     max-width: 960px;
 }
-.doc-box >h1, .doc-box >h2{
-    color: #4e5773;
+.doc-box >h1 {
+    color: #3a4156;
 }
 .doc-box >h2 {
     margin-top: 3rem;
+    color: #4e5773;
 }
 .code-wraper{
     margin: 2rem auto 4rem auto;
@@ -80,6 +81,16 @@
     color: #fff;
     font-size: 16px;
     line-height: 1;
-    padding: 20px 2rem;
+    padding: 20px 1.5rem;
     display: block;
+}
+.logo-box{
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    border: solid 1px rgba(255,255,255,.2);
+    border-radius: 10% 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgba(0,0,0,.05);
+    background-color: rgba(255,255,255,.08);
 }

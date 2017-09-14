@@ -44,13 +44,20 @@
     function requestCB(res, path) {
         res = $('<div>').append( marked(res, path) );
         $('pre > code', res).each(function(key, it) {
-            var parent = $(it).parent();
-            var htmls = it.innerHTML.replace(/\&lt\;/g, '<').replace(/\&gt\;/g, '>');
-            var wraper = $('<div class="code-wraper"></div>');
-            parent.before(wraper);
+            var cur = $(it), ret, wraper, parent;
+            
+            if( (ret = it.innerHTML.match(/^-(?:\s+)?([\w\W]+)/)) ) {
+                cur.html ( ret[1] );
+            }
+            else {
+                parent = cur.parent();
+                wraper = $('<div class="code-wraper"></div>');
+                parent.before(wraper);
+                ret = it.innerHTML.replace(/\&lt\;/g, '<').replace(/\&gt\;/g, '>');
+                wraper.append('<div class="example">'+ret+'</div>').append(parent)
+                .append('<a class="view-code text-main">VIEW CODE</a>');
+            }
             hljs.highlightBlock(it);
-            wraper.append('<div class="example">'+htmls+'</div>').append(parent)
-            .append('<a class="view-code text-main">VIEW CODE</a>');
         });
 
         // 为table添加样式

@@ -88,3 +88,8 @@ Jvase中有大量的修饰语法，这些语法的规则都是统一的 `.use-*`
 
 ## Issue
 你可以在Github [Issue](https://github.com/focci/jvase/issues) 上提交Bug或者讨论问题
+
+## 捐赠
+![Wechat](https://raw.githubusercontent.com/focci/asset/master/pay/wechat.jpg)
+&nbsp;&nbsp;&nbsp;&nbsp;
+![Alipay](https://raw.githubusercontent.com/focci/asset/master/pay/alipay.jpg)

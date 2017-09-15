@@ -4,7 +4,7 @@
 ## NPM
 推荐使用NPM的安装方式，它能更好地配合 [Gulp](https://gulpjs.com/) 进行使用.
 ```
-- npm install -save jvase
+- npm install --save jvase
 ```
 
 ## CDN

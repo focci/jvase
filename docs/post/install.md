@@ -10,7 +10,9 @@
 ## CDN
 可以通过 [https://unpkg.com/jvase/dist/](https://unpkg.com/jvase/dist/) 来浏览最新版本的资源文件，通过引入CSS文件来添加Jvase.
 ```
-- <link rel="stylesheet" href="https://unpkg.com/jvase/dist/jvase.min.css" />
+- 
+<!-- 最新版本的 Jvase 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://unpkg.com/jvase/dist/jvase.min.css" />
 ```
 
 ## 下载

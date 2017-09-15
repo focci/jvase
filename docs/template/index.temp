@@ -3,7 +3,7 @@
 {{#def.content 
     <div class="hero use-medium">
         <div class="hero-body use-center">
-            <div class="logo-box"><img src="https://raw.githubusercontent.com/focci/asset/master/img/jvase-logo-avadar.png" height="150"/></div>
+            <div class="logo-box"><img src="https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/jvase-logo-avadar.png" height="150"/></div>
             <h1 class="use-bold font-50">渐进式CSS库, ONLY CSS!</h1>
             <p class="font-24">Jvase专为设计师或者后端开发者提供的一套CSS样式库，旨在快速、高效地构建项目.</p>
         </div>

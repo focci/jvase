@@ -3758,5 +3758,5 @@ textarea.input {
 
 .version {
   color: #9097ae; }
-  .version:before {
+  .version:after {
     content: "Jvase - v1.0.3"; }

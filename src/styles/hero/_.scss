@@ -1,8 +1,0 @@
-@import 'hero';
-
-@include set-hero-size('.use-medium', $hero-body-medium-padding);
-@include set-hero-size('.use-large', $hero-body-large-padding);
-
-.use-fullheight {
-    min-height: 100vh;
-}

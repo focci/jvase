@@ -1,9 +1,0 @@
-@charset "utf-8";
-.btn.use-static{
-	pointer-events: none;
-	background-color: #f5f5f5;
-	cursor: default;
-	&:hover{
-		border-color: $btn-border-color !important;
-	}
-}

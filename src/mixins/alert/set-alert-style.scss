@@ -1,7 +1,0 @@
-@charset "utf-8";
-@mixin set-alert-style($fcolor, $bgc, $name: '') {
-	.alert#{$name} {
-		background-color: $bgc;
-		color: $fcolor;
-	}
-}

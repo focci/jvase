@@ -1,7 +1,0 @@
-@charset "utf-8";
-@import "alert";
-
-@include set-alert-style($c-danger, $c-danger-light, '.use-danger');
-@include set-alert-style($c-info, $c-info-light, '.use-info');
-@include set-alert-style($c-warn, $c-warn-light, '.use-warn');
-@include set-alert-style($c-success, $c-success-light, '.use-success');

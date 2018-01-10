@@ -1,7 +1,0 @@
-@charset "utf-8";
-@mixin set-hero-size($name: '', $size: '') {
-    .hero#{$name} > .hero-body{
-        padding-top: $size;
-        padding-bottom: $size;
-    }
-}

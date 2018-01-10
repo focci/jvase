@@ -1,8 +1,0 @@
-@charset "utf-8";
-.table {
-	> tbody > tr.use-active > td,
-	&.use-hover > tbody > tr:hover > td,
-	&.use-hover > tbody > tr.use-active > td {
-		background-color: $table-hover-bgc;
-	}
-}

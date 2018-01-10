@@ -1,6 +1,0 @@
-@media (max-width: $grid-md) {
-	@include set-slidebar-width($layout-slidebar-narrow-width, '.layout-responsive');
-}
-@media (max-width: $grid-sm) {
-	@include set-slidebar-width(0, '.layout-responsive');
-}

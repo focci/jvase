@@ -1,7 +1,0 @@
-@charset "utf-8";
-@import 'icon';
-
-@include set-icon-size(pr(21px));
-@include set-icon-size(pr(42px), '.use-large');
-@include set-icon-size(pr(28px), '.use-medium');
-@include set-icon-size(pr(14px), '.use-small');

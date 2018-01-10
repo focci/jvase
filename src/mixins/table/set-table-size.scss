@@ -1,7 +1,0 @@
-@charset "utf-8";
-// 设置行Padding
-@mixin set-table-size($name:'', $padding:'') {
-	.table#{$name} > tbody > tr > td {
-		padding: $padding;
-	}
-}

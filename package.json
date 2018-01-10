@@ -1,7 +1,7 @@
 {
   "name": "jvase",
-  "version": "1.0.4",
-  "description": "Jvase is a CSS framework. only CSS!",
+  "version": "2.0.0",
+  "description": "jvase is a CSS framework. only CSS!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/focci/jvase.git"

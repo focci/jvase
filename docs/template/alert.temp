@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '提示'
+        title: '提示',
+        ename: 'alert'
     } 
 }}
 

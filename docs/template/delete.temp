@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '删除'
+        title: '删除',
+        ename: 'delete'
     } 
 }}
 

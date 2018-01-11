@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '颜色'
+        title: '颜色',
+        ename: 'color'
     } 
 }}
 

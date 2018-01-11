@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '进度条'
+        title: '进度条',
+        ename: 'progress'
     } 
 }}
 

@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '滑动条'
+        title: '滑动条',
+        ename: 'slider'
     } 
 }}
 

@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '下拉菜单'
+        title: '下拉菜单',
+        ename: 'dropdown'
     } 
 }}
 

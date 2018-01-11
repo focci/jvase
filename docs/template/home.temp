@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '首页'
+        title: '首页',
+        ename: 'home'
     } 
 }}
 

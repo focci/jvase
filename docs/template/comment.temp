@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '评论'
+        title: '评论',
+        ename: 'comment'
     } 
 }}
 

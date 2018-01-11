@@ -3,6 +3,7 @@
 .menu-list {
     list-style: none;
     padding: 0;
+
     li {
         display: list-item;
 
@@ -12,6 +13,7 @@
             border-left: solid 1px $menu-list-child-border-color;
         }
     }
+
     a {
         @extend .v-block;
         @extend .v-ellipsis;
@@ -21,14 +23,18 @@
         border-radius: $border-radius;
         transition: background-color .3s;
 
-        &:hover,
-        &:focus {
+        &:not([disabled]):hover,
+        &:not([disabled]):focus {
             background-color: $menu-list-item-hover-bgc;
         }
 
-        &.v-active {
+        &:not([disabled]).v-active {
             background-color: $menu-list-item-active-bgc;
             color: $menu-list-item-active-color;
         }
+    }
+
+    [disabled] {
+        @extend .v-disabled;
     }
 }

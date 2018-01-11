@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '开关'
+        title: '开关',
+        ename: 'switch'
     } 
 }}
 

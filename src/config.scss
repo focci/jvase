@@ -56,12 +56,13 @@ $font-color: $color-black-light;
 
 // layout
 // =============================================
-$layout-header-height: 5rem;
-$layout-header-bgc: $color-main-tone;
+$layout-header-height: 4rem;
+$layout-header-background-color: $color-main-tone;
 $layout-header-padding-left: 1rem;
 $layout-header-padding-right: 1rem;
 
-$layout-slidebar-width: 20rem;
+$layout-slidebar-width: 19rem;
+$layout-slidebar-background-color: #f6f6f6;
 $layout-slidebar-padding-top: $layout-header-height + 2rem;
 $layout-slidebar-padding-left: 2rem;
 $layout-slidebar-padding-right: 2rem;
@@ -97,9 +98,9 @@ $menu-list-item-hover-bgc: $color-silver-dark;
 $menu-list-item-active-bgc: $color-main-tone;
 $menu-list-item-active-color: #fff;
 
-$menu-list-child-padding-left: 1rem;
+$menu-list-child-padding-left: .75rem;
 $menu-list-child-margin: .5rem .75rem;
-$menu-list-child-border-color: #ddd;
+$menu-list-child-border-color: #e9e9e9;
 
 // 
 // =============================================

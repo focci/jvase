@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '表单'
+        title: '表单',
+        ename: 'form'
     } 
 }}
 

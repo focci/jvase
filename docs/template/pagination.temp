@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '分页'
+        title: '分页',
+        ename: 'pagination'
     } 
 }}
 

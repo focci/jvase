@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '徽标'
+        title: '徽标',
+        ename: 'badge'
     } 
 }}
 

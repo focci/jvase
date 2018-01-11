@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '栅栏'
+        title: '栅栏',
+        ename: 'grid'
     } 
 }}
 

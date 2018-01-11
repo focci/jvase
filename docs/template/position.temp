@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '定位'
+        title: '定位',
+        ename: 'position'
     } 
 }}
 

@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '按钮'
+        title: '按钮',
+        ename: 'button'
     } 
 }}
 

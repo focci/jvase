@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '标签'
+        title: '标签',
+        ename: 'tab'
     } 
 }}
 

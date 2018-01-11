@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '布局'
+        title: '布局',
+        ename: 'layout'
     } 
 }}
 

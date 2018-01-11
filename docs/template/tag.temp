@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '标记'
+        title: '标记',
+        ename: 'tag'
     } 
 }}
 

@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '表格'
+        title: '表格',
+        ename: 'table'
     } 
 }}
 

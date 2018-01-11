@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '卡片'
+        title: '卡片',
+        ename: 'card'
     } 
 }}
 

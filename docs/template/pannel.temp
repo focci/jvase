@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '面板'
+        title: '面板',
+        ename: 'pannel'
     } 
 }}
 

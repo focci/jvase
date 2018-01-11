@@ -1,83 +1,156 @@
 <div class="slidebar">
     <div class="menu">
-        <p class="menu-label">常规(General)</p>
-        <ul class="menu-list">
-            <li><a href="color.html">颜色(Color)</a></li>
-        </ul>
+        {{
+            var menu_data  = [
+                {
+                    title: '常规',
+                    ename: 'General',
+                    children: [
+                        {
+                            title: '颜色',
+                            ename: 'Color'
+                        }
+                    ]
+                },
+                {
+                    title: '元素',
+                    ename: 'Element',
+                    children: [
+                        {
+                            title: '徽标',
+                            ename: 'Badge'
+                        },
+                        {
+                            title: '按钮',
+                            ename: 'Button'
+                        },
+                        {
+                            title: '删除',
+                            ename: 'Delete'
+                        },
+                        {
+                            title: '图标',
+                            ename: 'Icon'
+                        }
+                    ]
+                },
+                {
+                    title: '组件',
+                    ename: 'Component',
+                    children: [
+                        {
+                            title: '警告',
+                            ename: 'Alert'
+                        },
+                        {
+                            title: '文章',
+                            ename: 'Article'
+                        },
+                        {
+                            title: '评论',
+                            ename: 'Comment'
+                        },
+                        {
+                            title: '下拉菜单',
+                            ename: 'Dropdown'
+                        },
+                        {
+                            title: '表单',
+                            ename: 'Form'
+                        },
+                        {
+                            title: '栅栏',
+                            ename: 'Grid'
+                        },
+                        {
+                            title: '展示面板',
+                            ename: 'Hero'
+                        },
+                        {
+                            title: '布局',
+                            ename: 'Layout'
+                        },
+                        {
+                            title: '列表',
+                            ename: 'List'
+                        },
+                        {
+                            title: '菜单',
+                            ename: 'Menu'
+                        },
+                        {
+                            title: '导航条',
+                            ename: 'Navbar'
+                        },
+                        {
+                            title: '分页',
+                            ename: 'Pagination'
+                        },
+                        {
+                            title: '面板',
+                            ename: 'Pannel'
+                        },
+                        {
+                            title: '位置',
+                            ename: 'Position'
+                        },
+                        {
+                            title: '进度条',
+                            ename: 'Progress'
+                        },
+                        {
+                            title: '滑动条',
+                            ename: 'Slider'
+                        },
+                        {
+                            title: '开关',
+                            ename: 'Switch'
+                        },
+                        {
+                            title: '标签',
+                            ename: 'Tab'
+                        },
+                        {
+                            title: '表格',
+                            ename: 'Table'
+                        },
+                        {
+                            title: '标记',
+                            ename: 'Tag'
+                        },
+                        {
+                            title: '气泡',
+                            ename: 'Tooltip'
+                        }
+                    ]
+                }
+            ];
+            for( var i=0,len=menu_data.length; i<len; i++ ) {
+                var item = menu_data[i];
+        }}
 
-        <p class="menu-label">元素(Element)</p>
-        <ul class="menu-list">
-            <li><a href="badge.html">徽标(Badge)</a></li>
-            <li><a class="v-active" href="button.html">按钮(Button)</a></li>
-            <li><a href="delete.html">删除(Delete)</a></li>
-            <li><a href="icon.html">图标(Icon)</a></li>
-        </ul>
-
-        <p class="menu-label">组件(Component)</p>
-        <ul class="menu-list v-hide">
-            <li><a href="alert.html">警告(Alert)</a></li>
-            <li><a href="article.html">文章(Article)</a></li>
-            <li><a href="comment.html">评论(Comment)</a></li>
-            <li><a href="dropdown.html">下拉菜单(Dropdown)</a></li>
-            <li><a href="form.html">表彰(Form)</a></li>
-            <li><a href="grid.html">栅栏(Grid)</a></li>
-            <li><a href="hero.html">展示面板(Hero)</a></li>
-            <li><a href="layout.html">布局(Layout)</a></li>
-            <li><a href="list.html">列表(List)</a></li>
-            <li><a href="menu.html">菜单(Menu)</a></li>
-            <li><a href="navbar.html">导航条(Navbar)</a></li>
-            <li><a href="pagination.html">分页(Pagination)</a></li>
-            <li><a href="pannel.html">面板(Pannel)</a></li>
-            <li><a href="position.html">位置(Position)</a></li>
-            <li><a href="progress.html">进度条(Progress)</a></li>
-            <li><a href="slider.html">滑动条(Slider)</a></li>
-            <li><a href="switch.html">开关(Switch)</a></li>
-            <li><a href="tab.html">标签(Tab)</a></li>
-            <li><a href="table.html">表格(Table)</a></li>
-            <li><a href="tag.html">标记(Tag)</a></li>
-            <li><a href="tooltip.html">气泡(Tooltip)</a></li>
-        </ul>
-
-        <p class="menu-label">工具(Tool)</p>
-        <ul class="menu-list">
-            <li><a href="Tool.html">版本号(Tool)</a></li>
-        </ul>
-
-        <p class="menu-label">页面(Page)</p>
-        <ul class="menu-list">
-            <li><a href=""></a></li>
-        </ul>
-
-        <p class="menu-label">多级菜单</p>
-        <ul class="menu-list">
-            <li>
-                <a href="">父级菜单</a>
-                <a href="">父级菜单</a>
-                <a href="">父级菜单</a>
+            <p class="menu-label">{{- item.title}} <span>({{- item.ename}})</span></p>
+            {{
+                if (item.children) {
+            }}
                 <ul class="menu-list">
-                    <li>
-                        <a href="">二级菜单</a>
-                        <a href="">二级菜单</a>
-                        <a href="">二级菜单</a>
-                        <ul class="menu-list">
-                            <li>
-                                <a href="">三级菜单三级菜单三级菜单三级菜单</a>
-                                <a href="">三级菜单</a>
-                                <a href="">三级菜单</a>
-                                <ul class="menu-list">
-                                    <li>
-                                        <a href="">四级菜单</a>
-                                        <a href="">四级菜单</a>
-                                        <a href="">四级菜单</a>
-                                        <a href="">四级菜单</a>
-                                        <a href="">四级菜单</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    {{
+                        for (var m=0,ml=item.children.length; m<ml; m++) {
+                            var child = item.children[m];
+                    }}
+                        <li>
+                            <a {{- ename===child.ename.toLowerCase() ? 'class="v-active"':''}} 
+                                href="{{- child.ename | lower }}.html">
+                                {{- child.title}} ({{- child.ename}})
+                            </a>
+                        </li>
+                    {{
+                        }
+                    }}
                 </ul>
-            </li>
-        </ul>
+        {{
+                }
+            }
+        }}
     </div>
 </div>

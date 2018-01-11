@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: 'Hero'
+        title: 'Hero',
+        ename: 'hero'
     } 
 }}
 

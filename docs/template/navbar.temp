@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '导航条'
+        title: '导航条',
+        ename: 'navbar'
     } 
 }}
 

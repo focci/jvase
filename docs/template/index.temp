@@ -2,7 +2,8 @@
     extend './partial/layout'
     {
         title: '首页',
-        showSlideBar: false
+        showSlideBar: false,
+        ename: 'index'
     } 
 }}
 

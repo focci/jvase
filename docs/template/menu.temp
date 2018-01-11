@@ -1,7 +1,8 @@
 {{
     extend './partial/layout'
     {
-        title: '菜单'
+        title: '菜单',
+        ename: 'menu'
     } 
 }}
 
@@ -10,131 +11,38 @@
     
     <div class="card">
         <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
+            <h2 class="card-title">菜单 <small>MENU</small></h2>
             <small class="card-subtitle">SUBTITLE</small>
         </div>
         <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
+            <div class="menu">
+                <p class="menu-label">XXX科技有限公司</p>
+                <ul class="menu-list">
+                    <li>
+                        <a href="javascript:;">总经理</a>
+                        <ul class="menu-list">
+                            <li disabled><a class="v-active" href="javascript:;">财务部</a></li>
+                            <li><a href="javascript:;">人事部</a></li>
+                            <li disabled><a href="javascript:;">信息部(已注销)</a></li>
+                            <li>
+                                <a href="javascript:;">研发总监</a>
+                                <ul class="menu-list">
+                                    <li>
+                                        <a href="javascript:;">分析部</a>
+                                        <a href="javascript:;">风控部</a>
+                                        <a href="javascript:;">金融研究中心</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="menu-label">XXX理财担保有限公司</p>
+                <ul class="menu-list">
+                    <li><a href="javascript:;">财务总监</a></li>
+                    <li><a href="javascript:;">市场总监</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 

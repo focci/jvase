@@ -1,0 +1,143 @@
+{{
+    extend './partial/layout'
+    {
+        title: '滑动条'
+    } 
+}}
+
+{{#def.content
+    
+    
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    
+
+#}}

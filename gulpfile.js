@@ -6,8 +6,6 @@ var	postcss = require('gulp-postcss');
 var	concat = require('gulp-concat');
 var tempos = require('gulp-tempos');
 var	notify = require('gulp-notify');
-var fs = require('fs');
-var data = require('gulp-data');
 
 // 样式
 gulp.task('styles', function() {
@@ -49,9 +47,6 @@ var webConfig = {
 
 gulp.task('doc', function() {
 	return gulp.src('./docs/template/*.temp')
-		.pipe(data((file) => {
-			return webConfig[ file.relative.replace('.temp', '') ];
-		}))
 		.pipe(tempos(null, {
 			extname: '.html'
 		}))
@@ -67,4 +62,5 @@ gulp.task('default', function() {
 
 gulp.task('watch', function() {
     gulp.watch('./src/**/*.*', ['styles']);
+    gulp.watch('./docs/template/**/*.*', ['doc']);
 });

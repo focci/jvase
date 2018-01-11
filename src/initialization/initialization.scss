@@ -1,9 +1,18 @@
 @charset 'utf-8';
+html {
+    font: unquote('#{$font-size}/#{$line-height}') $font-family;
+}
+
+body{
+    background-color: $background-color;
+    color: $font-color;
+    box-sizing: border-box;
+}
 
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 *,
@@ -13,13 +22,12 @@
     outline: none;
 }
 
-html {
-    font: $font-size / $line-height $font-family;
-    color: $font-color;
+a {
+    text-decoration: none;
 }
 
 img {
-    display: inline-block;
+    @extend .v-inline-block;
     
     @at-root
     :link &,
@@ -59,6 +67,7 @@ ul,
 ol {
     margin-top: 0;
     margin-bottom: torem(10px);
+    
     &.v-inline {
         list-style: none;
         padding-left: 0;

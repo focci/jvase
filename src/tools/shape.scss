@@ -1,13 +1,13 @@
 @charset 'utf-8';
 
 .v-pill {
-    border-radius: 100000px !important;
+    border-radius: 100000px;
 }
 
 .v-radius {
-    border-radius: $border-radius !important;
+    border-radius: $border-radius;
 }
 
 .v-circle {
-    border-radius: 50% !important;
+    border-radius: 50%;
 }

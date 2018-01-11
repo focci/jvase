@@ -1,23 +1,30 @@
 @charset 'utf-8';
 
 .v-bold {
-    font-weight: 700 !important;
+    font-weight: 700;
 }
 
 .v-left {
-    text-align: left !important;
+    text-align: left;
 }
 
 .v-center {
-    text-align: center !important;
+    text-align: center;
+}
+
+.v-middle {
+    @extend .v-relative;
+    
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .v-right {
-    text-align: right !important;
+    text-align: right;
 }
 
 .v-justify {
-    text-align: justify !important;
+    text-align: justify;
     &:after {
         content: '';
         display: inline-block;
@@ -33,18 +40,19 @@
 
 .v-ellipsis {
     @extend .v-nowrap;
+
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .v-capitalize {
-    text-transform: capitalize !important;
+    text-transform: capitalize;
 }
 
 .v-lowercase {
-    text-transform: lowercase !important;
+    text-transform: lowercase;
 }
 
 .v-uppercase {
-    text-transform: uppercase !important;
+    text-transform: uppercase;
 }

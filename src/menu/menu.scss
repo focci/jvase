@@ -1,2 +1,5 @@
 @charset 'utf-8';
 
+.menu {
+    @extend .v-relative;
+}

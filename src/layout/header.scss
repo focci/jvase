@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.header {
+    @extend .v-fixed;
+
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: $layout-header-height;
+    background-color: $layout-header-bgc;
+    padding-left: $layout-header-padding-left;
+    padding-right: $layout-header-padding-right;
+}
+
+.header, .header-ctx {
+    width: 100%;
+}
+
+.header-ctx {
+    @extend .v-middle;
+}

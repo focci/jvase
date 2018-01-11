@@ -1,6 +1,14 @@
-{{ extend './partial/layout' }}
+{{
+    extend './partial/layout'
+    {
+        title: '首页',
+        showSlideBar: false
+    } 
+}}
 
-{{#def.content 
+{{#def.content
+
+
     <div class="hero use-medium">
         <div class="hero-body use-center">
             <div class="logo-box"><img src="https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/jvase-logo-avadar.png" height="150"/></div>

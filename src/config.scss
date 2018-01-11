@@ -26,13 +26,17 @@ $color-gray-light: #ccd1e1;
 $color-gray-dark: #a2a7b8;
 
 $color-silver-dark: #e8ebef;
-$color-silver: #f2f2f2;
+$color-silver: #f3f3f3;
 $color-white: #fff;
+
+// global
+// =============================================
+$line-height: 1.5;
+$background-color: $color-silver;
 
 // font
 // =============================================
 $font-size: 14px;
-$line-height: 1.5;
 $font-color: $color-black-light;
 $font-family: ProximaNova,
     BlinkMacSystemFont,
@@ -47,16 +51,55 @@ $font-family: ProximaNova,
 // border
 // =============================================
 $border-color: $color-silver-dark;
-$border-radius: torem(4px);
+$border-radius: .2rem;
+$font-color: $color-black-light;
 
-// 
+// layout
 // =============================================
+$layout-header-height: 5rem;
+$layout-header-bgc: $color-main-tone;
+$layout-header-padding-left: 1rem;
+$layout-header-padding-right: 1rem;
 
-// 
-// =============================================
+$layout-slidebar-width: 20rem;
+$layout-slidebar-padding-top: $layout-header-height + 2rem;
+$layout-slidebar-padding-left: 2rem;
+$layout-slidebar-padding-right: 2rem;
 
-// 
+$layout-content-padding-top: $layout-header-height + 2rem;
+$layout-content-padding-left: $layout-slidebar-width + 2rem;
+$layout-content-padding-right: 2rem;
+
+// card
 // =============================================
+$card-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+$card-margin-bottom: 2.5rem;
+$card-background-color: #fff;
+$card-border-radius: .2rem;
+
+$card-header-padding: 2rem;
+$card-title-margin: 0;
+$card-title-font-size: 1.2rem;
+$card-subtitle-color: $color-steel-light;
+$card-subtitle-margin-top: .5rem;
+
+$card-body-padding: 2rem;
+
+// menu
+// =============================================
+$menu-label-color: $color-steel-light;
+$menu-label-font-size: .8rem;
+$menu-label-margin-bottom: 1rem;
+
+$menu-list-item-padding: .5rem .75rem;
+$menu-list-item-color: $color-black-light;
+$menu-list-item-hover-bgc: $color-silver-dark;
+$menu-list-item-active-bgc: $color-main-tone;
+$menu-list-item-active-color: #fff;
+
+$menu-list-child-padding-left: 1rem;
+$menu-list-child-margin: .5rem .75rem;
+$menu-list-child-border-color: #ddd;
 
 // 
 // =============================================

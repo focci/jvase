@@ -19,7 +19,6 @@
     "gulp-data": "^1.2.1",
     "gulp-notify": "^2.2.0",
     "gulp-postcss": "^6.0.1",
-    "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-tempos": "^1.0.3"
   },

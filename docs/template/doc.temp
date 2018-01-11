@@ -1,0 +1,6 @@
+{{ extend './partial/layout' }}
+
+{{#def.content    
+    <div class="doc-box" id="docContainer"></div>
+    <script>__detailname__ = 'introduction';</script>
+#}}

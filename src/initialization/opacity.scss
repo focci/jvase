@@ -1,0 +1,8 @@
+@charset 'utf-8';
+
+@for $i from 0 through 10 {
+    .va-opacity-#{$i} {
+        opacity: $i/10;
+        filter: alpha(opacity=($i * 10)); // for IE6,7,8
+    }
+}

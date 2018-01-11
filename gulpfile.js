@@ -4,26 +4,15 @@ var	autoprefixer = require('autoprefixer');
 var	nano = require('gulp-cssnano');
 var	postcss = require('gulp-postcss');
 var	concat = require('gulp-concat');
-var rename = require('gulp-rename');
 var tempos = require('gulp-tempos');
 var	notify = require('gulp-notify');
 var fs = require('fs');
 var data = require('gulp-data');
-var config = {
-	index: {
-		title: 'Jvase',
-		slideFlag: false	// 是否显示左边菜单
-	},
-	doc: {
-		title: 'Documentation Jvase',
-		slideFlag: true
-	}
-};
 
-// Styles
+// 样式
 gulp.task('styles', function() {
 	return sass('./src/index.scss')
-		.pipe(concat('jvase.css'))
+		.pipe(concat('jvase.min.css'))
 		.pipe(postcss([ 
 			autoprefixer({
 				browsers: [
@@ -37,22 +26,31 @@ gulp.task('styles', function() {
 				]
 			})
 		]))
-		.pipe(gulp.dest('./dist'))
-		.pipe(rename({
-			suffix: '.min'
-		}))
 		.pipe(nano())
 		.pipe(gulp.dest('./dist'))
+		.pipe(gulp.dest('./docs/styles'))
 		.pipe(notify({
 			message: 'Styles task complete'
 		})
 	);
 });
 
+// 文档
+var webConfig = {
+	index: {
+		title: 'Jvase',
+		slideFlag: false	// 是否显示左边菜单
+	},
+	doc: {
+		title: 'Documentation Jvase',
+		slideFlag: true
+	}
+};
+
 gulp.task('doc', function() {
 	return gulp.src('./docs/template/*.temp')
 		.pipe(data((file) => {
-			return config[ file.relative.replace('.temp', '') ];
+			return webConfig[ file.relative.replace('.temp', '') ];
 		}))
 		.pipe(tempos(null, {
 			extname: '.html'
@@ -62,7 +60,7 @@ gulp.task('doc', function() {
 			message: 'Doc task complete'
 		}));
 });
-gulp.start('doc');
+
 gulp.task('default', function() {
 	gulp.start(['styles', 'doc']);
 });

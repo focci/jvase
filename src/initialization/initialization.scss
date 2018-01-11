@@ -1,0 +1,161 @@
+@charset 'utf-8';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+*,
+*:active,
+*:hover {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+html {
+    font: $font-size / $line-height $font-family;
+    color: $font-color;
+}
+
+img {
+    display: inline-block;
+    
+    @at-root
+    :link &,
+    :visited & {
+        border: 0;
+    }
+}
+
+hr {
+    @extend .v-block;
+
+    height: 0;
+    margin: 1rem 0;
+    border: 0;
+    border-top: torem(1px) solid #eee;
+}
+
+textarea {
+    resize: vertical;
+}
+
+figure {
+    margin: 0;
+}
+
+input,
+textarea,
+a {
+    outline: none;
+}
+
+p {
+    margin: 0 0 torem(7px);
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: torem(10px);
+    &.v-inline {
+        list-style: none;
+        padding-left: 0;
+        margin-left: torem(-7px);
+        >li {
+            display: inline-block;
+            padding-left:torem(7px);
+            padding-right:torem(7px);
+        }
+    }
+}
+
+dl {
+    margin-top: 0;
+    margin-bottom: torem(21px);
+    >dt {
+        font-weight: 700;
+    }
+    >dd {
+        margin-left: 0;
+    }
+    &.v-horizontal {
+        >dt {
+            @extend .v-ellipsis;
+
+            float: left;
+            width: torem(154px);
+            text-align: right;
+            clear: left;
+        }
+        >dd {
+            margin-left: torem(182px);
+        }
+    }
+}
+
+kbd,
+code,
+pre {
+    font-family: 'Consolas';
+    line-height: 1;
+}
+
+kbd,
+code {
+    @extend .v-radius;
+
+    padding: torem(2px) torem(4px);
+    font-size: 96%;
+    color: $color-white;
+    background-color: $color-black;
+}
+
+code {
+    background-color: $color-silver;
+    color: $color-danger;
+}
+
+pre {
+    @extend .v-radius;
+
+    display: block;
+    padding: torem(14px);
+    margin: 0 0 torem(14px);
+    color: $color-black-light;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f8f8f8;
+}
+
+blockquote {
+    border-left: solid torem(7px) #eee;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: torem(21px);
+    padding-bottom: torem(7px);
+    font-size: torem(16px);
+    footer {
+        font-size: torem(14px);
+        color: $color-steel-light;
+        &:before {
+            content: '\2014 \00A0'
+        }
+    }
+    &.blockquote-right {
+        text-align: right;
+        border-left: 0;
+        border-right: solid torem(7px) #eee;
+        padding-right: torem(21px);
+        padding-left: 0;
+        footer {
+            &:before {
+                content: '';
+            }
+            &:after {
+                content: '\00A0 \2014 '
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@charset 'utf-8';
+
+.v-bold {
+    font-weight: 700 !important;
+}
+
+.v-left {
+    text-align: left !important;
+}
+
+.v-center {
+    text-align: center !important;
+}
+
+.v-right {
+    text-align: right !important;
+}
+
+.v-justify {
+    text-align: justify !important;
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.v-nowrap {
+    white-space: nowrap;
+}
+
+.v-ellipsis {
+    @extend .v-nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.v-capitalize {
+    text-transform: capitalize !important;
+}
+
+.v-lowercase {
+    text-transform: lowercase !important;
+}
+
+.v-uppercase {
+    text-transform: uppercase !important;
+}

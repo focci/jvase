@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+.v-clear {
+    &:after {
+		content: '';
+        display: table;
+        clear: both;
+	}
+}
+

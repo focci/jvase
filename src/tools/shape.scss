@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+.v-pill {
+    border-radius: 100000px !important;
+}
+
+.v-radius {
+    border-radius: $border-radius !important;
+}
+
+.v-circle {
+    border-radius: 50% !important;
+}

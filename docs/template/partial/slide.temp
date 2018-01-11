@@ -1,0 +1,1 @@
+<div class="layout-slidebar jvase-slider pad-45 {{- !slideFlag ? 'use-hide' : ''}}" id="slidebar"></div>

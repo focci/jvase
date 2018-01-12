@@ -1,0 +1,41 @@
+@charset 'utf-8';
+
+h1,h2,h3,h4,h5,h6,
+.v-h1,.v-h2,.v-h3,.v-h4,.v-h5,.v-h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: $header-margin-bottom;
+    color: $header-color;
+}
+
+@each $key, $size in $header-size {
+    h#{$key},
+    .v-h#{$key} {
+        font-size: $size;
+    }
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4
+{
+    font-weight: 300;
+}
+
+.display-4 {
+    font-size: 3.5rem;
+}
+
+.display-3 {
+    font-size: 4.5rem;
+}
+
+.display-2 {
+    font-size: 5.5rem;
+}
+
+.display-1 {
+    font-size: 6.5rem;
+}

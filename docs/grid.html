@@ -44,6 +44,13 @@
                             </a>
                         </li>
                     
+                        <li>
+                            <a  
+                                href="typography.html">
+                                排版 (Typography)
+                            </a>
+                        </li>
+                    
                 </ul>
         
 
@@ -240,140 +247,203 @@
         
         <div class="content">
             
+    <div class="content-header">
+        <h1 class="content-title">栅栏 (Grid)</h1>
+        <p class="content-subtitle">通过基础的12列，快速实现布局</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">用法介绍</h2>
+            <small class="card-subtitle">
+                创建一个容器 <code>.box</code>, 接着添行容器 <code>.rows</code>, 再在行容器内添加列容器 <code>.cols-*-*</code>, 便可实现栅栏效果.
+            </small>
+        </div>
+        <div class="card-body">
+            <div class="box">
+                <div class="rows">
+                    <div class="cols-xs-12">
+                        <div class="bg-gray-light v-box">cols-xs-12</div>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="cols-xs-6">
+                        <div class="bg-gray-light v-box">cols-xs-6</div>
+                    </div>
+                    <div class="cols-xs-6">
+                        <div class="bg-silver-dark v-box">cols-xs-6</div>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="cols-xs-4">
+                        <div class="bg-gray-light v-box">cols-xs-4</div>
+                    </div>
+                    <div class="cols-xs-4">
+                        <div class="bg-silver-dark v-box">cols-xs-4</div>
+                    </div>
+                    <div class="cols-xs-4">
+                        <div class="bg-gray-light v-box">cols-xs-4</div>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="cols-xs-3">
+                        <div class="bg-gray-light v-box">cols-xs-3</div>
+                    </div>
+                    <div class="cols-xs-3">
+                        <div class="bg-silver-dark v-box">cols-xs-3</div>
+                    </div>
+                    <div class="cols-xs-3">
+                        <div class="bg-gray-light v-box">cols-xs-3</div>
+                    </div>
+                    <div class="cols-xs-3">
+                        <div class="bg-silver-dark v-box">cols-xs-3</div>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="cols-xs-2">
+                        <div class="bg-gray-light v-box">cols-xs-2</div>
+                    </div>
+                    <div class="cols-xs-2">
+                        <div class="bg-silver-dark v-box">cols-xs-2</div>
+                    </div>
+                    <div class="cols-xs-2">
+                        <div class="bg-gray-light v-box">cols-xs-2</div>
+                    </div>
+                    <div class="cols-xs-2">
+                        <div class="bg-gray-light v-box">cols-xs-2</div>
+                    </div>
+                    <div class="cols-xs-2">
+                        <div class="bg-gray-light v-box">cols-xs-2</div>
+                    </div>
+                    <div class="cols-xs-2">
+                        <div class="bg-silver-dark v-box">cols-xs-2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="rows">
+            <div class="cols-xs-12 cols-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">清除行列间距</h2>
+                        <small class="card-subtitle">
+                            通过添加类 <code>.v-rows-gapless</code>清除行间距.
+                        </small>
+                    </div>
+                    <div class="card-body">
+                        <div class="box v-rows-gapless">
+                            <div class="rows">
+                                <div class="cols-xs-12">
+                                    <div class="bg-gray-light v-box">cols-xs-12</div>
+                                </div>
+                            </div>
+                            <div class="rows">
+                                <div class="cols-xs-6">
+                                    <div class="bg-silver-dark v-box">cols-xs-6</div>
+                                </div>
+                                <div class="cols-xs-6">
+                                    <div class="bg-silver-dark v-box">cols-xs-6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">清除列间距</h2>
+                        <small class="card-subtitle">
+                            通过添加类 <code>.v-cols-gapless</code> 清除列间距.
+                        </small>
+                    </div>
+                    <div class="card-body">
+                        <div class="box v-cols-gapless">
+                            <div class="rows">
+                                <div class="cols-xs-4">
+                                    <div class="bg-gray-light v-box">cols-xs-4</div>
+                                </div>
+                                <div class="cols-xs-4">
+                                    <div class="bg-silver-dark v-box">cols-xs-4</div>
+                                </div>
+                                <div class="cols-xs-4">
+                                    <div class="bg-gray-light v-box">cols-xs-4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">同时清除行列间距</h2>
+                        <small class="card-subtitle">
+                            通过添加类 <code>.v-gapless</code> 可同时清除行列间距.
+                        </small>
+                    </div>
+                    <div class="card-body">
+                        <div class="box v-gapless">
+                            <div class="rows">
+                                <div class="cols-xs-4">
+                                    <div class="bg-gray-light v-box">cols-xs-4</div>
+                                </div>
+                                <div class="cols-xs-4">
+                                    <div class="bg-silver-dark v-box">cols-xs-4</div>
+                                </div>
+                                <div class="cols-xs-4">
+                                    <div class="bg-gray-light v-box">cols-xs-4</div>
+                                </div>
+                            </div>
+                            <div class="rows">
+                                <div class="cols-xs-4">
+                                    <div class="bg-silver-dark v-box">cols-xs-4</div>
+                                </div>
+                                <div class="cols-xs-4">
+                                    <div class="bg-gray-light v-box">cols-xs-4</div>
+                                </div>
+                                <div class="cols-xs-4">
+                                    <div class="bg-silver-dark v-box">cols-xs-4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cols-xs-12 cols-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">偏移</h2>
+                        <small class="card-subtitle">
+                            偏移的实现也是通过分成12等分，每一份偏移量为1/12，偏移的宽度通过添加类 
+                            <code>.cols-*-offset-*</code> 来实现，其中第一个'*'的值为：xs、sm、md、lg；第二个'*'的值为1-12.
+                        </small>
+                    </div>
+                    <div class="card-body">
+                        <div class="box">
+                            <div class="rows">
+                                <div class="cols-xs-4">
+                                    <div class="bg-gray-light v-box">cols-xs-4</div>
+                                </div>
+                                <div class="cols-xs-6 cols-xs-offset-2">
+                                    <div class="bg-silver-dark v-box">cols-xs-offset-2</div>
+                                </div>
+                            </div>
+                            <div class="rows">
+                                <div class="cols-xs-3">
+                                    <div class="bg-gray-light v-box">cols-xs-3</div>
+                                </div>
+                                <div class="cols-xs-7 cols-xs-offset-2">
+                                    <div class="bg-silver-dark v-box">cols-xs-offset-2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
-    
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    
-
 
         </div>
     </div>

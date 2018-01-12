@@ -9,6 +9,10 @@
                         {
                             title: '颜色',
                             ename: 'Color'
+                        },
+                        {
+                            title: '排版',
+                            ename: 'Typography'
                         }
                     ]
                 },

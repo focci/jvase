@@ -5,7 +5,6 @@ var	nano = require('gulp-cssnano');
 var	postcss = require('gulp-postcss');
 var	concat = require('gulp-concat');
 var tempos = require('gulp-tempos');
-var	notify = require('gulp-notify');
 
 // 样式
 gulp.task('styles', function() {
@@ -24,13 +23,9 @@ gulp.task('styles', function() {
 				]
 			})
 		]))
-		.pipe(nano())
+		// .pipe(nano())
 		.pipe(gulp.dest('./dist'))
-		.pipe(gulp.dest('./docs/styles'))
-		.pipe(notify({
-			message: 'Styles task complete'
-		})
-	);
+		.pipe(gulp.dest('./docs/styles'));
 });
 
 // 文档
@@ -50,10 +45,7 @@ gulp.task('doc', function() {
 		.pipe(tempos(null, {
 			extname: '.html'
 		}))
-		.pipe(gulp.dest('./docs'))
-		.pipe(notify({
-			message: 'Doc task complete'
-		}));
+		.pipe(gulp.dest('./docs'));
 });
 
 gulp.task('default', function() {

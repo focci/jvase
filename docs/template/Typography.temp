@@ -1,0 +1,194 @@
+{{
+    extend './partial/layout'
+    {
+        title: '滑动条',
+        ename: 'typography'
+    } 
+}}
+
+{{#def.content
+    <div class="content-header">
+        <h1 class="content-title">排版 (Typography)</h1>
+        <p class="content-subtitle">页面常用到的排版元素</p>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Header</h2>
+            <small class="card-subtitle">
+                <code>h1</code> ... <code>h6</code> 所有标题标签，
+                在标题内可以通过 <code>&lt;small&gt;</code> 标签来添加副标题。同样，
+                也可以通过 <code>.v-h1</code> ... <code>.v-h6</code> 来实现同样的效果.
+            </small>
+        </div>
+        <div class="card-body">
+            <h1>H1 Heading 1 <small class="fc-steel-light">Small Header</small></h1>
+            <hr>
+            <h2>H2 Heading 2 <small class="fc-steel-light">Small Header</small></h2>
+            <hr>
+            <h3>H3 Heading 3 <small class="fc-steel-light">Small Header</small></h3>
+            <hr>
+            <h4>H4 Heading 4 <small class="fc-steel-light">Small Header</small></h4>
+            <hr>
+            <h5>H5 Heading 5 <small class="fc-steel-light">Small Header</small></h5>
+            <hr>
+            <h6>H6 Heading 6 <small class="fc-steel-light">Small Header</small></h6>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">标题</h2>
+            <small class="card-subtitle">
+                当 <code>h1</code> 不满足标题尺寸时，可以通过添加类 
+                <code>display-1</code> ... <code>display-4</code> 来设置更大的标题尺寸.
+            </small>
+        </div>
+        <div class="card-body">
+            <h1 class="display-1">display-1</h1>
+            <hr>
+            <h1 class="display-2">display-2</h1>
+            <hr>
+            <h1 class="display-3">display-3</h1>
+            <hr>
+            <h1 class="display-4">display-4</h1>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Lead</h2>
+            <small class="card-subtitle">突出显示段落，添加类 <code>.v-lead</code> 即可</small>
+        </div>
+        <div class="card-body">
+            <p class="v-lead">
+                天下只有两种人。比如一串葡萄到手，一种人挑最好的先吃，
+                另一种人把最好的留到最后吃。照例第一种人应该乐观，
+                因为他每吃一颗都是吃剩的葡萄里最好的；第二种人应该悲观，
+                因为他每吃一颗都是吃剩的葡萄里最坏的。不过事实却适得其反，
+                缘故是第二种人还有希望，第一种人只有回忆。
+            </p>
+            <p>
+                天下只有两种人。比如一串葡萄到手，一种人挑最好的先吃，
+                另一种人把最好的留到最后吃。照例第一种人应该乐观，
+                因为他每吃一颗都是吃剩的葡萄里最好的；第二种人应该悲观，
+                因为他每吃一颗都是吃剩的葡萄里最坏的。不过事实却适得其反，
+                缘故是第二种人还有希望，第一种人只有回忆。
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">横线</h2>
+            <small class="card-subtitle">
+                对于被删除的文本使用 <code>&lt;del&gt;</code> 标签，额外插入的文本使用 <code>&lt;ins&gt;</code> 标签
+            </small>
+        </div>
+        <div class="card-body">
+            <p><del>del 代表被删除的文本</del></p>
+            <p><ins>ins 代表插入的文本</ins></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">文本形状</h2>
+            <small class="card-subtitle">
+                文本的各种显示方式，包括：加粗、斜体、大小写等.
+            </small>
+        </div>
+        <div class="card-body">
+            <p><code>&lt;small&gt;</code>：<small>小号文本</small></p>
+            <p><code>.v-bold</code>：<span class="v-bold">强调文本</span></p>
+            <p><code>&lt;em&gt;</code>：<em>斜体文本</em></p>
+            <p><code>&lt;code&gt;</code>：定义计算机代码文本 <code>js</code>、<code>css</code></p>
+            <p><code>.v-lowercase</code>：小写文本 LOWERCASE / <span class="v-lowercase">LOWERCASE</span></p>
+            <p><code>.v-uppercase</code>：大写文本 uppercase / <span class="v-uppercase">uppercase</span></p>
+            <p><code>.v-capitalize</code>：首字母大写 capitalize / <span class="v-capitalize">capitalize</span></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">TITLE</h2>
+            <small class="card-subtitle">SUBTITLE</small>
+        </div>
+        <div class="card-body">
+            CARDBODY
+        </div>
+    </div>
+
+    
+
+#}}

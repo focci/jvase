@@ -1,2 +1,19 @@
 @charset 'utf-8';
 
+.badge {
+    @extend .v-nowrap;
+    @extend .v-inline-block;
+
+    line-height: $badge-line-height;
+    padding: $badge-padding;
+    border-radius: $badge-border-radius;
+    vertical-align: baseline;
+    font-weight: 500%;
+}
+
+@include setBadgeStyle('', $badge-background-color, $badge-color);
+
+@include setBadgeStyle('.v-success', $color-success, $badge-color);
+@include setBadgeStyle('.v-warn', $color-warn, $badge-color);
+@include setBadgeStyle('.v-danger', $color-danger, $badge-color);
+@include setBadgeStyle('.v-info', $color-info, $badge-color);

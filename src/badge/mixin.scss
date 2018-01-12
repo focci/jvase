@@ -1,2 +1,8 @@
 @charset 'utf-8';
 
+@mixin setBadgeStyle($name, $bg, $color) {
+    .badge#{$name} {
+        background-color: $bg;
+        color: $color;
+    }
+}

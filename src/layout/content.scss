@@ -5,3 +5,18 @@
     padding-left: $layout-content-padding-left;
     padding-right: $layout-content-padding-right;
 }
+
+.content-header {
+    margin-bottom: $layout-content-header-margin-bottom;
+}
+
+.content-title {
+    margin: 0;
+    font-size: $layout-content-title-font-size;
+    font-weight: 400;
+}
+
+.content-subtitle {
+    color: $layout-content-subtitle-color;
+    margin-top: $layout-content-subtitle-margin-top;
+}

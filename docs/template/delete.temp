@@ -7,138 +7,75 @@
 }}
 
 {{#def.content
+    <div class="content-header">
+        <h1 class="content-title">关闭 (Color)</h1>
+        <p class="content-subtitle">创建一个删除按钮.</p>
+    </div>
     
-    
     <div class="card">
         <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+            <h2 class="card-title">用法介绍</h2>
+            <small class="card-subtitle">
+                添加类 <code>.close</code> 到一个 <code>&lt;a&gt;</code> 标签或者 <code>&lt;button&gt;</code> 标签
+            </small>
         </div>
         <div class="card-body">
-            CARDBODY
+            <a href="javascript:;" class="delete"></a>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+            <h2 class="card-title">反转</h2>
+            <small class="card-subtitle">
+                添加类 <code>.v-invert</code> 到 <code>.delete</code> 标签
+            </small>
         </div>
         <div class="card-body">
-            CARDBODY
+            <a href="javascript:;" class="delete v-invert"></a>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+            <h2 class="card-title">尺寸</h2>
+            <small class="card-subtitle">
+                除了默认尺寸外，还另外提供其它三种类型的尺寸，
+                分别添加类 <code>.v-large</code>、<code>.v-medium</code>、
+                <code>.v-small</code> 到 <code>.delete</code>
+            </small>
         </div>
         <div class="card-body">
-            CARDBODY
+            <a href="javascript:;" class="delete v-small"></a>
+            <a href="javascript:;" class="delete"></a>
+            <a href="javascript:;" class="delete v-medium"></a>
+            <a href="javascript:;" class="delete v-large"></a>
+            <a href="javascript:;" class="delete v-invert v-large"></a>
+            <a href="javascript:;" class="delete v-medium v-invert"></a>
+            <a href="javascript:;" class="delete v-invert"></a>
+            <a href="javascript:;" class="delete v-invert v-small"></a>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+            <h2 class="card-title">风格</h2>
+            <small class="card-subtitle">
+                默认内置4种不同风格的<code>.delete</code> <code>.v-success</code>、
+                <code>.v-warn</code>、<code>.v-info</code>、<code>.v-danger</code>.
+            </small>
         </div>
         <div class="card-body">
-            CARDBODY
+            <a href="javascript:;" class="delete v-success"></a>
+            <a href="javascript:;" class="delete v-info"></a>
+            <a href="javascript:;" class="delete v-danger"></a>
+            <a href="javascript:;" class="delete v-warn"></a>
+            <a href="javascript:;" class="delete v-invert v-success"></a>
+            <a href="javascript:;" class="delete v-invert v-info"></a>
+            <a href="javascript:;" class="delete v-invert v-danger"></a>
+            <a href="javascript:;" class="delete v-invert v-warn"></a>
         </div>
     </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    
+  
 
 #}}

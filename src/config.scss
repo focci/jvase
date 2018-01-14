@@ -37,6 +37,13 @@ $header-size: (1:2.5rem, 2:2rem, 3:1.75rem, 4:1.5rem, 5:1.25rem, 6:1rem);
 $header-margin-bottom: .5rem;
 $header-color: $color-black;
 
+$auxiliary-styles: (
+    ('.v-success' $color-success $color-success-light),
+    ('.v-danger' $color-danger $color-danger-light),
+    ('.v-warn' $color-warn $color-warn-light),
+    ('.v-info' $color-info $color-info-light)
+);
+
 // font
 // =============================================
 $font-size: 14px;
@@ -132,8 +139,19 @@ $badge-background-color: $color-steel;
 $badge-color: $color-white;
 
 
-// 
+// delete
 // =============================================
+$del-invert-zoom: .64;
+$del-invert-background-color: rgba(0,0,0,.1);
+$del-color: $color-steel-light;
+$del-size-style-data: (
+    ('.v-small' 1rem),  
+    ('' 1.5rem),  
+    ('.v-medium' 2rem),  
+    ('.v-large' 2.5rem)
+);
+
+
 
 // 
 // =============================================

@@ -41,6 +41,55 @@
 
     <div class="card">
         <div class="card-header">
+            <h2 class="card-title">删除按钮</h2>
+            <small class="card-subtitle">
+                向 <code>.badge</code> 中添加 <code>.delte</code> 
+                <a href="delete.html">删除按钮</a>即可。
+            </small>
+        </div>
+        <div class="card-body">
+            <div class="badge">default
+                <a href='javascript:;' class="delete v-small"></a>
+            </div>
+            <span class="badge v-pill">pill
+                <a href='javascript:;' class="delete v-small"></a>
+            </span>
+            <span class="badge v-success">success
+                <a href='javascript:;' class="delete v-small"></a>
+            </span>
+            <span class="badge v-warn">warn
+                <a href='javascript:;' class="delete v-small"></a>
+            </span>
+            <span class="badge v-danger">danger
+                <a href='javascript:;' class="delete v-small"></a>
+            </span>
+            <span class="badge v-info">info
+                <a href='javascript:;' class="delete v-small"></a>
+            </span>
+            <hr>
+            <div class="badge">default
+                <a href='javascript:;' class="delete v-invert v-small"></a>
+            </div>
+            <span class="badge v-pill">pill
+                <a href='javascript:;' class="delete v-invert v-small"></a>
+            </span>
+            <span class="badge v-success">success
+                <a href='javascript:;' class="delete v-invert v-small"></a>
+            </span>
+            <span class="badge v-warn">warn
+                <a href='javascript:;' class="delete v-invert v-small"></a>
+            </span>
+            <span class="badge v-danger">danger
+                <a href='javascript:;' class="delete v-invert v-small"></a>
+            </span>
+            <span class="badge v-info">info
+                <a href='javascript:;' class="delete v-invert v-small"></a>
+            </span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
             <h2 class="card-title">胶囊</h2>
             <small class="card-subtitle">
                 添加类 <code>.v-pill</code> 即可实现胶囊形状的徽章

@@ -2,13 +2,14 @@
 
 .badge {
     @extend .v-nowrap;
+    @extend .v-relative;
     @extend .v-inline-block;
 
     line-height: $badge-line-height;
     padding: $badge-padding;
     border-radius: $badge-border-radius;
     vertical-align: baseline;
-    font-weight: 500%;
+    font-weight: 500;
 }
 
 @include setBadgeStyle('', $badge-background-color, $badge-color);

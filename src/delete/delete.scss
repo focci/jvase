@@ -1,2 +1,47 @@
 @charset 'utf-8';
 
+.delete {
+    @extend .v-relative;
+    @extend .v-circle;
+    @extend .v-inline-block;
+
+    transition: opacity .1s;
+
+    &:hover {
+        @extend .opacity-8;
+    }
+
+    &:active {
+        @extend .opacity-6;
+    }
+    
+    &:before,
+    &:after {
+        @extend .v-absolute;
+
+        content: '';
+        height: 0;
+        border: solid 1px;
+        left: 50%;
+        top: 50%;
+    }
+
+    &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+@include setDeleteStyle();
+
+@each $item in $del-size-style-data {
+    //
+    @each $as in $auxiliary-styles {
+        @include setDeleteStyle(nth($as, 1), nth($as, 2));
+    }
+
+    @include setDeleteSize(nth($item, 1), nth($item, 2));
+}

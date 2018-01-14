@@ -1,15 +1,15 @@
 @charset 'utf-8';
 
-.v-rows-gapless >.rows {
+.v-row-gapless >.v-row {
     margin-bottom: 0;
 }
 
-.v-cols-gapless >.rows >[class*='cols-'] {
+.v-col-gapless >.v-row >[class*='v-col-'] {
     padding-left: 0;
     padding-right: 0;
 }
 
 .v-gapless {
-    @extend .v-rows-gapless;
-    @extend .v-cols-gapless;
+    @extend .v-row-gapless;
+    @extend .v-col-gapless;
 }

@@ -7,35 +7,170 @@
 }}
 
 {{#def.content
-    
+    <div class="content-header">
+        <h1 class="content-title">表格 (Menu)</h1>
+        <p class="content-subtitle">简单快速的创建不同样式的表格.</p>
+    </div>
     
     <div class="card">
         <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+            <h2 class="card-title">用法介绍</h2>
+            <small class="card-subtitle">
+                添加类 <code>.v-table</code> 到 <code>&lt;table&gt;</code> 元素
+            </small>
         </div>
         <div class="card-body">
-            CARDBODY
+            <div class="v-table-responsive">
+                <table class="v-table">
+                    <thead>
+                        <tr>
+                            <th width="25">#</th>
+                            <th>姓名</th>
+                            <th>邮箱</th>
+                            <th>github</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Focci</td>
+                            <td>focci@qq.com</td>
+                            <td>github.com/focci</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>依米艾</td>
+                            <td>emilwallner@gmail.com</td>
+                            <td>github.com/emilwallner</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>卡.阿梅德斯</td>
+                            <td>kamranahmedse@gmail.com</td>
+                            <td>github.com/kamranahmedse</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>IAIK</td>
+                            <td>iaik@gmail.com</td>
+                            <td>github.com/IAIK</td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>Wang shub</td>
+                            <td>wangshub@gmail.com</td>
+                            <td>github.com/wangshub</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+            <h2 class="card-title">边框</h2>
+            <small class="card-subtitle">
+                添加类 <code>.v-border</code> 到 <code>.v-table</code> 即可，
+                同时头部会添加背景颜色
+            </small>
         </div>
         <div class="card-body">
-            CARDBODY
+            <table class="v-table v-border">
+                <thead>
+                    <tr>
+                        <th width="25">#</th>
+                        <th>姓名</th>
+                        <th>邮箱</th>
+                        <th>github</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Focci</td>
+                        <td>focci@qq.com</td>
+                        <td>github.com/focci</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>依米艾</td>
+                        <td>emilwallner@gmail.com</td>
+                        <td>github.com/emilwallner</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>卡.阿梅德斯</td>
+                        <td>kamranahmedse@gmail.com</td>
+                        <td>github.com/kamranahmedse</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>IAIK</td>
+                        <td>iaik@gmail.com</td>
+                        <td>github.com/IAIK</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>王书笔</td>
+                        <td>wangsb@gmail.com</td>
+                        <td>github.com/wangsb</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+            <h2 class="card-title">列分隔条</h2>
+            <small class="card-subtitle">
+                添加类 <code>.v-col-divider</code> 到 <code>.v-table</code> 即可
+            </small>
         </div>
         <div class="card-body">
-            CARDBODY
+            <table class="v-table v-col-divider">
+                <thead>
+                    <tr>
+                        <th width="25">#</th>
+                        <th>姓名</th>
+                        <th>邮箱</th>
+                        <th>github</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Focci</td>
+                        <td>focci@qq.com</td>
+                        <td>github.com/focci</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>依米艾</td>
+                        <td>emilwallner@gmail.com</td>
+                        <td>github.com/emilwallner</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>卡.阿梅德斯</td>
+                        <td>kamranahmedse@gmail.com</td>
+                        <td>github.com/kamranahmedse</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>IAIK</td>
+                        <td>iaik@gmail.com</td>
+                        <td>github.com/IAIK</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>王书笔</td>
+                        <td>wangsb@gmail.com</td>
+                        <td>github.com/wangsb</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 

@@ -16,26 +16,22 @@ h1,h2,h3,h4,h5,h6,
     }
 }
 
-.display-1,
-.display-2,
-.display-3,
-.display-4
-{
+h1[class*='v-display-'] {
     font-weight: 300;
 }
 
-.display-4 {
+.v-display-4 {
     font-size: 3.5rem;
 }
 
-.display-3 {
+.v-display-3 {
     font-size: 4.5rem;
 }
 
-.display-2 {
+.v-display-2 {
     font-size: 5.5rem;
 }
 
-.display-1 {
+.v-display-1 {
     font-size: 6.5rem;
 }

@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-$color_data: (
+$color-data: (
     primary: $color-primary,
     danger: $color-danger,
     warn: $color-warn,
@@ -24,6 +24,6 @@ $color_data: (
     white: $color-white
 );
 
-@each $name, $color in $color_data {
+@each $name, $color in $color-data {
     @include setBgcAndFontColor($name, $color);
 }

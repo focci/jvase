@@ -1,20 +1,42 @@
 @charset 'utf-8';
 
-.badge {
+.v-badge {
     @extend .v-nowrap;
     @extend .v-relative;
     @extend .v-inline-block;
+    @extend .v-badge.v-normal-size;
 
     line-height: $badge-line-height;
     padding: $badge-padding;
     border-radius: $badge-border-radius;
-    vertical-align: baseline;
     font-weight: 500;
+
+    &, & .v-del {
+        @extend .v-top;
+    }
+
+    & .v-del,
+    & .v-del.v-invert {
+        &:before,
+        &:after {
+            border-color: $badge-color;
+        }
+    }
 }
 
-@include setBadgeStyle('', $badge-background-color, $badge-color);
+@include setBadgeStyle();
 
-@include setBadgeStyle('.v-success', $color-success, $badge-color);
-@include setBadgeStyle('.v-warn', $color-warn, $badge-color);
-@include setBadgeStyle('.v-danger', $color-danger, $badge-color);
-@include setBadgeStyle('.v-info', $color-info, $badge-color);
+@each $key, $item in $auxiliary-styles {
+    @include setBadgeStyle(nth($item, 1), nth($item, 2));
+}
+
+// size
+@each $key, $item in $sizes {
+    @if (nth($item, 1) != '.v-small') {
+        @include setBadgeSize(
+            nth($item, 1),
+            nth($badge-adjust-size, $key),
+            nth($item, 2)
+        );
+    }
+}

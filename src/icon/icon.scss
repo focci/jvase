@@ -1,2 +1,21 @@
 @charset 'utf-8';
 
+.v-icon {
+    @extend .v-inline-block;
+    @extend .v-center;
+    @extend .v-relative;
+    @extend .v-icon.v-normal-size;
+
+    line-height: $icon-line-height;
+
+    >i {
+        @extend .v-middle;
+    }
+}
+
+@each $key, $item in $sizes {
+    @include setIconSize(
+        nth($item, 1),
+        nth($icon-adjust-size, $key)
+    );
+}

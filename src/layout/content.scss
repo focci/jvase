@@ -20,3 +20,11 @@
     color: $layout-content-subtitle-color;
     margin-top: $layout-content-subtitle-margin-top;
 }
+
+$screen: nth(nth($grid-responsive-data,1), 2);
+@media (max-width: #{$screen}) {
+    .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

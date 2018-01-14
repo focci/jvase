@@ -1,26 +1,26 @@
 @charset 'utf-8';
 
-.box {
+.v-grid {
     padding-left: $grid-gap;
     padding-right: $grid-gap;
     margin-left: auto;
     margin-right: auto;
 }
 
-.box,
-.rows,
-[class*='cols-'] {
+.v-grid,
+.v-row,
+[class*='v-col-'] {
     @extend .v-clear;
     
 	position: relative;
 }
 
-.rows {
+.v-row {
     margin-bottom: $grid-rows-margin-bottom;
     margin-left: -$grid-gap;
     margin-right: -$grid-gap;
 
-    >[class*='cols-'] {
+    >[class*='v-col-'] {
         padding-left: $grid-gap/2;
         padding-right: $grid-gap/2;
         &:first-child {
@@ -36,31 +36,31 @@
 @each $item in $grid-responsive-data {
 
 	@if( nth($item, 1) == xs ) {
-		[class*='cols-#{nth($item, 1)}-'] {
+		[class*='v-col-#{nth($item, 1)}-'] {
 			float: left;
 		}
 		@for $i from 1 through $grid-total-column {
-			.cols-#{nth($item, 1)}-#{$i} {
+			.v-col-#{nth($item, 1)}-#{$i} {
 				width:  percentage($i / $grid-total-column);
 			}
-			.cols-#{nth($item, 1)}-offset-#{$i} {
+			.v-col-#{nth($item, 1)}-offset-#{$i} {
 				margin-left:  percentage($i / $grid-total-column);
 			}
 		}
 	}
 	@else {
 		@media (#{nth($item, 4)}-width: nth($item, 2)) {
-			.box-responsive {
+			.v-responsive {
 				width: nth($item, 2) - nth($item, 3);
 			}
-			[class*='cols-#{nth($item, 1)}-'] {
+			[class*='v-col-#{nth($item, 1)}-'] {
 				float: left;
 			}
 			@for $i from 1 through $grid-total-column {
-				.cols-#{nth($item, 1)}-#{$i} {
+				.v-col-#{nth($item, 1)}-#{$i} {
 					width:  percentage($i / $grid-total-column);
 				}
-				.cols-#{nth($item, 1)}-offset-#{$i} {
+				.v-col-#{nth($item, 1)}-offset-#{$i} {
 					margin-left:  percentage($i / $grid-total-column);
 				}
 			}

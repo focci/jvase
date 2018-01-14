@@ -41,17 +41,17 @@
             <h2 class="card-title">标题</h2>
             <small class="card-subtitle">
                 当 <code>h1</code> 不满足标题尺寸时，可以通过添加类 
-                <code>display-1</code> ... <code>display-4</code> 来设置更大的标题尺寸.
+                <code>.v-display-1</code> ... <code>.v-display-4</code> 来设置更大的标题尺寸.
             </small>
         </div>
         <div class="card-body">
-            <h1 class="display-1">display-1</h1>
+            <h1 class="v-display-1">v-display-1</h1>
             <hr>
-            <h1 class="display-2">display-2</h1>
+            <h1 class="v-display-2">v-display-2</h1>
             <hr>
-            <h1 class="display-3">display-3</h1>
+            <h1 class="v-display-3">v-display-3</h1>
             <hr>
-            <h1 class="display-4">display-4</h1>
+            <h1 class="v-display-4">v-display-4</h1>
         </div>
     </div>
 

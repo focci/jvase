@@ -4,22 +4,14 @@
     $name: '',
     $color: $del-color
 ) {
-    .delete#{$name} {
+    .v-del#{$name} {
         &:before,
         &:after {
             border-color: $color;
         }
     }
 
-    .badge >.delete#{$name},
-    .badge > .delete#{$name}.v-invert {
-        &:before,
-        &:after {
-            border-color: #fff;
-        }
-    }
-
-    .delete#{$name}.v-invert {
+    .v-del#{$name}.v-invert {
         background-color: $color;
 
         &:before,
@@ -27,17 +19,13 @@
             border-color: lighten($color, 50%);
         }
     }
-
-    .badge#{$name} > .delete.v-invert {
-        background-color: lighten($color, 15%);
-    }
 }
 
 @mixin setDeleteSize(
     $name: '',
-    $size: ''
+    $size: $del-size
 ) {
-    .delete#{$name} {
+    .v-del#{$name} {
         height: $size;
 
         &,
@@ -47,7 +35,7 @@
         }
     }
     
-    .delete#{$name}.v-invert {
+    .v-del#{$name}.v-invert {
         &:before,
         &:after {
             width: $size * $del-invert-zoom;

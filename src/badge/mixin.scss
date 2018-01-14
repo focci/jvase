@@ -1,8 +1,32 @@
 @charset 'utf-8';
 
-@mixin setBadgeStyle($name, $bg, $color) {
-    .badge#{$name} {
+@mixin setBadgeStyle(
+    $name: '',
+    $bg: $badge-background-color,
+    $color: $badge-color
+) {
+    .v-badge#{$name} {
         background-color: $bg;
         color: $color;
+    }
+
+    .v-badge#{$name} .v-del.v-invert {
+        background-color: lighten($bg, 15%);
+    }
+}
+
+@mixin setBadgeSize(
+    $name,
+    $fontSize,
+    $deleteSizeName
+) {
+    .v-badge#{$name} {
+        font-size: $fontSize;
+
+        @if ($deleteSizeName != '') {
+            & .v-del {
+                @extend .v-del#{$deleteSizeName}
+            }
+        }
     }
 }

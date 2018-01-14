@@ -33,15 +33,29 @@ $color-white: #fff;
 // =============================================
 $line-height: 1.5;
 $background-color: $color-silver;
-$header-size: (1:2.5rem, 2:2rem, 3:1.75rem, 4:1.5rem, 5:1.25rem, 6:1rem);
+$header-size: (
+    1:2.5rem,
+    2:2rem,
+    3:1.75rem,
+    4:1.5rem,
+    5:1.25rem,
+    6:1rem
+);
 $header-margin-bottom: .5rem;
 $header-color: $color-black;
 
+$sizes: (
+    1: ('.v-small', ''),
+    2: ('.v-normal-size', '.v-small'),
+    3: ('.v-medium', '.v-normal-size'),
+    4: ('.v-large', '.v-medium')
+);
+
 $auxiliary-styles: (
-    ('.v-success' $color-success $color-success-light),
-    ('.v-danger' $color-danger $color-danger-light),
-    ('.v-warn' $color-warn $color-warn-light),
-    ('.v-info' $color-info $color-info-light)
+    1: ('.v-success' $color-success $color-success-light),
+    2: ('.v-danger' $color-danger $color-danger-light),
+    3: ('.v-warn' $color-warn $color-warn-light),
+    4: ('.v-info' $color-info $color-info-light)
 );
 
 // font
@@ -123,41 +137,46 @@ $grid-total-column: 12;
 $grid-gap: 1rem;
 $grid-rows-margin-bottom: $grid-gap;
 $grid-responsive-data: (
+// name width gap media
     (xs 768px 14 max),
     (sm 768px 14 min),
     (md 992px 24 min),
     (lg 1200px 30 min)
 );
 
-
 // badge
 // =============================================
 $badge-line-height: 1;
-$badge-padding: 0.25rem .5rem;
+$badge-padding: 0.25rem;
 $badge-border-radius: $border-radius;
-$badge-background-color: $color-steel;
+$badge-background-color: $color-steel-light;
 $badge-color: $color-white;
-
+$badge-adjust-size: (0, 1rem, 1.5rem, 2rem);
 
 // delete
 // =============================================
 $del-invert-zoom: .64;
 $del-invert-background-color: rgba(0,0,0,.1);
 $del-color: $color-steel-light;
-$del-size-style-data: (
-    ('.v-small' 1rem),  
-    ('' 1.5rem),  
-    ('.v-medium' 2rem),  
-    ('.v-large' 2.5rem)
-);
+$del-adjust-size: (1rem, 1.5rem, 2rem, 2.5rem);
 
-
-
-// 
+// icon
 // =============================================
+$icon-adjust-size: (1rem, 1.5rem, 2rem, 2.5rem);
+$icon-line-height: 1;
 
-// 
+// table
 // =============================================
+$table-background-color: $color-white;
+
+$table-header-border-width: 3px;
+$table-header-color: $color-black-dark;
+$table-header-background-color: $color-silver;
+
+$table-cell-border: 1px solid $color-silver-dark;
+$table-cell-width: 0 0 1px;
+$table-cell-padding: .5rem .75rem;
+$table-cell-color: $color-steel-dark;
 
 // 
 // =============================================

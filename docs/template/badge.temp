@@ -9,17 +9,17 @@
 {{#def.content
     <div class="content-header">
         <h1 class="content-title">徽章 (Badge)</h1>
-        <p class="content-subtitle">主要用于简单的提示信息展示，比如说新信息数量.</p>
+        <p class="content-subtitle">主要用于简单的提示信息展示，比如说标注数量.</p>
     </div>
     
     <div class="card">
         <div class="card-header">
             <h2 class="card-title">用法介绍</h2>
-            <small class="card-subtitle">将类 <code>.badge</code> 添加至一个行内元素(比如span)</small>
+            <small class="card-subtitle">将类 <code>.v-badge</code> 添加至一个行内元素(比如span)</small>
         </div>
         <div class="card-body">
-            <span class="badge">1</span>
-            <span class="badge">100</span>
+            <span class="v-badge">1</span>
+            <span class="v-badge">100</span>
         </div>
     </div>
 
@@ -32,59 +32,24 @@
             </small>
         </div>
         <div class="card-body">
-            <span class="badge v-success">success</span>
-            <span class="badge v-warn">warn</span>
-            <span class="badge v-danger">danger</span>
-            <span class="badge v-info">info</span>
+            <span class="v-badge v-success">success</span>
+            <span class="v-badge v-warn">warn</span>
+            <span class="v-badge v-danger">danger</span>
+            <span class="v-badge v-info">info</span>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">
-            <h2 class="card-title">删除按钮</h2>
+            <h2 class="card-title">尺寸</h2>
             <small class="card-subtitle">
-                向 <code>.badge</code> 中添加 <code>.delte</code> 
-                <a href="delete.html">删除按钮</a>即可。
+                除了默认尺寸，还提供其它两种不同尺寸的徽章: <code>.v-medium</code>、<code>.v-large</code>.
             </small>
         </div>
         <div class="card-body">
-            <div class="badge">default
-                <a href='javascript:;' class="delete v-small"></a>
-            </div>
-            <span class="badge v-pill">pill
-                <a href='javascript:;' class="delete v-small"></a>
-            </span>
-            <span class="badge v-success">success
-                <a href='javascript:;' class="delete v-small"></a>
-            </span>
-            <span class="badge v-warn">warn
-                <a href='javascript:;' class="delete v-small"></a>
-            </span>
-            <span class="badge v-danger">danger
-                <a href='javascript:;' class="delete v-small"></a>
-            </span>
-            <span class="badge v-info">info
-                <a href='javascript:;' class="delete v-small"></a>
-            </span>
-            <hr>
-            <div class="badge">default
-                <a href='javascript:;' class="delete v-invert v-small"></a>
-            </div>
-            <span class="badge v-pill">pill
-                <a href='javascript:;' class="delete v-invert v-small"></a>
-            </span>
-            <span class="badge v-success">success
-                <a href='javascript:;' class="delete v-invert v-small"></a>
-            </span>
-            <span class="badge v-warn">warn
-                <a href='javascript:;' class="delete v-invert v-small"></a>
-            </span>
-            <span class="badge v-danger">danger
-                <a href='javascript:;' class="delete v-invert v-small"></a>
-            </span>
-            <span class="badge v-info">info
-                <a href='javascript:;' class="delete v-invert v-small"></a>
-            </span>
+            <span class="v-badge">default</span>
+            <span class="v-badge v-medium">medium</span>
+            <span class="v-badge v-large">large</span>
         </div>
     </div>
 
@@ -96,9 +61,38 @@
             </small>
         </div>
         <div class="card-body">
-            <span class="badge v-pill">胶囊徽章</span>
-            <span class="badge v-pill">v-pill</span>
+            <span class="v-badge v-pill">胶囊徽章</span>
+            <span class="v-badge v-pill">100</span>
+            <span class="v-badge v-pill v-danger">6</span>
+            <span class="v-badge v-pill v-success">18</span>
         </div>
     </div>
+
+    <div class="content-header">
+        <h1 class="content-title">应用 (Apply)</h1>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">应用 - 删除按钮</h2>
+            <small class="card-subtitle">
+                向 <code>.v-badge</code> 中添加 <code>.v-del</code> 
+                <a href="delete.html">删除按钮</a>即可，针对不同风格的徽章，
+                已对删除按钮的样式进行了重写，所以不用添加相应的(风格)类.
+            </small>
+        </div>
+        <div class="card-body">
+            <div class="v-badge">default
+                <a href='javascript:;' class="v-del"></a>
+            </div>
+            <span class="v-badge v-success">success
+                <a href='javascript:;' class="v-del v-invert"></a>
+            </span>
+            <span class="v-badge v-warn v-pill">warn
+                <a href='javascript:;' class="v-del v-invert"></a>
+            </span>
+        </div>
+    </div>
+    
 
 #}}

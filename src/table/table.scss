@@ -1,2 +1,48 @@
 @charset 'utf-8';
 
+.v-table {
+    border-collapse: collapse;
+
+    >thead >tr >th,
+    >tbody >tr >td {
+        @extend .v-left;
+
+        padding: $table-cell-padding;
+        border-bottom: $table-cell-border;
+    }
+
+    >thead >tr >th {
+        border-bottom-width: $table-header-border-width;
+        color: $table-header-color;
+        font-weight: 500;
+    }
+
+    &.v-border {
+        border-top: $table-cell-border;
+        border-left: $table-cell-border;
+
+        >thead >tr >th,
+        >tbody >tr >td {
+            border-right: $table-cell-border;
+        }
+
+        >thead >tr >th {
+            background-color: $table-header-background-color;
+            border-bottom-width: 1px;
+            color: $table-cell-color;
+        }
+    }
+
+    &.v-col-divider:not(.v-border) {
+        >tbody >tr >td {
+            border-bottom: none;
+        }
+        >thead >tr >th,
+        >tbody >tr >td {
+            border-left: $table-cell-border;
+            &:first-child {
+                border-left: none;
+            }
+        }
+    }
+}

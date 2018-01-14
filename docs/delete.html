@@ -13,6 +13,7 @@
     <meta content="删除" name="keywords" />
     <meta content="删除" name="description" />
     <link rel="stylesheet" href="./styles/jvase.min.css">
+    <link rel="stylesheet" href="./styles/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="app">
@@ -30,17 +31,31 @@
 </div>
         
             <div class="slidebar">
-    <div class="menu">
+    <div class="v-menu">
         
 
-            <p class="menu-label">常规 <span>(General)</span></p>
+            <p class="v-menu-label">常规 <span>(General)</span></p>
             
-                <ul class="menu-list">
+                <ul class="v-menu-list">
                     
                         <li>
                             <a  
                                 href="color.html">
                                 颜色 (Color)
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a  
+                                href="grid.html">
+                                栅栏 (Grid)
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a  
+                                href="layout.html">
+                                布局 (Layout)
                             </a>
                         </li>
                     
@@ -54,14 +69,14 @@
                 </ul>
         
 
-            <p class="menu-label">元素 <span>(Element)</span></p>
+            <p class="v-menu-label">元素 <span>(Element)</span></p>
             
-                <ul class="menu-list">
+                <ul class="v-menu-list">
                     
                         <li>
                             <a  
                                 href="badge.html">
-                                徽标 (Badge)
+                                徽章 (Badge)
                             </a>
                         </li>
                     
@@ -81,17 +96,31 @@
                     
                         <li>
                             <a  
+                                href="form.html">
+                                表单 (Form)
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a  
                                 href="icon.html">
                                 图标 (Icon)
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a  
+                                href="table.html">
+                                表格 (Table)
                             </a>
                         </li>
                     
                 </ul>
         
 
-            <p class="menu-label">组件 <span>(Component)</span></p>
+            <p class="v-menu-label">组件 <span>(Component)</span></p>
             
-                <ul class="menu-list">
+                <ul class="v-menu-list">
                     
                         <li>
                             <a  
@@ -123,29 +152,8 @@
                     
                         <li>
                             <a  
-                                href="form.html">
-                                表单 (Form)
-                            </a>
-                        </li>
-                    
-                        <li>
-                            <a  
-                                href="grid.html">
-                                栅栏 (Grid)
-                            </a>
-                        </li>
-                    
-                        <li>
-                            <a  
                                 href="hero.html">
                                 展示面板 (Hero)
-                            </a>
-                        </li>
-                    
-                        <li>
-                            <a  
-                                href="layout.html">
-                                布局 (Layout)
                             </a>
                         </li>
                     
@@ -221,13 +229,6 @@
                     
                         <li>
                             <a  
-                                href="table.html">
-                                表格 (Table)
-                            </a>
-                        </li>
-                    
-                        <li>
-                            <a  
                                 href="tag.html">
                                 标记 (Tag)
                             </a>
@@ -247,7 +248,7 @@
         
         <div class="content">
             <div class="content-header">
-        <h1 class="content-title">关闭 (Color)</h1>
+        <h1 class="content-title">删除 (Delete)</h1>
         <p class="content-subtitle">创建一个删除按钮.</p>
     </div>
     
@@ -255,11 +256,11 @@
         <div class="card-header">
             <h2 class="card-title">用法介绍</h2>
             <small class="card-subtitle">
-                添加类 <code>.close</code> 到一个 <code>&lt;a&gt;</code> 标签或者 <code>&lt;button&gt;</code> 标签
+                添加类 <code>.v-del</code> 到加到 <code>&lt;a&gt;</code> 或者 <code>&lt;button&gt;</code> 标签
             </small>
         </div>
         <div class="card-body">
-            <a href="javascript:;" class="delete"></a>
+            <a href="javascript:;" class="v-del"></a>
         </div>
     </div>
 
@@ -267,11 +268,11 @@
         <div class="card-header">
             <h2 class="card-title">反转</h2>
             <small class="card-subtitle">
-                添加类 <code>.v-invert</code> 到 <code>.delete</code> 标签
+                添加类 <code>.v-invert</code> 到 <code>.v-del</code> 标签
             </small>
         </div>
         <div class="card-body">
-            <a href="javascript:;" class="delete v-invert"></a>
+            <a href="javascript:;" class="v-del v-invert"></a>
         </div>
     </div>
 
@@ -281,18 +282,18 @@
             <small class="card-subtitle">
                 除了默认尺寸外，还另外提供其它三种类型的尺寸，
                 分别添加类 <code>.v-large</code>、<code>.v-medium</code>、
-                <code>.v-small</code> 到 <code>.delete</code>
+                <code>.v-small</code> 到 <code>.v-del</code>
             </small>
         </div>
         <div class="card-body">
-            <a href="javascript:;" class="delete v-small"></a>
-            <a href="javascript:;" class="delete"></a>
-            <a href="javascript:;" class="delete v-medium"></a>
-            <a href="javascript:;" class="delete v-large"></a>
-            <a href="javascript:;" class="delete v-invert v-large"></a>
-            <a href="javascript:;" class="delete v-medium v-invert"></a>
-            <a href="javascript:;" class="delete v-invert"></a>
-            <a href="javascript:;" class="delete v-invert v-small"></a>
+            <a href="javascript:;" class="v-del v-small"></a>
+            <a href="javascript:;" class="v-del"></a>
+            <a href="javascript:;" class="v-del v-medium"></a>
+            <a href="javascript:;" class="v-del v-large"></a>
+            <a href="javascript:;" class="v-del v-invert v-large"></a>
+            <a href="javascript:;" class="v-del v-medium v-invert"></a>
+            <a href="javascript:;" class="v-del v-invert"></a>
+            <a href="javascript:;" class="v-del v-invert v-small"></a>
         </div>
     </div>
 
@@ -300,19 +301,19 @@
         <div class="card-header">
             <h2 class="card-title">风格</h2>
             <small class="card-subtitle">
-                默认内置4种不同风格的<code>.delete</code> <code>.v-success</code>、
+                默认内置4种不同风格的<code>.v-del</code> <code>.v-success</code>、
                 <code>.v-warn</code>、<code>.v-info</code>、<code>.v-danger</code>.
             </small>
         </div>
         <div class="card-body">
-            <a href="javascript:;" class="delete v-success"></a>
-            <a href="javascript:;" class="delete v-info"></a>
-            <a href="javascript:;" class="delete v-danger"></a>
-            <a href="javascript:;" class="delete v-warn"></a>
-            <a href="javascript:;" class="delete v-invert v-success"></a>
-            <a href="javascript:;" class="delete v-invert v-info"></a>
-            <a href="javascript:;" class="delete v-invert v-danger"></a>
-            <a href="javascript:;" class="delete v-invert v-warn"></a>
+            <a href="javascript:;" class="v-del v-success"></a>
+            <a href="javascript:;" class="v-del v-info"></a>
+            <a href="javascript:;" class="v-del v-danger"></a>
+            <a href="javascript:;" class="v-del v-warn"></a>
+            <a href="javascript:;" class="v-del v-invert v-success"></a>
+            <a href="javascript:;" class="v-del v-invert v-info"></a>
+            <a href="javascript:;" class="v-del v-invert v-danger"></a>
+            <a href="javascript:;" class="v-del v-invert v-warn"></a>
         </div>
     </div>
         </div>

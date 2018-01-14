@@ -30,9 +30,9 @@
             <small class="card-subtitle">除主色调外，主要用于着重提示(比如说警告等)</small>
         </div>
         <div class="card-body">
-            <div class="box">
-                <div class="rows">
-                    <div class="cols-xs-12 cols-sm-6 cols-md-3">
+            <div class="v-grid">
+                <div class="v-row">
+                    <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
                         <div class="v-box bg-success fc-white">
                             <b>success</b>
                             <p class="opacity-8">#32c787</p>
@@ -42,7 +42,7 @@
                             <p class="opacity-8">#f1ffef</p>
                         </div>
                     </div>
-                    <div class="cols-xs-12 cols-sm-6 cols-md-3">
+                    <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
                         <div class="v-box bg-warn fc-white">
                             <b>warn</b>
                             <p class="opacity-8">#ff9900</p>
@@ -52,7 +52,7 @@
                             <p class="opacity-8">#fffaef</p>
                         </div>
                     </div>
-                    <div class="cols-xs-12 cols-sm-6 cols-md-3">
+                    <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
                         <div class="v-box bg-danger fc-white">
                             <b>danger</b>
                             <p class="opacity-8">#ff5b69</p>
@@ -62,7 +62,7 @@
                             <p class="opacity-8">#fef0ef</p>
                         </div>
                     </div>
-                    <div class="cols-xs-12 cols-sm-6 cols-md-3">
+                    <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
                         <div class="v-box bg-info fc-white">
                             <b>info</b>
                             <p class="opacity-8">#00c6a9</p>
@@ -83,9 +83,9 @@
             <small class="card-subtitle">主要用于文字、背景等颜色</small>
         </div>
         <div class="card-body">
-            <div class="box">
-                <div class="rows">
-                    <div class="cols-xs-12 cols-sm-6 cols-md-3">
+            <div class="v-grid">
+                <div class="v-row">
+                    <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
                         <div class="v-box bg-black-dark fc-white">
                             <b>black-dark</b>
                             <p class="opacity-8">#222735</p>
@@ -99,7 +99,7 @@
                             <p class="opacity-8">#4e5773</p>
                         </div>
                     </div>
-                    <div class="cols-xs-12 cols-sm-6 cols-md-3">
+                    <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
                         <div class="v-box bg-steel-dark fc-white">
                             <b>steel-dark</b>
                             <p class="opacity-8">#6a728c</p>
@@ -113,7 +113,7 @@
                             <p class="opacity-8">#9097ae</p>
                         </div>
                     </div>
-                    <div class="cols-xs-12 cols-sm-6 cols-md-3">
+                    <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
                         <div class="v-box bg-gray-dark fc-white">
                             <b>bg-gray-dark</b>
                             <p class="opacity-8">#a2a7b8</p>
@@ -127,7 +127,7 @@
                             <p class="opacity-8">#ccd1e1</p>
                         </div>
                     </div>
-                    <div class="cols-xs-12 cols-sm-6 cols-md-3">
+                    <div class="v-col-xs-12 v-col-sm-6 v-col-md-3">
                         <div class="v-box bg-silver-dark fc-steel-light">
                             <b>silver-dark</b>
                             <p class="opacity-8">#e8ebef</p>

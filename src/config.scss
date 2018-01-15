@@ -175,8 +175,15 @@ $table-header-background-color: $color-silver;
 
 $table-cell-border: 1px solid $color-silver-dark;
 $table-cell-width: 0 0 1px;
-$table-cell-padding: .5rem .75rem;
 $table-cell-color: $color-steel-dark;
+
+$table-adjust-size: (
+// padding ver / padding hor/ font-size
+    (.1rem .25rem 1rem),
+    (.5rem .75rem 1rem),
+    (.75rem 1rem 1.25rem),
+    (1rem 1.25rem 1.5rem),
+);
 
 // 
 // =============================================

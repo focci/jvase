@@ -23,12 +23,6 @@
     >[class*='v-col-'] {
         padding-left: $grid-gap/2;
         padding-right: $grid-gap/2;
-        &:first-child {
-            padding-left: 0;
-        }
-        &:last-child {
-            padding-right: 0;
-        }
     }
 }
 
@@ -39,6 +33,7 @@
 		[class*='v-col-#{nth($item, 1)}-'] {
 			float: left;
 		}
+
 		@for $i from 1 through $grid-total-column {
 			.v-col-#{nth($item, 1)}-#{$i} {
 				width:  percentage($i / $grid-total-column);

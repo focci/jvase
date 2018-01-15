@@ -1,2 +1,15 @@
 @charset 'utf-8';
 
+@mixin setTableSize(
+    $name: '',
+    $padding: '',
+    $fontSIze: ''
+) {
+    .v-table#{$name} {
+        >thead >tr >th,
+        >tbody >tr >td {
+            padding: $padding;
+            font-size: $fontSIze;
+        }
+    }
+}

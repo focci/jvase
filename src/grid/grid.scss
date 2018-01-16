@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
-.v-grid {
+.v-grid,
+.v-grid-fluid {
     padding-left: $grid-gap;
     padding-right: $grid-gap;
     margin-left: auto;
@@ -8,6 +9,7 @@
 }
 
 .v-grid,
+.v-grid-fluid,
 .v-row,
 [class*='v-col-'] {
     @extend .v-clear;
@@ -45,7 +47,7 @@
 	}
 	@else {
 		@media (#{nth($item, 4)}-width: nth($item, 2)) {
-			.v-responsive {
+			.v-grid {
 				width: nth($item, 2) - nth($item, 3);
 			}
 			[class*='v-col-#{nth($item, 1)}-'] {

@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-.header {
+.v-layout-header {
     @extend .v-fixed;
 
     top: 0;
@@ -12,10 +12,10 @@
     padding-right: $layout-header-padding-right;
 }
 
-.header, .header-ctx {
+.v-layout-header, .v-layout-header-ctx {
     width: 100%;
 }
 
-.header-ctx {
+.v-layout-header-ctx {
     @extend .v-middle;
 }

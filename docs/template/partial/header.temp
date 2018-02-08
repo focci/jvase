@@ -1,5 +1,5 @@
-<div class="header">
-    <div class="header-ctx">
+<div class="v-layout-header">
+    <div class="v-layout-header-ctx">
         <div class="navbar">
             <div class="navbar-header">
                 <a href="index.html" class="navbar-brand">

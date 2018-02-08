@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-.card {
+.v-card {
     @extend .v-relative;
 
     box-shadow: $card-box-shadow;
@@ -9,6 +9,6 @@
     border-radius: $card-border-radius;
 }
 
-.card-header~.card-body {
+.v-card-header~.v-card-body {
     padding-top: 0;
 }

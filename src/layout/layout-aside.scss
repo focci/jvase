@@ -1,21 +1,21 @@
 @charset 'utf-8';
 
-.asidebar {
+.v-layout-aside {
     @extend .v-fixed;
 
     overflow: auto;
 
-    width: $layout-asidebar-width;
+    width: $layout-aside-width;
     height: 100%;
-    padding-top: $layout-asidebar-padding-top;
-    padding-left: $layout-asidebar-padding-left;
-    padding-right: $layout-asidebar-padding-right;
-    background-color: $layout-asidebar-background-color;
+    padding-top: $layout-aside-padding-top;
+    padding-left: $layout-aside-padding-left;
+    padding-right: $layout-aside-padding-right;
+    background-color: $layout-aside-background-color;
 }
 
 $screen: nth(nth($grid-responsive-data,1), 2);
 @media (max-width: #{$screen}) {
-    .asidebar {
+    .v-layout-aside {
         display: none;
     }
 }

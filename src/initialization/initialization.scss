@@ -153,7 +153,7 @@ blockquote {
             content: '\2014 \00A0'
         }
     }
-    &.blockquote-right {
+    &.v-blockquote-right {
         text-align: right;
         border-left: 0;
         border-right: solid torem(7px) #eee;
@@ -168,4 +168,8 @@ blockquote {
             }
         }
     }
+}
+
+.v-box {
+    padding: 1rem;
 }

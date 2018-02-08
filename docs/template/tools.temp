@@ -9,132 +9,132 @@
 {{#def.content
     
     
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>

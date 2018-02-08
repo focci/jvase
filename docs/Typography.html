@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="./styles/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="app">
-        <div class="header">
-    <div class="header-ctx">
+    <div class="v-app">
+        <div class="v-layout-header">
+    <div class="v-layout-header-ctx">
         <div class="navbar">
             <div class="navbar-header">
                 <a href="index.html" class="navbar-brand">
@@ -30,7 +30,7 @@
     </div>
 </div>
         
-            <div class="slidebar">
+            <div class="v-layout-aside">
     <div class="v-menu">
         
 
@@ -246,22 +246,22 @@
     </div>
 </div>
         
-        <div class="content">
-            <div class="content-header">
-        <h1 class="content-title">排版 (Typography)</h1>
-        <p class="content-subtitle">页面常用到的排版元素</p>
+        <div class="v-layout-content">
+            <div class="v-layout-content-header">
+        <h1 class="v-layout-content-title">排版 (Typography)</h1>
+        <p class="v-layout-content-subtitle">页面常用到的排版元素</p>
     </div>
     
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">Header</h2>
-            <small class="card-subtitle">
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">Header</h2>
+            <small class="v-card-subtitle">
                 <code>h1</code> ... <code>h6</code> 所有标题标签，
                 在标题内可以通过 <code>&lt;small&gt;</code> 标签来添加副标题。同样，
                 也可以通过 <code>.v-h1</code> ... <code>.v-h6</code> 来实现同样的效果.
             </small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <h1>H1 Heading 1 <small class="fc-steel-light">Small Header</small></h1>
             <hr>
             <h2>H2 Heading 2 <small class="fc-steel-light">Small Header</small></h2>
@@ -276,15 +276,15 @@
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">标题</h2>
-            <small class="card-subtitle">
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">标题</h2>
+            <small class="v-card-subtitle">
                 当 <code>h1</code> 不满足标题尺寸时，可以通过添加类 
                 <code>.v-display-1</code> ... <code>.v-display-4</code> 来设置更大的标题尺寸.
             </small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <h1 class="v-display-1">v-display-1</h1>
             <hr>
             <h1 class="v-display-2">v-display-2</h1>
@@ -295,12 +295,12 @@
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">Lead</h2>
-            <small class="card-subtitle">突出显示段落，添加类 <code>.v-lead</code> 即可</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">Lead</h2>
+            <small class="v-card-subtitle">突出显示段落，添加类 <code>.v-lead</code> 即可</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <p class="v-lead">
                 天下只有两种人。比如一串葡萄到手，一种人挑最好的先吃，
                 另一种人把最好的留到最后吃。照例第一种人应该乐观，
@@ -318,27 +318,27 @@
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">横线</h2>
-            <small class="card-subtitle">
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">横线</h2>
+            <small class="v-card-subtitle">
                 对于被删除的文本使用 <code>&lt;del&gt;</code> 标签，额外插入的文本使用 <code>&lt;ins&gt;</code> 标签
             </small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <p><del>del 代表被删除的文本</del></p>
             <p><ins>ins 代表插入的文本</ins></p>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">文本形状</h2>
-            <small class="card-subtitle">
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">文本形状</h2>
+            <small class="v-card-subtitle">
                 文本的各种显示方式，包括：加粗、斜体、大小写等.
             </small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <p><code>&lt;small&gt;</code>：<small>小号文本</small></p>
             <p><code>.v-bold</code>：<span class="v-bold">强调文本</span></p>
             <p><code>&lt;em&gt;</code>：<em>斜体文本</em></p>
@@ -349,82 +349,82 @@
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">TITLE</h2>
-            <small class="card-subtitle">SUBTITLE</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">TITLE</h2>
+            <small class="v-card-subtitle">SUBTITLE</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             CARDBODY
         </div>
     </div>

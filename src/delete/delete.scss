@@ -9,11 +9,11 @@
     transition: opacity .1s;
 
     &:hover {
-        @extend .opacity-8;
+        @extend .v-opacity-8;
     }
 
     &:active {
-        @extend .opacity-6;
+        @extend .v-opacity-6;
     }
     
     &:before,

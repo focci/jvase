@@ -1,29 +1,29 @@
 @charset 'utf-8';
 
-.content {
+.v-layout-content {
     padding-top: $layout-content-padding-top;
     padding-left: $layout-content-padding-left;
     padding-right: $layout-content-padding-right;
 }
 
-.content-header {
+.v-layout-content-header {
     margin-bottom: $layout-content-header-margin-bottom;
 }
 
-.content-title {
+.v-layout-content-title {
     margin: 0;
     font-size: $layout-content-title-font-size;
     font-weight: 400;
 }
 
-.content-subtitle {
+.v-layout-content-subtitle {
     color: $layout-content-subtitle-color;
     margin-top: $layout-content-subtitle-margin-top;
 }
 
 $screen: nth(nth($grid-responsive-data,1), 2);
 @media (max-width: #{$screen}) {
-    .content {
+    .v-layout-content {
         padding-left: 1rem;
         padding-right: 1rem;
     }

@@ -1,10 +1,10 @@
 @charset 'utf-8';
 
 @mixin setBgcAndFontColor($name, $color) {
-    .bg-#{$name} {
+    .v-bgc-#{$name} {
         background-color: $color;
     }
-    .fc-#{$name} {
+    .v-txt-#{$name} {
         color: $color;
     }
 }

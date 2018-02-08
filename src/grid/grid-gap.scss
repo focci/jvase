@@ -4,9 +4,14 @@
     margin-bottom: 0;
 }
 
-.v-col-gapless >.v-row >[class*='v-col-'] {
-    padding-left: 0;
-    padding-right: 0;
+.v-col-gapless >.v-row {
+    margin-left: -$grid-gap;
+    margin-right: -$grid-gap;
+    
+    >[class*='v-col-'] {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .v-gapless {

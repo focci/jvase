@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="./styles/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="app">
-        <div class="header">
-    <div class="header-ctx">
+    <div class="v-app">
+        <div class="v-layout-header">
+    <div class="v-layout-header-ctx">
         <div class="navbar">
             <div class="navbar-header">
                 <a href="index.html" class="navbar-brand">
@@ -30,7 +30,7 @@
     </div>
 </div>
         
-            <div class="slidebar">
+            <div class="v-layout-aside">
     <div class="v-menu">
         
 
@@ -246,163 +246,116 @@
     </div>
 </div>
         
-        <div class="content">
-            <div class="content-header">
-        <h1 class="content-title">栅栏 (Grid)</h1>
-        <p class="content-subtitle">通过基础的12列，快速实现布局</p>
+        <div class="v-layout-content">
+            <div class="v-layout-content-header">
+        <h1 class="v-layout-content-title">栅栏 (Grid)</h1>
+        <p class="v-layout-content-subtitle">通过基础的12列或者10列，快速实现布局.</p>
+        <p class="v-layout-content-subtitle">10列主要是针对特殊的排版(比如说显示5张并列的图片)， 在使用方式上与12列布局一样，只是列所用的类(
+        <code>.v-cod-*</code>)不一样.</p>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">用法介绍</h2>
-            <small class="card-subtitle">
-                创建一个容器 <code>.v-grid</code>, 接着添行容器 <code>.v-row</code>, 再在行容器内添加列容器 <code>.v-col-*-*</code>, 便可实现栅栏效果.
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">用法介绍</h2>
+            <small class="v-card-subtitle">
+                创建一个容器 <code>.v-grid</code>, 接着添行容器 <code>.v-row</code>, 
+                再在行容器内添加列容器 <code>.v-col-*-*</code>, 便可实现栅栏效果.
+            </small>
+            <small class="v-card-subtitle">
+                - 如果需要宽度自适应请使用 <code>.v-grid-fluid</code> 类.
+            </small>
+            <small class="v-card-subtitle">
+                - 不建议将 <code>.v-grid</code> 或 <code>.v-grid-fluid</code> 作为最外部
+                容器(最好放在 <code>.v-box</code> 容器中)，这将有可能会让页面出现水平滚动条.
             </small>
         </div>
-        <div class="card-body">
-            <div class="v-grid">
+        <div class="v-card-body">
+            <div class="v-grid-fluid">
                 <div class="v-row">
                     <div class="v-col-xs-12">
-                        <div class="bg-gray-light v-box">v-col-xs-12</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-12</div>
                     </div>
                 </div>
                 <div class="v-row">
                     <div class="v-col-xs-6">
-                        <div class="bg-gray-light v-box">v-col-xs-6</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-6</div>
                     </div>
                     <div class="v-col-xs-6">
-                        <div class="bg-silver-dark v-box">v-col-xs-6</div>
+                        <div class="v-bgc-silver-dark v-box">v-col-xs-6</div>
                     </div>
                 </div>
                 <div class="v-row">
                     <div class="v-col-xs-4">
-                        <div class="bg-gray-light v-box">v-col-xs-4</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-4</div>
                     </div>
                     <div class="v-col-xs-4">
-                        <div class="bg-silver-dark v-box">v-col-xs-4</div>
+                        <div class="v-bgc-silver-dark v-box">v-col-xs-4</div>
                     </div>
                     <div class="v-col-xs-4">
-                        <div class="bg-gray-light v-box">v-col-xs-4</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-4</div>
                     </div>
                 </div>
                 <div class="v-row">
                     <div class="v-col-xs-3">
-                        <div class="bg-gray-light v-box">v-col-xs-3</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-3</div>
                     </div>
                     <div class="v-col-xs-3">
-                        <div class="bg-silver-dark v-box">v-col-xs-3</div>
+                        <div class="v-bgc-silver-dark v-box">v-col-xs-3</div>
                     </div>
                     <div class="v-col-xs-3">
-                        <div class="bg-gray-light v-box">v-col-xs-3</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-3</div>
                     </div>
                     <div class="v-col-xs-3">
-                        <div class="bg-silver-dark v-box">v-col-xs-3</div>
+                        <div class="v-bgc-silver-dark v-box">v-col-xs-3</div>
                     </div>
                 </div>
                 <div class="v-row">
                     <div class="v-col-xs-2">
-                        <div class="bg-gray-light v-box">v-col-xs-2</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-2</div>
                     </div>
                     <div class="v-col-xs-2">
-                        <div class="bg-silver-dark v-box">v-col-xs-2</div>
+                        <div class="v-bgc-silver-dark v-box">v-col-xs-2</div>
                     </div>
                     <div class="v-col-xs-2">
-                        <div class="bg-gray-light v-box">v-col-xs-2</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-2</div>
                     </div>
                     <div class="v-col-xs-2">
-                        <div class="bg-gray-light v-box">v-col-xs-2</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-2</div>
                     </div>
                     <div class="v-col-xs-2">
-                        <div class="bg-gray-light v-box">v-col-xs-2</div>
+                        <div class="v-bgc-gray-light v-box">v-col-xs-2</div>
                     </div>
                     <div class="v-col-xs-2">
-                        <div class="bg-silver-dark v-box">v-col-xs-2</div>
+                        <div class="v-bgc-silver-dark v-box">v-col-xs-2</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="v-grid">
+    <div class="v-grid-fluid v-row-gapless">
         <div class="v-row">
             <div class="v-col-xs-12 v-col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-title">清除行间距</h2>
-                        <small class="card-subtitle">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">清除行间距</h2>
+                        <small class="v-card-subtitle">
                             通过添加类 <code>.v-row-gapless</code>清除行间距.
                         </small>
                     </div>
-                    <div class="card-body">
-                        <div class="v-grid v-row-gapless">
+                    <div class="v-card-body">
+                        <div class="v-grid-fluid v-row-gapless">
                             <div class="v-row">
                                 <div class="v-col-xs-12">
-                                    <div class="bg-gray-light v-box">v-col-xs-12</div>
+                                    <div class="v-bgc-gray-light v-box">v-col-xs-12</div>
                                 </div>
                             </div>
                             <div class="v-row">
                                 <div class="v-col-xs-6">
-                                    <div class="bg-silver-dark v-box">v-col-xs-6</div>
+                                    <div class="v-bgc-silver-dark v-box">v-col-xs-6</div>
                                 </div>
                                 <div class="v-col-xs-6">
-                                    <div class="bg-silver-dark v-box">v-col-xs-6</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-title">清除列间距</h2>
-                        <small class="card-subtitle">
-                            通过添加类 <code>.v-col-gapless</code> 清除列间距.
-                        </small>
-                    </div>
-                    <div class="card-body">
-                        <div class="v-grid v-col-gapless">
-                            <div class="v-row">
-                                <div class="v-col-xs-4">
-                                    <div class="bg-gray-light v-box">v-col-xs-4</div>
-                                </div>
-                                <div class="v-col-xs-4">
-                                    <div class="bg-silver-dark v-box">v-col-xs-4</div>
-                                </div>
-                                <div class="v-col-xs-4">
-                                    <div class="bg-gray-light v-box">cols-xs-4</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-title">同时清除行列间距</h2>
-                        <small class="card-subtitle">
-                            通过添加类 <code>.v-gapless</code> 可同时清除行列间距.
-                        </small>
-                    </div>
-                    <div class="card-body">
-                        <div class="v-grid v-gapless">
-                            <div class="v-row">
-                                <div class="v-col-xs-4">
-                                    <div class="bg-gray-light v-box">v-col-xs-4</div>
-                                </div>
-                                <div class="v-col-xs-4">
-                                    <div class="bg-silver-dark v-box">v-col-xs-4</div>
-                                </div>
-                                <div class="v-col-xs-4">
-                                    <div class="bg-gray-light v-box">v-col-xs-4</div>
-                                </div>
-                            </div>
-                            <div class="v-row">
-                                <div class="v-col-xs-4">
-                                    <div class="bg-silver-dark v-box">v-col-xs-4</div>
-                                </div>
-                                <div class="v-col-xs-4">
-                                    <div class="bg-gray-light v-box">v-col-xs-4</div>
-                                </div>
-                                <div class="v-col-xs-4">
-                                    <div class="bg-silver-dark v-box">v-col-xs-4</div>
+                                    <div class="v-bgc-silver-dark v-box">v-col-xs-6</div>
                                 </div>
                             </div>
                         </div>
@@ -410,33 +363,157 @@
                 </div>
             </div>
             <div class="v-col-xs-12 v-col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-title">偏移</h2>
-                        <small class="card-subtitle">
-                            偏移的实现也是通过分成12等分，每一份偏移量为1/12，偏移的宽度通过添加类 
-                            <code>.v-col-*-offset-*</code> 来实现，其中第一个'*'的值为：xs、sm、md、lg；第二个'*'的值为1-12.
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">同时清除行列间距</h2>
+                        <small class="v-card-subtitle">
+                            通过添加类
+                            <code>.v-gapless</code> 可同时清除行列间距.
                         </small>
                     </div>
-                    <div class="card-body">
-                        <div class="v-grid">
+                    <div class="v-card-body">
+                        <div class="v-grid-fluid v-gapless">
                             <div class="v-row">
                                 <div class="v-col-xs-4">
-                                    <div class="bg-gray-light v-box">v-col-xs-4</div>
+                                    <div class="v-bgc-gray-light v-box">v-col-xs-4</div>
                                 </div>
-                                <div class="v-col-xs-6 v-col-xs-offset-2">
-                                    <div class="bg-silver-dark v-box">v-col-xs-offset-2</div>
+                                <div class="v-col-xs-4">
+                                    <div class="v-bgc-silver-dark v-box">v-col-xs-4</div>
+                                </div>
+                                <div class="v-col-xs-4">
+                                    <div class="v-bgc-gray-light v-box">v-col-xs-4</div>
                                 </div>
                             </div>
                             <div class="v-row">
-                                <div class="v-col-xs-3">
-                                    <div class="bg-gray-light v-box">v-col-xs-3</div>
+                                <div class="v-col-xs-4">
+                                    <div class="v-bgc-silver-dark v-box">v-col-xs-4</div>
                                 </div>
-                                <div class="v-col-xs-7 v-col-xs-offset-2">
-                                    <div class="bg-silver-dark v-box">v-col-xs-offset-2</div>
+                                <div class="v-col-xs-4">
+                                    <div class="v-bgc-gray-light v-box">v-col-xs-4</div>
+                                </div>
+                                <div class="v-col-xs-4">
+                                    <div class="v-bgc-silver-dark v-box">v-col-xs-4</div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">清除列间距</h2>
+            <small class="v-card-subtitle">
+                通过添加类 <code>.v-col-gapless</code> 清除列间距.
+            </small>
+        </div>
+        <div class="v-card-body">
+            <div class="v-grid-fluid v-col-gapless">
+                <div class="v-row">
+                    <div class="v-col-xs-4">
+                        <div class="v-bgc-gray-light v-box">v-col-xs-4</div>
+                    </div>
+                    <div class="v-col-xs-4">
+                        <div class="v-bgc-silver-dark v-box">v-col-xs-4</div>
+                    </div>
+                    <div class="v-col-xs-4">
+                        <div class="v-bgc-gray-light v-box">cols-xs-4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">偏移</h2>
+            <small class="v-card-subtitle">
+                偏移的实现也是通过分成12等分，每一份偏移量为1/12，偏移的宽度通过添加类 
+                <code>.v-col-*-offset-*</code> 来实现.
+            </small>
+            <small class="v-card-subtitle">
+                - 第一个'*'的值为：xs、sm、md、lg
+            </small>
+            <small class="v-card-subtitle">
+                - 第二个'*'的值为1-12.
+            </small>
+        </div>
+        <div class="v-card-body">
+            <div class="v-grid-fluid">
+                <div class="v-row">
+                    <div class="v-col-xs-4">
+                        <div class="v-bgc-gray-light v-box">v-col-xs-4</div>
+                    </div>
+                    <div class="v-col-xs-6 v-col-xs-offset-2">
+                        <div class="v-bgc-silver-dark v-box">v-col-xs-offset-2</div>
+                    </div>
+                </div>
+                <div class="v-row">
+                    <div class="v-col-xs-3">
+                        <div class="v-bgc-gray-light v-box">v-col-xs-3</div>
+                    </div>
+                    <div class="v-col-xs-7 v-col-xs-offset-2">
+                        <div class="v-bgc-silver-dark v-box">v-col-xs-offset-2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title"><span class="v-badge v-success">NEW</span> 10列布局</h2>
+            <small class="v-card-subtitle">
+                通过等分成10份(偏移也一样)，来实现快速布局，列使用的类为：<code>.v-cod-*-*</code>(宽度)、
+                <code>.v-cod-*-offset-*</code>(偏移).
+            </small>
+            <small class="v-card-subtitle">
+                - 第一个'*'的值为：xs、sm、md、lg
+            </small>
+            <small class="v-card-subtitle">
+                - 第二个'*'的值为1-12.
+            </small>
+        </div>
+        <div class="v-card-body">
+            <div class="v-grid-fluid">
+                <div class="v-row">
+                    <div class="v-cod-xs-4">
+                        <div class="v-bgc-gray-light v-box">v-cod-xs-4</div>
+                    </div>
+                    <div class="v-cod-xs-6">
+                        <div class="v-bgc-silver-dark v-box">v-cod-xs-6</div>
+                    </div>
+                </div>
+                <div class="v-row">
+                    <div class="v-cod-xs-2">
+                        <div class="v-bgc-gray-light v-box">v-cod-xs-2</div>
+                    </div>
+                    <div class="v-cod-xs-2">
+                        <div class="v-bgc-gray-light v-box">v-cod-xs-2</div>
+                    </div>
+                    <div class="v-cod-xs-2">
+                        <div class="v-bgc-gray-light v-box">v-cod-xs-2</div>
+                    </div>
+                    <div class="v-cod-xs-2">
+                        <div class="v-bgc-gray-light v-box">v-cod-xs-2</div>
+                    </div>
+                    <div class="v-cod-xs-2">
+                        <div class="v-bgc-gray-light v-box">v-cod-xs-2</div>
+                    </div>
+                </div>
+                <hr>
+                <p>偏移</p>
+                <div class="v-row">
+                    <div class="v-cod-xs-2">
+                        <div class="v-bgc-gray-light v-box">v-cod-xs-2</div>
+                    </div>
+                    <div class="v-cod-xs-2">
+                        <div class="v-bgc-gray-light v-box">v-cod-xs-2</div>
+                    </div>
+                    <div class="v-cod-xs-4 v-cod-xs-offset-2">
+                        <div class="v-bgc-gray-light v-box">v-cod-xs-4 v-cod-xs-offset-2</div>
                     </div>
                 </div>
             </div>

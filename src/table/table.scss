@@ -18,13 +18,3 @@
         font-weight: 500;
     }
 }
-
-@each $key,$item in $sizes {
-    $tas: nth($table-adjust-size, $key);
-
-    @include setTableSize(
-        nth($item, 1),
-        nth($tas, 1) nth($tas, 2),
-        nth($tas, 3)
-    );
-}

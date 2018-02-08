@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="./styles/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="app">
+    <div class="v-app">
         {{ include './partial/header' }}
         {{ if(showSlideBar !== false) { }}
             {{ include './partial/slide' }}
         {{ } }}
-        <div class="content">
+        <div class="v-layout-content">
             {{ #use.content }}
         </div>
     </div>

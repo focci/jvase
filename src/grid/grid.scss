@@ -11,7 +11,8 @@
 .v-grid,
 .v-grid-fluid,
 .v-row,
-[class*='v-col-'] {
+[class*='v-col-'],
+[class*='v-cod-'] {
     @extend .v-clear;
     
 	position: relative;
@@ -19,11 +20,12 @@
 
 .v-row {
     margin-bottom: $grid-rows-margin-bottom;
-    margin-left: -$grid-gap;
-    margin-right: -$grid-gap;
+    margin-left: -$grid-gap*2;
+    margin-right: -$grid-gap*2;
 
-    >[class*='v-col-'] {
-        padding-left: $grid-gap/2;
-        padding-right: $grid-gap/2;
+    >[class*='v-col-'],
+    >[class*='v-cod-'] {
+        padding-left: $grid-gap;
+        padding-right: $grid-gap;
     }
 }

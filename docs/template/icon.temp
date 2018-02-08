@@ -7,33 +7,33 @@
 }}
 
 {{#def.content
-    <div class="content-header">
-        <h1 class="content-title">图标 (Icon)</h1>
-        <p class="content-subtitle">Jvase没有内置的图标库，因为第三方图标库提供的图标已经很丰富了，
+    <div class="v-layout-content-header">
+        <h1 class="v-layout-content-title">图标 (Icon)</h1>
+        <p class="v-layout-content-subtitle">Jvase没有内置的图标库，因为第三方图标库提供的图标已经很丰富了，
             比如<a href="http://www.fontawesome.com.cn/" target="_blank">Awesome</a>.
         </p>
     </div>
     
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">用法介绍</h2>
-            <small class="card-subtitle">
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">用法介绍</h2>
+            <small class="v-card-subtitle">
                 使用类 <code>.v-icon</code> 将图标包裹起来，引入图标请用 <code>&lt;i&gt;</code> 标签，否则样式会失效.
             </small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <span class="v-icon">
                 <i class="fa fa-user"></i>
             </span>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">尺寸</h2>
-            <small class="card-subtitle">-</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">尺寸</h2>
+            <small class="v-card-subtitle">-</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <span class="v-icon v-small">
                 <i class="fa fa-user"></i>
             </span>

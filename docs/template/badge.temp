@@ -7,31 +7,31 @@
 }}
 
 {{#def.content
-    <div class="content-header">
-        <h1 class="content-title">徽章 (Badge)</h1>
-        <p class="content-subtitle">主要用于简单的提示信息展示，比如说标注数量.</p>
+    <div class="v-layout-content-header">
+        <h1 class="v-layout-content-title">徽章 (Badge)</h1>
+        <p class="v-layout-content-subtitle">主要用于简单的提示信息展示，比如说标注数量.</p>
     </div>
     
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">用法介绍</h2>
-            <small class="card-subtitle">将类 <code>.v-badge</code> 添加至一个行内元素(比如span)</small>
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">用法介绍</h2>
+            <small class="v-card-subtitle">将类 <code>.v-badge</code> 添加至一个行内元素(比如span)</small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <span class="v-badge">1</span>
             <span class="v-badge">100</span>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">风格</h2>
-            <small class="card-subtitle">
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">风格</h2>
+            <small class="v-card-subtitle">
                 默认支持其它4种风格: <code>.v-success</code>、<code>.v-warn</code>、
                 <code>.v-info</code>、<code>.v-danger</code>.
             </small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <span class="v-badge v-success">success</span>
             <span class="v-badge v-warn">warn</span>
             <span class="v-badge v-danger">danger</span>
@@ -39,28 +39,28 @@
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">尺寸</h2>
-            <small class="card-subtitle">
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">尺寸</h2>
+            <small class="v-card-subtitle">
                 除了默认尺寸，还提供其它两种不同尺寸的徽章: <code>.v-medium</code>、<code>.v-large</code>.
             </small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <span class="v-badge">default</span>
             <span class="v-badge v-medium">medium</span>
             <span class="v-badge v-large">large</span>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">胶囊</h2>
-            <small class="card-subtitle">
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">胶囊</h2>
+            <small class="v-card-subtitle">
                 添加类 <code>.v-pill</code> 即可实现胶囊形状的徽章
             </small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <span class="v-badge v-pill">胶囊徽章</span>
             <span class="v-badge v-pill">100</span>
             <span class="v-badge v-pill v-danger">6</span>
@@ -68,20 +68,20 @@
         </div>
     </div>
 
-    <div class="content-header">
-        <h1 class="content-title">应用 (Apply)</h1>
+    <div class="v-layout-content-header">
+        <h1 class="v-layout-content-title">应用 (Apply)</h1>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-title">应用 - 删除按钮</h2>
-            <small class="card-subtitle">
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">应用 - 删除按钮</h2>
+            <small class="v-card-subtitle">
                 向 <code>.v-badge</code> 中添加 <code>.v-del</code> 
                 <a href="delete.html">删除按钮</a>即可，针对不同风格的徽章，
                 已对删除按钮的样式进行了重写，所以不用添加相应的(风格)类.
             </small>
         </div>
-        <div class="card-body">
+        <div class="v-card-body">
             <div class="v-badge">default
                 <a href='javascript:;' class="v-del"></a>
             </div>

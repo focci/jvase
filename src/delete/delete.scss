@@ -35,16 +35,3 @@
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 }
-
-@include setDeleteStyle();
-
-@each $key, $item in $auxiliary-styles {
-    @include setDeleteStyle(nth($item, 1), nth($item, 2));
-}
-
-@each $key, $item in $sizes {
-    @include setDeleteSize(
-        nth($item, 1), 
-        nth($del-adjust-size, $key)
-    );
-}

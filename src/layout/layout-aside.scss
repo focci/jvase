@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.asidebar {
+    @extend .v-fixed;
+
+    overflow: auto;
+
+    width: $layout-asidebar-width;
+    height: 100%;
+    padding-top: $layout-asidebar-padding-top;
+    padding-left: $layout-asidebar-padding-left;
+    padding-right: $layout-asidebar-padding-right;
+    background-color: $layout-asidebar-background-color;
+}
+
+$screen: nth(nth($grid-responsive-data,1), 2);
+@media (max-width: #{$screen}) {
+    .asidebar {
+        display: none;
+    }
+}

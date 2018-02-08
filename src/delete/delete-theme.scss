@@ -1,0 +1,7 @@
+@charset 'utf-8';
+
+@include setDeleteStyle();
+
+@each $key, $item in $auxiliary-styles {
+    @include setDeleteStyle(nth($item, 1), nth($item, 2));
+}

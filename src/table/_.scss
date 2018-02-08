@@ -1,5 +1,7 @@
-@import './mixin';
+@charset 'utf-8';
+@import './_mixin';
+
 @import './table';
-@import './border';
-@import './col-divider';
-@import './fullwidth';
+@import './table-border';
+@import './table-col-divider';
+@import './table-fullwidth';

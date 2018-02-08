@@ -1,7 +1,10 @@
+@charset 'utf-8';
+@import './_mixin';
+
 @import './form';
-@import './input';
-@import './textarea';
-@import './select';
-@import './checkbox';
-@import './radio';
-@import './file';
+@import './form-input';
+@import './form-textarea';
+@import './form-select';
+@import './form-checkbox';
+@import './form-radio';
+@import './form-file';

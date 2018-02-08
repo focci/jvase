@@ -1,0 +1,8 @@
+@charset 'utf-8';
+
+@each $key, $item in $sizes {
+    @include setIconSize(
+        nth($item, 1),
+        nth($icon-adjust-size, $key)
+    );
+}

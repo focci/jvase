@@ -1,5 +1,7 @@
-@import './mixin';
-@import './app';
-@import './header';
-@import './slider';
-@import './content';
+@charset 'utf-8';
+@import './_mixin';
+
+@import './layout-app';
+@import './layout-header';
+@import './layout-aside';
+@import './layout-content';

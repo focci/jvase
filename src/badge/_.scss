@@ -1,2 +1,6 @@
-@import './mixin';
+@charset 'utf-8';
+@import './_mixin';
+
 @import './badge';
+@import './badge-size';
+@import './badge-theme';

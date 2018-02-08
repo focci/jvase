@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+@each $item in $grid-responsive-data {
+
+	@if( nth($item, 1) == xs ) {
+		[class*='v-col-#{nth($item, 1)}-'] {
+			float: left;
+		}
+
+		@for $i from 1 through $grid-total-column {
+			.v-col-#{nth($item, 1)}-#{$i} {
+				width:  percentage($i / $grid-total-column);
+			}
+			.v-col-#{nth($item, 1)}-offset-#{$i} {
+				margin-left:  percentage($i / $grid-total-column);
+			}
+		}
+	}
+	@else {
+		@media (#{nth($item, 4)}-width: nth($item, 2)) {
+			.v-grid {
+				width: nth($item, 2) - nth($item, 3);
+			}
+			[class*='v-col-#{nth($item, 1)}-'] {
+				float: left;
+			}
+			@for $i from 1 through $grid-total-column {
+				.v-col-#{nth($item, 1)}-#{$i} {
+					width:  percentage($i / $grid-total-column);
+				}
+				.v-col-#{nth($item, 1)}-offset-#{$i} {
+					margin-left:  percentage($i / $grid-total-column);
+				}
+			}
+		}
+	}
+}

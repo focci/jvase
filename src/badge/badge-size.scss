@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+@each $key, $item in $sizes {
+    @if (nth($item, 1) != '.v-small') {
+        @include setBadgeSize(
+            nth($item, 1),
+            nth($badge-adjust-size, $key),
+            nth($item, 2)
+        );
+    }
+}

@@ -1,0 +1,7 @@
+@charset 'utf-8';
+
+@include setBadgeStyle();
+
+@each $key, $item in $auxiliary-styles {
+    @include setBadgeStyle(nth($item, 1), nth($item, 2));
+}

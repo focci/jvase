@@ -1,3 +1,6 @@
+@charset 'utf-8';
+@import './_mixin';
+
 @import './card';
-@import './header';
-@import './body';
+@import './card-header';
+@import './card-body';

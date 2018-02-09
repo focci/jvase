@@ -1,4 +1,4 @@
-<div class="v-layout-aside">
+<div class="v-layout-aside v-box">
     <div class="v-menu">
         {{
             var menu_data  = [

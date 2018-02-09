@@ -1,21 +1,13 @@
 @charset 'utf-8';
 
 .v-layout-aside {
-    @extend .v-fixed;
-
-    overflow: auto;
+    @extend .v-absolute;
 
     width: $layout-aside-width;
-    height: 100%;
-    padding-top: $layout-aside-padding-top;
-    padding-left: $layout-aside-padding-left;
-    padding-right: $layout-aside-padding-right;
-    background-color: $layout-aside-background-color;
-}
+    top: 0;
+    bottom: 0;
 
-$screen: nth(nth($grid-responsive-data,1), 2);
-@media (max-width: #{$screen}) {
-    .v-layout-aside {
-        display: none;
+    .v-layout-header~& {
+        top: $layout-header-height;
     }
 }

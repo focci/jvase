@@ -81,24 +81,7 @@ $font-color: $color-black-light;
 // layout
 // =============================================
 $layout-header-height: 4rem;
-$layout-header-background-color: $color-primary;
-$layout-header-padding-left: 1rem;
-$layout-header-padding-right: 1rem;
-
 $layout-aside-width: 19rem;
-$layout-aside-background-color: #f6f6f6;
-$layout-aside-padding-top: $layout-header-height + 2rem;
-$layout-aside-padding-left: 2rem;
-$layout-aside-padding-right: 2rem;
-
-$layout-content-padding-top: $layout-header-height + 2rem;
-$layout-content-padding-left: $layout-aside-width + 2rem;
-$layout-content-padding-right: 2rem;
-
-$layout-content-header-margin-bottom: 2rem;
-$layout-content-title-font-size: 1.5rem;
-$layout-content-subtitle-color: $color-steel-light;
-$layout-content-subtitle-margin-top: .5rem;
 
 // card
 // =============================================

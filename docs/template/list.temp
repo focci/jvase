@@ -2,7 +2,8 @@
     extend './partial/layout'
     {
         title: '列表',
-        ename: 'list'
+        ename: 'list',
+        description: ''
     } 
 }}
 

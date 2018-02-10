@@ -9,24 +9,15 @@
         background-color: $bg;
         color: $color;
     }
-
-    .v-badge#{$name} .v-del.v-invert {
-        background-color: lighten($bg, 15%);
-    }
 }
 
 @mixin setBadgeSize(
     $name,
-    $fontSize,
-    $deleteSizeName
+    $height,
+    $fontSize
 ) {
     .v-badge#{$name} {
+        height: $height;
         font-size: $fontSize;
-
-        @if ($deleteSizeName != '') {
-            & .v-del {
-                @extend .v-del#{$deleteSizeName}
-            }
-        }
     }
 }

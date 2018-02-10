@@ -1,0 +1,8 @@
+@charset 'utf-8';
+
+.v-article-body {
+    @extend .v-block;
+    
+    padding-top: $article-body-padding;
+    padding-bottom: $article-body-padding;
+}

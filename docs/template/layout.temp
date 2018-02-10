@@ -2,19 +2,30 @@
     extend './partial/layout'
     {
         title: '布局',
-        ename: 'layout'
+        ename: 'layout',
+        description: '常用页面布局，方便快速建立页面的基本结构'
     } 
 }}
 
 {{#def.content
     
-    <div class="v-grid-fluid">
+    
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">使用方式</h2>
+            <p>首先添加外部容器 <code>.v-layout</code> (高度默认为100%)，再添加相应的页面结构容器</p>
+        </div>
+    </div>
+
+    <div class="v-grid-fluid v-row-gapless">
         <div class="v-row">
-            <div class="v-col-xs-12 v-col-sm-6">
+            <div class="v-col-xs-12 v-col-lg-6">
                 <div class="v-card">
                     <div class="v-card-header">
-                        <h2 class="v-card-title">TITLE</h2>
-                        <small class="v-card-subtitle">SUBTITLE</small>
+                        <h2 class="v-card-title">上下结构</h2>
+                        <small class="v-card-subtitle">
+                            结构顺序：头部(<code>.v-layout-header</code>)，内容(<code>.v-layout-content</code>)
+                        </small>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout" style="height:240px;">
@@ -28,11 +39,13 @@
                     </div>
                 </div>
             </div>
-            <div class="v-col-xs-12 v-col-sm-6">
+            <div class="v-col-xs-12 v-col-lg-6">
                 <div class="v-card">
                     <div class="v-card-header">
-                        <h2 class="v-card-title">TITLE</h2>
-                        <small class="v-card-subtitle">SUBTITLE</small>
+                        <h2 class="v-card-title">左右结构</h2>
+                        <small class="v-card-subtitle">
+                            结构顺序：侧边(<code>.v-layout-aside</code>)，内容(<code>.v-layout-content</code>)
+                        </small>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout" style="height:240px;">
@@ -46,11 +59,16 @@
                     </div>
                 </div>
             </div>
-            <div class="v-col-xs-12 v-col-sm-6">
+        </div>
+        <div class="v-row">
+            <div class="v-col-xs-12 v-col-lg-6">
                 <div class="v-card">
                     <div class="v-card-header">
-                        <h2 class="v-card-title">TITLE</h2>
-                        <small class="v-card-subtitle">SUBTITLE</small>
+                        <h2 class="v-card-title">上下-左右结构</h2>
+                        <small class="v-card-subtitle">
+                            结构顺序：头部(<code>.v-layout-header</code>)，
+                            侧边(<code>.v-layout-aside</code>)，(<code>.v-layout-content</code>)
+                        </small>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout" style="height:240px;">
@@ -67,11 +85,14 @@
                     </div>
                 </div>
             </div>
-            <div class="v-col-xs-12 v-col-sm-6">
+            <div class="v-col-xs-12 v-col-lg-6">
                 <div class="v-card">
                     <div class="v-card-header">
-                        <h2 class="v-card-title">TITLE</h2>
-                        <small class="v-card-subtitle">SUBTITLE</small>
+                        <h2 class="v-card-title">左右-上下结构</h2>
+                        <small class="v-card-subtitle">
+                            结构顺序：侧边(<code>.v-layout-aside</code>)，
+                            头部(<code>.v-layout-header</code>)，内容(<code>.v-layout-content</code>)
+                        </small>
                     </div>
                     <div class="v-card-body">
                         <div class="v-layout" style="height:240px;">
@@ -92,126 +113,5 @@
     </div>
     
 
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">TITLE</h2>
-            <small class="v-card-subtitle">SUBTITLE</small>
-        </div>
-        <div class="v-card-body">
-            CARDBODY
-        </div>
-    </div>
-
-    
 
 #}}

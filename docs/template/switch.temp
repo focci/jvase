@@ -2,7 +2,8 @@
     extend './partial/layout'
     {
         title: '开关',
-        ename: 'switch'
+        ename: 'switch',
+        description: ''
     } 
 }}
 

@@ -2,15 +2,14 @@
     extend './partial/layout'
     {
         title: '表格',
-        ename: 'table'
+        ename: 'table',
+        description: '简单快速的创建不同样式的表格'
     } 
 }}
 
 {{#def.content
-    <div class="v-layout-content-header">
-        <h1 class="v-layout-content-title">表格 (Menu)</h1>
-        <p class="v-layout-content-subtitle">简单快速的创建不同样式的表格.</p>
-    </div>
+
+
     
     <div class="v-card">
         <div class="v-card-header">

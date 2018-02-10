@@ -2,7 +2,8 @@
     extend './partial/layout'
     {
         title: '按钮',
-        ename: 'button'
+        ename: 'button',
+        description: ''
     } 
 }}
 

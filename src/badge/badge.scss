@@ -4,22 +4,13 @@
     @extend .v-nowrap;
     @extend .v-relative;
     @extend .v-inline-block;
+    @extend .v-top;
     @extend .v-badge.v-normal-size;
+    @extend .v-flex-inline;
+    @extend .v-flex-middle;
 
-    line-height: $badge-line-height;
+    line-height: $line-height;
+    border-radius: $border-radius;
     padding: $badge-padding;
-    border-radius: $badge-border-radius;
     font-weight: 500;
-
-    &, & .v-del {
-        @extend .v-top;
-    }
-
-    & .v-del,
-    & .v-del.v-invert {
-        &:before,
-        &:after {
-            border-color: $badge-color;
-        }
-    }
 }

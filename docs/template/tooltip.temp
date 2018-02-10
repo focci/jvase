@@ -2,7 +2,8 @@
     extend './partial/layout'
     {
         title: '气泡',
-        ename: 'tooltip'
+        ename: 'tooltip',
+        description: ''
     } 
 }}
 

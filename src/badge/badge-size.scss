@@ -2,10 +2,11 @@
 
 @each $key, $item in $sizes {
     @if (nth($item, 1) != '.v-small') {
+        $setting-item: nth($badge-adjust-size, $key);
         @include setBadgeSize(
             nth($item, 1),
-            nth($badge-adjust-size, $key),
-            nth($item, 2)
+            nth($setting-item, 1),
+            nth($setting-item, 2)
         );
     }
 }

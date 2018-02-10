@@ -14,6 +14,7 @@
     <meta content="{{- description || title}}" name="description" />
     <link rel="stylesheet" href="./styles/jvase.min.css">
     <link rel="stylesheet" href="./styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>body{overflow:hidden}.v-layout-aside,.v-layout-content{overflow-y:auto;}</style>
 </head>
 <body>
     <div class="v-layout">
@@ -21,8 +22,14 @@
         {{ if(showSlideBar !== false) { }}
             {{ include './partial/slide' }}
         {{ } }}
-        <div class="v-layout-content v-box">
-            {{ #use.content }}
+        <div class="v-layout-content">
+            <div class="v-article">
+                <h1 class="v-article-header">{{- title}} ({{- ename | upper true}})</h1>
+                <p class="v-article-meta">{{- description}}</p>
+                <div class="v-article-body">
+                    {{ #use.content }}
+                </div>
+            </div>
         </div>
     </div>
 </body>

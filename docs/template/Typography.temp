@@ -1,18 +1,15 @@
 {{
     extend './partial/layout'
     {
-        title: '滑动条',
-        ename: 'typography'
+        title: '排版',
+        ename: 'typography',
+        description: '页面常用到的排版元素'
     } 
 }}
 
 {{#def.content
 
 
-    <div class="v-layout-content-header">
-        <h1 class="v-layout-content-title">排版 (Typography)</h1>
-        <p class="v-layout-content-subtitle">页面常用到的排版元素</p>
-    </div>
     
     <div class="v-card">
         <div class="v-card-header">

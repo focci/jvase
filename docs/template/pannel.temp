@@ -2,7 +2,8 @@
     extend './partial/layout'
     {
         title: '面板',
-        ename: 'pannel'
+        ename: 'pannel',
+        description: ''
     } 
 }}
 

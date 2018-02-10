@@ -2,7 +2,8 @@
     extend './partial/layout'
     {
         title: '标签',
-        ename: 'tab'
+        ename: 'tab',
+        description: ''
     } 
 }}
 

@@ -7,6 +7,8 @@
     @extend .v-del.v-normal-size;
 
     transition: opacity .1s;
+    border: none;
+    cursor: pointer;
 
     &:hover {
         @extend .v-opacity-8;

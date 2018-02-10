@@ -19,3 +19,19 @@
 .v-invisible {
     visibility: hidden;
 }
+
+.v-flex-inline {
+    display: inline-flex;
+}
+
+.v-flex {
+    display: flex;
+}
+
+.v-flex-middle {
+    align-items: center;
+}
+
+.v-flex-center {
+    justify-content: center;
+}

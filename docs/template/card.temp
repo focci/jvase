@@ -2,7 +2,8 @@
     extend './partial/layout'
     {
         title: '卡片',
-        ename: 'card'
+        ename: 'card',
+        description: ''
     } 
 }}
 

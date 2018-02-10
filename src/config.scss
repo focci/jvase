@@ -129,12 +129,16 @@ $grid-responsive-data: (
 
 // badge
 // =============================================
-$badge-line-height: 1;
-$badge-padding: 0.25rem;
-$badge-border-radius: $border-radius;
-$badge-background-color: $color-steel-light;
-$badge-color: $color-white;
-$badge-adjust-size: (0, 1rem, 1.5rem, 2rem);
+$badge-padding: 0 .4rem;
+$badge-background-color: $color-silver-dark;
+$badge-color: $color-steel;
+$badge-adjust-size: (
+  // height font-size 
+    (0 0), // unuseful
+    (1.5rem 1rem),
+    (2rem 1.25rem),
+    (2.5rem 1.5rem)
+);
 
 // delete
 // =============================================
@@ -168,8 +172,19 @@ $table-adjust-size: (
     (1rem 1.25rem 1.5rem),
 );
 
-// 
+// article
 // =============================================
+$article-padding: 3rem;
+
+$article-header-font-size: 2rem;
+$article-header-margin-bottom: 1rem;
+$article-header-color: $color-black;
+
+$article-meta-font-size: 1rem;
+$article-meta-margin-bottom: 1rem;
+$article-meta-color: $color-steel-light;
+
+$article-body-padding: 1rem;
 
 
 // 

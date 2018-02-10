@@ -2,17 +2,14 @@
     extend './partial/layout'
     {
         title: '栅栏',
-        ename: 'grid'
+        ename: 'grid',
+        description: '通过基础的12列或者10列，快速实现布局.'
     } 
 }}
 
 {{#def.content
-    <div class="v-layout-content-header">
-        <h1 class="v-layout-content-title">栅栏 (Grid)</h1>
-        <p class="v-layout-content-subtitle">通过基础的12列或者10列，快速实现布局.</p>
-        <p class="v-layout-content-subtitle">10列主要是针对特殊的排版(比如说显示5张并列的图片)， 在使用方式上与12列布局一样，只是列所用的类(
-        <code>.v-cod-*</code>)不一样.</p>
-    </div>
+
+
 
     <div class="v-card">
         <div class="v-card-header">
@@ -226,7 +223,9 @@
         <div class="v-card-header">
             <h2 class="v-card-title"><span class="v-badge v-success">NEW</span> 10列布局</h2>
             <small class="v-card-subtitle">
-                通过等分成10份(偏移也一样)，来实现快速布局，列使用的类为：<code>.v-cod-*-*</code>(宽度)、
+                10列主要是针对特殊的排版(比如说显示5张并列的图片)， 在使用方式上与12列布局一样，只是列所用的类(
+                <code>.v-cod-*</code>)不一样，通过等分成10份(偏移也一样)，来实现快速布局，
+                列使用的类为：<code>.v-cod-*-*</code>(宽度)、
                 <code>.v-cod-*-offset-*</code>(偏移).
             </small>
             <small class="v-card-subtitle">

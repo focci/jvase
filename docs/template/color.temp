@@ -2,16 +2,14 @@
     extend './partial/layout'
     {
         title: '颜色',
-        ename: 'color'
+        ename: 'color',
+        description: '为了视觉传达上达到统一，Jvase特规定以下一组颜色来快速搭建系统'
     } 
 }}
 
 {{#def.content
-    <div class="v-layout-content-header">
-        <h1 class="v-layout-content-title">颜色 (Color)</h1>
-        <p class="v-layout-content-subtitle">为了视觉传达上达到统一，Jvase特规定以下一组颜色来快速搭建系统</p>
-    </div>
-    
+
+
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">主色调</h2>
@@ -156,7 +154,6 @@
             <p class="v-box v-txt-steel">文字颜色：.v-txt-steel</p>
         </div>
     </div>
-
     
 
 #}}

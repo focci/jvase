@@ -2,17 +2,13 @@
     extend './partial/layout'
     {
         title: '图标',
-        ename: 'icon'
+        ename: 'icon',
+        description: 'Jvase没有内置的图标库，因为第三方图标库提供的图标已经很丰富了，比如Awesome'
     } 
 }}
 
 {{#def.content
-    <div class="v-layout-content-header">
-        <h1 class="v-layout-content-title">图标 (Icon)</h1>
-        <p class="v-layout-content-subtitle">Jvase没有内置的图标库，因为第三方图标库提供的图标已经很丰富了，
-            比如<a href="http://www.fontawesome.com.cn/" target="_blank">Awesome</a>.
-        </p>
-    </div>
+
     
     <div class="v-card">
         <div class="v-card-header">

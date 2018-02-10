@@ -2,54 +2,59 @@
     extend './partial/layout'
     {
         title: '菜单',
-        ename: 'menu'
+        ename: 'menu',
+        description: '简单的树形菜单，支持数据分组以及嵌套'
     } 
 }}
 
 {{#def.content
-    <div class="v-layout-content-header">
-        <h1 class="v-layout-content-title">菜单 (Menu)</h1>
-        <p class="v-layout-content-subtitle">简单的树形菜单，支持数据分组以及嵌套</p>
-    </div>
-    
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">使用介绍</h2>
-            <small class="v-card-subtitle">
-                将类 <code>.v-menu</code> 添加至菜单外部容器，然后在里面添加类 
-                <code>.v-menu-label</code> (标题) 以及 <code>.v-menu-list</code> (列表),
-                设置选中样式请在列表项中添加类 <code>.v-active</code>
-            </small>
-        </div>
-        <div class="v-card-body">
-            <div class="v-menu">
-                <p class="v-menu-label">XXX理财担保有限公司</p>
-                <ul class="v-menu-list">
-                    <li><a href="javascript:;">财务总监</a></li>
-                    <li><a class="v-active" href="javascript:;">市场总监</a></li>
-                    <li><a href="javascript:;">分析部主管</a></li>
-                    <li><a href="javascript:;">风控部经理</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div class="v-card">
-        <div class="v-card-header">
-            <h2 class="v-card-title">禁用</h2>
-            <small class="v-card-subtitle">
-                添加属性 <code>disabled</code> 至列表项，即可实现禁用.
-            </small>
-        </div>
-        <div class="v-card-body">
-            <div class="v-menu">
-                <p class="v-menu-label">XXX理财担保有限公司</p>
-                <ul class="v-menu-list">
-                    <li disabled><a href="javascript:;" class="v-active">市场总监(已离职)</a></li>
-                    <li><a href="javascript:;">分析部主管</a></li>
-                    <li><a href="javascript:;" disabled>财务总监(已离职)</a></li>
-                    <li><a href="javascript:;">风控部经理</a></li>
-                </ul>
+
+    <div class="v-grid-fluid v-row-gapless">
+        <div class="v-row">
+            <div class="v-col-xs-12 v-col-sm-6">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">使用介绍</h2>
+                        <small class="v-card-subtitle">
+                            将类 <code>.v-menu</code> 添加至菜单外部容器，然后在里面添加类 
+                            <code>.v-menu-label</code> (标题) 以及 <code>.v-menu-list</code> (列表),
+                            设置选中样式请在列表项中添加类 <code>.v-active</code>
+                        </small>
+                    </div>
+                    <div class="v-card-body">
+                        <div class="v-menu">
+                            <p class="v-menu-label">XXX理财担保有限公司</p>
+                            <ul class="v-menu-list">
+                                <li><a href="javascript:;">财务总监</a></li>
+                                <li><a class="v-active" href="javascript:;">市场总监</a></li>
+                                <li><a href="javascript:;">分析部主管</a></li>
+                                <li><a href="javascript:;">风控部经理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v-col-xs-12 v-col-sm-6">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">禁用</h2>
+                        <small class="v-card-subtitle">
+                            添加属性 <code>disabled</code> 至列表项，即可实现禁用.
+                        </small>
+                    </div>
+                    <div class="v-card-body">
+                        <div class="v-menu">
+                            <p class="v-menu-label">XXX理财担保有限公司</p>
+                            <ul class="v-menu-list">
+                                <li disabled><a href="javascript:;" class="v-active">市场总监(已离职)</a></li>
+                                <li><a href="javascript:;">分析部主管</a></li>
+                                <li><a href="javascript:;" disabled>财务总监(已离职)</a></li>
+                                <li><a href="javascript:;">风控部经理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

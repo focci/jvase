@@ -2,13 +2,13 @@
     extend './partial/layout'
     {
         title: '提示',
-        ename: 'alert'
+        ename: 'alert',
+        description: ''
     } 
 }}
 
 {{#def.content
     
-    
     <div class="v-card">
         <div class="v-card-header">
             <h2 class="v-card-title">TITLE</h2>
@@ -138,7 +138,6 @@
             v-CARDBODY
         </div>
     </div>
-
     
 
 #}}

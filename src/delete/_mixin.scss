@@ -2,7 +2,8 @@
 
 @mixin setDeleteStyle(
     $name: '',
-    $color: $del-color
+    $color: $del-color,
+    $invert-bgc: ''
 ) {
     .v-del#{$name} {
         &:before,
@@ -12,18 +13,18 @@
     }
 
     .v-del#{$name}.v-invert {
-        background-color: $color;
-
-        &:before,
-        &:after {
-            border-color: lighten($color, 50%);
+        @if ($invert-bgc == '') {
+            background-color: rgba($color, .35);
+        }
+        @else {
+            background-color: $invert-bgc;
         }
     }
 }
 
 @mixin setDeleteSize(
     $name: '',
-    $size: $del-size
+    $size: 0
 ) {
     .v-del#{$name} {
         height: $size;

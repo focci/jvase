@@ -2,22 +2,19 @@
 
 .v-del {
     @extend .v-relative;
-    @extend .v-circle;
     @extend .v-inline-block;
+    @extend .v-circle;
     @extend .v-del.v-normal-size;
 
     transition: opacity .1s;
     border: none;
     cursor: pointer;
+    background-color: transparent;
 
     &:hover {
         @extend .v-opacity-8;
     }
 
-    &:active {
-        @extend .v-opacity-6;
-    }
-    
     &:before,
     &:after {
         @extend .v-absolute;

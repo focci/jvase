@@ -58,7 +58,7 @@
         <div class="v-card-header">
             <h2 class="v-card-title">风格</h2>
             <small class="v-card-subtitle">
-                默认内置4种不同风格： <code>.v-success</code>、
+                默认内置5种不同风格： <code>.v-success</code>、
                 <code>.v-warn</code>、<code>.v-info</code>、
                 <code>.v-danger</code>、<code>.v-white</code>.
             </small>
@@ -69,24 +69,10 @@
                 <a href="javascript:;" class="v-del v-info"></a>
                 <a href="javascript:;" class="v-del v-danger"></a>
                 <a href="javascript:;" class="v-del v-warn"></a>
-                <a href="javascript:;" class="v-del v-white"></a>
                 <a href="javascript:;" class="v-del v-invert v-success"></a>
                 <a href="javascript:;" class="v-del v-invert v-info"></a>
                 <a href="javascript:;" class="v-del v-invert v-danger"></a>
                 <a href="javascript:;" class="v-del v-invert v-warn"></a>
-                <a href="javascript:;" class="v-del v-invert v-white"></a>
-            </div>
-            <div class="v-box v-bgc-steel">
-                <a href="javascript:;" class="v-del v-success"></a>
-                <a href="javascript:;" class="v-del v-info"></a>
-                <a href="javascript:;" class="v-del v-danger"></a>
-                <a href="javascript:;" class="v-del v-warn"></a>
-                <a href="javascript:;" class="v-del v-white"></a>
-                <a href="javascript:;" class="v-del v-invert v-success"></a>
-                <a href="javascript:;" class="v-del v-invert v-info"></a>
-                <a href="javascript:;" class="v-del v-invert v-danger"></a>
-                <a href="javascript:;" class="v-del v-invert v-warn"></a>
-                <a href="javascript:;" class="v-del v-invert v-white"></a>
             </div>
         </div>
     </div>

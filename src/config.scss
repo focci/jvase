@@ -86,9 +86,8 @@ $layout-aside-width: 19rem;
 // card
 // =============================================
 $card-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
-$card-margin-bottom: 2.5rem;
+$card-margin: 0 0 2.5rem;
 $card-background-color: #fff;
-$card-border-radius: .2rem;
 
 $card-header-padding: 2rem;
 $card-title-margin: 0;
@@ -142,7 +141,7 @@ $badge-adjust-size: (
 
 // delete
 // =============================================
-$del-invert-zoom: .7;
+$del-invert-zoom: .75;
 $del-color: $color-steel-light;
 $del-adjust-size: (1rem, 1.5rem, 2rem, 2.5rem);
 
@@ -155,7 +154,7 @@ $icon-line-height: 1;
 // =============================================
 $table-background-color: $color-white;
 
-$table-header-border-width: 3px;
+$table-header-border-bottom-width: 3px;
 $table-header-color: $color-black-dark;
 $table-header-background-color: $color-silver;
 
@@ -186,9 +185,26 @@ $article-meta-color: $color-steel-light;
 $article-body-padding: 1rem;
 
 
-// 
+// button
 // =============================================
+$btn-font-size: 1rem;
+$btn-padding: torem(6px) 1rem;
+$btn-color: $color-steel;
+$btn-border-color: $color-silver-dark;
+$btn-background-color: $color-white;
 
+$btn-hover-color: $color-steel-dark;
+$btn-hover-border-color: $color-gray;
+
+$btn-active-border-color: $color-gray-light;
+
+$btn-sizes: (
+  // padding font-size
+    (1.5rem (.25rem .5rem) 1rem),
+    ((torem(6px) 1rem) $btn-font-size),
+    (.5rem 1rem),
+    (.5rem 1rem)
+);
 
 // 
 // =============================================

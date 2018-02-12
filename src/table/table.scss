@@ -13,7 +13,7 @@
     }
 
     >thead >tr >th {
-        border-bottom-width: $table-header-border-width;
+        border-bottom-width: $table-header-border-bottom-width;
         color: $table-header-color;
         font-weight: 500;
     }

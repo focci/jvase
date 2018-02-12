@@ -1,7 +1,8 @@
 @charset 'utf-8';
 
 @include setDeleteStyle();
-@include setDeleteStyle('.v-white', $color-white, rgba($del-color, .35));
+
+@include setDeleteStyle('.v-white', $color-white, '', 0);
 
 @each $key, $item in $auxiliary-styles {
     @include setDeleteStyle(nth($item, 1), nth($item, 2));

@@ -315,50 +315,71 @@
         </div>
     </div>
 
-    <h2 class="v-article-header">应用 (Apply)</h2>
-
     <div class="v-card">
         <div class="v-card-header">
-            <h2 class="v-card-title">应用 - 删除按钮</h2>
+            <h2 class="v-card-title">组合</h2>
             <small class="v-card-subtitle">
-                向 <code>.v-badge</code> 中添加 <code>.v-del</code> 
-                <a href="delete.html">删除按钮</a>即可，针对不同风格的徽章，
-                已对删除按钮的样式进行了重写，所以不用添加相应的(风格)类.
+                在多个 <code>.v-badge</code> 外层添加容器 <code>.v-badges</code> 进行包裹，
+                如果要设置尺寸与形状，请在最外面的包裹层添加相应的类.
             </small>
         </div>
         <div class="v-card-body">
-            <div class="v-badge">
-                <span>default</span> 
-                <button class="v-del v-small"></button>
-            </div>
-            <span class="v-badge v-success">
-                <span>success</span> 
-                <button class="v-del v-white v-small"></button>
-            </span>
-            <div class="v-badge">
-                <span>default</span> 
-                <button class="v-del v-small v-invert"></button>
-            </div>
-            <span class="v-badge v-success">
-                <span>success</span> 
-                <button class="v-del v-white v-small v-invert"></button>
+            <span class="v-badges">
+                <span class="v-badge v-info">info</span>
+                <span class="v-badge v-black">black</span>
+                <span class="v-badge v-dark">dark</span>
             </span>
             <hr>
+            <span class="v-badges">
+                <span class="v-badge v-primary">Badge</span>
+                <span class="v-badge">
+                    <button class="v-del v-small"></button>
+                </span>
+            </span>
+            <span class="v-badges v-medium">
+                <span class="v-badge v-primary">Badge</span>
+                <span class="v-badge">
+                    <button class="v-del"></button>
+                </span>
+            </span>
+            <span class="v-badges v-large">
+                <span class="v-badge v-primary">Badge</span>
+                <span class="v-badge">
+                    <button class="v-del"></button>
+                </span>
+            </span>
+            <hr>
+            <span class="v-badges v-medium v-pill">
+                <span class="v-badge v-success">YES</span>
+                <span class="v-badge v-dark">NO</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="v-card">
+        <div class="v-card-header">
+            <h2 class="v-card-title">删除按钮</h2>
+            <small class="v-card-subtitle">
+                向 <code>.v-badge</code> 中添加 <code>.v-del</code> 
+                <a href="delete.html">删除按钮</a>即可，按钮的样式设置请参照相应的文档.
+            </small>
+        </div>
+        <div class="v-card-body">
             <div class="v-badge v-medium">
-                <span>default</span> 
-                <button class="v-del"></button>
+                <span>badge</span> 
+                <button class="v-del v-small"></button>
             </div>
             <span class="v-badge v-medium v-success">
-                <span>success</span> 
-                <button class="v-del v-white"></button>
+                <span>badge</span> 
+                <button class="v-del v-small v-white"></button>
             </span>
             <div class="v-badge v-medium">
-                <span>default</span> 
-                <button class="v-del v-invert"></button>
+                <span>badge</span> 
+                <button class="v-del v-small v-invert"></button>
             </div>
             <span class="v-badge v-medium v-success">
-                <span>success</span> 
-                <button class="v-del v-white v-invert"></button>
+                <span>badge</span> 
+                <button class="v-del v-small v-invert"></button>
             </span>
             
         </div>

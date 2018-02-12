@@ -16,7 +16,8 @@
     $height,
     $fontSize
 ) {
-    .v-badge#{$name} {
+    .v-badge#{$name},
+    .v-badges#{$name} > .v-badge {
         height: $height;
         font-size: $fontSize;
     }

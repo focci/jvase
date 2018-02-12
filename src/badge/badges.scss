@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+.v-badges {
+    @extend .v-inline-block;
+
+    font-size: 0;
+
+    >.v-badge {
+        border-radius: 0!important;
+    }
+
+    &.v-pill >.v-badge {
+        &:first-child {
+            border-top-left-radius: 200px!important;
+            border-bottom-left-radius: 200px!important;
+        }
+        &:last-child {
+            border-top-right-radius: 200px!important;
+            border-bottom-right-radius: 200px!important;
+        }
+    }
+}

@@ -3,6 +3,7 @@
 .v-layout-content {
     @extend .v-absolute;
 
+    transition: left .3s;
     top: 0;
     left: 0;
     bottom: 0;
@@ -10,9 +11,5 @@
 
     .v-layout-header~& {
         top: $layout-header-height;
-    }
-
-    .v-layout-aside~& {
-        left: $layout-aside-width;
     }
 }

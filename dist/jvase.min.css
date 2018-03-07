@@ -1675,26 +1675,59 @@ h1[class*='v-display-'] {
   height: 100%; }
 
 .v-layout-header {
-  height: 4rem; }
-  .v-layout-aside + .v-layout-header {
-    margin-left: 19rem; }
+  height: 4rem;
+  transition: margin-left .3s; }
 
 .v-layout-aside {
-  width: 19rem;
+  transition: width .3s;
   top: 0;
   bottom: 0; }
   .v-layout-header ~ .v-layout-aside {
     top: 4rem; }
 
 .v-layout-content {
+  transition: left .3s;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0; }
   .v-layout-header ~ .v-layout-content {
     top: 4rem; }
-  .v-layout-aside ~ .v-layout-content {
-    left: 19rem; }
+
+.v-layout.v-narrow .v-layout-aside {
+  width: 4rem; }
+.v-layout.v-narrow .v-layout-aside ~ .v-layout-content {
+  left: 4rem; }
+.v-layout.v-narrow .v-layout-aside + .v-layout-header {
+  margin-left: 4rem; }
+
+.v-layout.v-small .v-layout-aside {
+  width: 14rem; }
+.v-layout.v-small .v-layout-aside ~ .v-layout-content {
+  left: 14rem; }
+.v-layout.v-small .v-layout-aside + .v-layout-header {
+  margin-left: 14rem; }
+
+.v-layout.v-normal-size .v-layout-aside, .v-layout .v-layout-aside {
+  width: 18rem; }
+.v-layout.v-normal-size .v-layout-aside ~ .v-layout-content, .v-layout .v-layout-aside ~ .v-layout-content {
+  left: 18rem; }
+.v-layout.v-normal-size .v-layout-aside + .v-layout-header, .v-layout .v-layout-aside + .v-layout-header {
+  margin-left: 18rem; }
+
+.v-layout.v-medium .v-layout-aside {
+  width: 22rem; }
+.v-layout.v-medium .v-layout-aside ~ .v-layout-content {
+  left: 22rem; }
+.v-layout.v-medium .v-layout-aside + .v-layout-header {
+  margin-left: 22rem; }
+
+.v-layout.v-large .v-layout-aside {
+  width: 26rem; }
+.v-layout.v-large .v-layout-aside ~ .v-layout-content {
+  left: 26rem; }
+.v-layout.v-large .v-layout-aside + .v-layout-header {
+  margin-left: 26rem; }
 
 .v-menu-label {
   font-size: 0.8rem;

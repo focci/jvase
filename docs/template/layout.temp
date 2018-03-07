@@ -67,7 +67,7 @@
                         <h2 class="v-card-title">上下-左右结构</h2>
                         <small class="v-card-subtitle">
                             结构顺序：头部(<code>.v-layout-header</code>)，
-                            侧边(<code>.v-layout-aside</code>)，(<code>.v-layout-content</code>)
+                            侧边(<code>.v-layout-aside</code>)，内容(<code>.v-layout-content</code>)
                         </small>
                     </div>
                     <div class="v-card-body">
@@ -101,6 +101,109 @@
                             </div>
                             <div class="v-layout-header v-bgc-gray">
                                 <div class="v-middle v-center v-txt-white">HEADER</div>
+                            </div>
+                            <div class="v-layout-content v-bgc-silver-dark">
+                                <div class="v-middle v-center">CONTENT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="v-article-header">Aside尺寸</h1>
+    <p class="v-article-meta">默认提供其它四种不同的尺寸大小：<code>.v-narrow</code>、
+        <code>.v-small</code>、<code>.v-medium</code>、<code>.v-large</code>
+    </p>
+    <div class="v-grid-fluid v-row-gapless">
+        <div class="v-row">
+            <div class="v-col-xs-12 v-col-lg-6">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">Narrow</h2>
+                        <small class="v-card-subtitle">
+                            添加类 <code>.v-narrow</code> 至 <code>.v-layout</code> ,默认宽度为<code>4rem</code>.
+                        </small>
+                    </div>
+                    <div class="v-card-body">
+                        <div class="v-layout v-narrow" style="height:240px;">
+                            <div class="v-layout-aside v-bgc-gray v-txt-white">
+                                <div class="v-middle v-center">ASIDE</div>
+                            </div>
+                            <div class="v-layout-header v-bgc-gray-light">
+                                <div class="v-middle v-center">HEADER</div>
+                            </div>
+                            <div class="v-layout-content v-bgc-silver-dark">
+                                <div class="v-middle v-center">CONTENT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v-col-xs-12 v-col-lg-6">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">Small</h2>
+                        <small class="v-card-subtitle">
+                            添加类 <code>.v-small</code> 至 <code>.v-layout</code> ,默认宽度为<code>14rem</code>.
+                        </small>
+                    </div>
+                    <div class="v-card-body">
+                        <div class="v-layout v-small" style="height:240px;">
+                            <div class="v-layout-aside v-bgc-gray v-txt-white">
+                                <div class="v-middle v-center">ASIDE</div>
+                            </div>
+                            <div class="v-layout-header v-bgc-gray-light">
+                                <div class="v-middle v-center">HEADER</div>
+                            </div>
+                            <div class="v-layout-content v-bgc-silver-dark">
+                                <div class="v-middle v-center">CONTENT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="v-row">
+            <div class="v-col-xs-12 v-col-lg-6">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">Medium</h2>
+                        <small class="v-card-subtitle">
+                            添加类 <code>.v-medium</code> 至 <code>.v-layout</code> ,默认宽度为<code>22rem</code>.
+                        </small>
+                    </div>
+                    <div class="v-card-body">
+                        <div class="v-layout v-medium" style="height:240px;">
+                            <div class="v-layout-aside v-bgc-gray v-txt-white">
+                                <div class="v-middle v-center">ASIDE</div>
+                            </div>
+                            <div class="v-layout-header v-bgc-gray-light">
+                                <div class="v-middle v-center">HEADER</div>
+                            </div>
+                            <div class="v-layout-content v-bgc-silver-dark">
+                                <div class="v-middle v-center">CONTENT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="v-col-xs-12 v-col-lg-6">
+                <div class="v-card">
+                    <div class="v-card-header">
+                        <h2 class="v-card-title">Large</h2>
+                        <small class="v-card-subtitle">
+                            添加类 <code>.v-large</code> 至 <code>.v-layout</code> ,默认宽度为<code>26rem</code>.
+                        </small>
+                    </div>
+                    <div class="v-card-body">
+                        <div class="v-layout v-large" style="height:240px;">
+                            <div class="v-layout-aside v-bgc-gray v-txt-white">
+                                <div class="v-middle v-center">ASIDE</div>
+                            </div>
+                            <div class="v-layout-header v-bgc-gray-light">
+                                <div class="v-middle v-center">HEADER</div>
                             </div>
                             <div class="v-layout-content v-bgc-silver-dark">
                                 <div class="v-middle v-center">CONTENT</div>

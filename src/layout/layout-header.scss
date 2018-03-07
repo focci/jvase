@@ -2,7 +2,5 @@
 
 .v-layout-header {
     height: $layout-header-height;
-    .v-layout-aside+& {
-        margin-left: $layout-aside-width;
-    }
+    transition: margin-left .3s;
 }

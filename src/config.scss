@@ -81,7 +81,8 @@ $font-color: $color-black-light;
 // layout
 // =============================================
 $layout-header-height: 4rem;
-$layout-aside-width: 19rem;
+// small, default, medium, large, narrow
+$layout-aside-size: (14rem, 18rem, 22rem, 26rem, 4rem);
 
 // card
 // =============================================

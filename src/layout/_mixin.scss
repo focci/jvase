@@ -1,2 +1,18 @@
 @charset 'utf-8';
 
+@mixin setAsideSize(
+    $name: '',
+    $size: $layout-aside-width
+) {
+    .v-layout#{$name} {
+        .v-layout-aside {
+            width: $size;
+        }
+        .v-layout-aside~.v-layout-content {
+            left: $size;
+        }
+        .v-layout-aside+.v-layout-header {
+            margin-left: $size;
+        }
+    }
+}

@@ -3,7 +3,7 @@
 .v-layout-aside {
     @extend .v-absolute;
 
-    width: $layout-aside-width;
+    transition: width .3s;
     top: 0;
     bottom: 0;
 

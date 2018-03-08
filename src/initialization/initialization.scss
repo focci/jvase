@@ -27,6 +27,10 @@ body {
     outline: none;
 }
 
+small, p {
+    font-size: 87.5%;
+}
+
 a {
     text-decoration: none;
     color: $color-primary;
@@ -46,9 +50,9 @@ hr {
     @extend .v-block;
 
     height: 0;
-    margin: 1rem 0;
+    margin: .875rem 0;
     border: 0;
-    border-top: torem(1px) solid #eee;
+    border-top: 1px solid #eee;
 }
 
 textarea {
@@ -66,29 +70,29 @@ a {
 }
 
 p {
-    margin: 0 0 torem(7px);
+    margin: 0 0 .5rem;
 }
 
 ul,
 ol {
     margin-top: 0;
-    margin-bottom: torem(10px);
+    margin-bottom: .75rem;
     
     &.v-inline {
         list-style: none;
         padding-left: 0;
-        margin-left: torem(-7px);
+        margin-left: -.5rem;
         >li {
             display: inline-block;
-            padding-left:torem(7px);
-            padding-right:torem(7px);
+            padding-left: .5rem;
+            padding-right: .5rem;
         }
     }
 }
 
 dl {
     margin-top: 0;
-    margin-bottom: torem(21px);
+    margin-bottom: 1.25rem;
     >dt {
         font-weight: 700;
     }
@@ -100,12 +104,12 @@ dl {
             @extend .v-ellipsis;
 
             float: left;
-            width: torem(154px);
+            width: 9.5rem;
             text-align: right;
             clear: left;
         }
         >dd {
-            margin-left: torem(182px);
+            margin-left: 11rem;
         }
     }
 }
@@ -121,8 +125,8 @@ kbd,
 code {
     @extend .v-radius;
 
-    padding: torem(2px) torem(4px);
-    font-size: 96%;
+    padding: .125rem .25rem;
+    font-size: 87.5%;
     color: $color-white;
     background-color: $color-black;
 }
@@ -136,8 +140,8 @@ pre {
     @extend .v-radius;
 
     display: block;
-    padding: torem(14px);
-    margin: 0 0 torem(14px);
+    padding: .875rem;
+    margin: 0 0 .875rem;
     color: $color-black-light;
     word-break: break-all;
     word-wrap: break-word;
@@ -145,14 +149,14 @@ pre {
 }
 
 blockquote {
-    border-left: solid torem(7px) #eee;
+    border-left: solid .5rem #eee;
     margin-left: 0;
     margin-right: 0;
-    padding-left: torem(21px);
-    padding-bottom: torem(7px);
-    font-size: torem(16px);
+    padding-left: 1.25rem;
+    padding-bottom: .5rem;
+    font-size: 1rem;
     footer {
-        font-size: torem(14px);
+        font-size: .875rem;
         color: $color-steel-light;
         &:before {
             content: '\2014 \00A0'
@@ -161,8 +165,8 @@ blockquote {
     &.v-blockquote-right {
         text-align: right;
         border-left: 0;
-        border-right: solid torem(7px) #eee;
-        padding-right: torem(21px);
+        border-right: solid .5rem #eee;
+        padding-right: 1.25rem;
         padding-left: 0;
         footer {
             &:before {

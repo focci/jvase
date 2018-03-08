@@ -8,6 +8,7 @@
     @extend .v-badge.v-normal-size;
     @extend .v-flex-inline;
     @extend .v-flex-middle;
+    @extend .v-flex-center;
 
     line-height: $line-height;
     border-radius: $border-radius;

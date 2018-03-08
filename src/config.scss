@@ -60,7 +60,7 @@ $auxiliary-styles: (
 
 // font
 // =============================================
-$font-size: 14px;
+$font-size: 16px;
 $font-color: $color-black-light;
 $font-family: ProximaNova,
     BlinkMacSystemFont,
@@ -80,32 +80,33 @@ $font-color: $color-black-light;
 
 // layout
 // =============================================
-$layout-header-height: 4rem;
+$layout-header-height: 3.5rem;
 // small, default, medium, large, narrow
-$layout-aside-size: (14rem, 18rem, 22rem, 26rem, 4rem);
+$layout-aside-size: (12rem, 16rem, 20rem, 24rem, 4rem);
 
 // card
 // =============================================
 $card-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
-$card-margin: 0 0 2.5rem;
+$card-margin: 0 0 2.25rem;
 $card-background-color: #fff;
 
-$card-header-padding: 2rem;
+$card-header-padding: 1.75rem;
 $card-title-margin: 0;
-$card-title-font-size: 1.2rem;
+$card-title-font-size: 1.25rem;
 $card-subtitle-color: $color-steel-light;
 $card-subtitle-margin-top: .5rem;
 
-$card-body-padding: 2rem;
+$card-body-padding: $card-header-padding;
 
 // menu
 // =============================================
 $menu-label-color: $color-steel-light;
-$menu-label-font-size: .8rem;
-$menu-label-margin-bottom: 1rem;
+$menu-label-font-size: .75rem;
+$menu-label-margin-bottom: .75rem;
 
-$menu-list-item-padding: .5rem .75rem;
+$menu-list-item-padding: .375rem .75rem;
 $menu-list-item-color: $color-black-light;
+$menu-list-item-font-size: .875rem;
 $menu-list-item-hover-bgc: $color-silver-dark;
 $menu-list-item-active-bgc: $color-primary;
 $menu-list-item-active-color: #fff;
@@ -135,9 +136,9 @@ $badge-color: $color-steel;
 $badge-adjust-size: (
   // height font-size 
     (0 0), // unuseful
+    (1.25rem .75rem),
     (1.5rem 1rem),
-    (2rem 1.25rem),
-    (2.5rem 1.5rem)
+    (2rem 1.25rem)
 );
 
 // delete
@@ -175,20 +176,20 @@ $table-adjust-size: (
 // =============================================
 $article-padding: 3rem;
 
-$article-header-font-size: 2rem;
-$article-header-margin-bottom: 1rem;
+$article-header-font-size: 1.75rem;
+$article-header-margin-bottom: .75rem;
 $article-header-color: $color-black;
 
-$article-meta-font-size: 1rem;
-$article-meta-margin-bottom: 1rem;
+$article-meta-font-size: .875rem;
+$article-meta-margin-bottom: .75rem;
 $article-meta-color: $color-steel-light;
 
-$article-body-padding: 1rem;
+$article-body-padding: .75rem;
 
 
 // button
 // =============================================
-$btn-font-size: 1rem;
+$btn-font-size: .875rem;
 $btn-padding: torem(6px) 1rem;
 $btn-color: $color-steel;
 $btn-border-color: $color-silver-dark;
@@ -199,12 +200,12 @@ $btn-hover-border-color: $color-gray;
 
 $btn-active-border-color: $color-gray-light;
 
-$btn-sizes: (
-  // padding font-size
-    (1.5rem (.25rem .5rem) 1rem),
+$btn-adjust-size: (
+  // horizontal-padding vertical-padding  font-size
+    (.25rem .5rem 1rem),
     ((torem(6px) 1rem) $btn-font-size),
-    (.5rem 1rem),
-    (.5rem 1rem)
+    (.5rem 1rem $btn-font-size),
+    (.5rem 1rem $btn-font-size)
 );
 
 // 

@@ -8,7 +8,7 @@
 *.nupkg
 *.nuspec
 *.bat
-/.sass-cache/*
+.sass-cache
 /node_modules/*
 /docs/Jvase_logo.png
 /web.config

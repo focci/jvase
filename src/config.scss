@@ -1,12 +1,12 @@
 @charset 'utf-8';
 // color
 // =============================================
-$color-primary: #03a9f4;
+$color-primary: #00b1f9;
 
 $color-danger: #ff5b69;
-$color-warn: #f90;
-$color-info: #21baf3;
-$color-success: #32c787;
+$color-warn: #ffb13d;
+$color-info: #18daf1;
+$color-success: #33d690;
 
 $color-success-light: #f1ffef;
 $color-warn-light: #fffaef;
@@ -87,12 +87,12 @@ $layout-aside-size: (12rem, 16rem, 20rem, 24rem, 4rem);
 // card
 // =============================================
 $card-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
-$card-margin: 0 0 2.25rem;
+$card-margin: 0 0 2rem;
 $card-background-color: #fff;
 
 $card-header-padding: 1.75rem;
 $card-title-margin: 0;
-$card-title-font-size: 1.25rem;
+$card-title-font-size: 1.125rem;
 $card-subtitle-color: $color-steel-light;
 $card-subtitle-margin-top: .5rem;
 
@@ -176,7 +176,7 @@ $table-adjust-size: (
 // =============================================
 $article-padding: 3rem;
 
-$article-header-font-size: 1.75rem;
+$article-header-font-size: 1.5rem;
 $article-header-margin-bottom: .75rem;
 $article-header-color: $color-black;
 

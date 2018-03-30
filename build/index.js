@@ -34,6 +34,7 @@ gulp.task('styles', function() {
         tasks = tasks.pipe(nano());
     }
 	tasks.pipe(gulp.dest(get_dest_dir('styles')));
+	tasks.pipe(gulp.dest('../../jvase-doc/docs/static'));
 });
 
 var gulpItems = ['assets', 'styles'];

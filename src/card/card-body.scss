@@ -3,3 +3,9 @@
 .v-card-body {
     padding: $card-body-padding;
 }
+
+@media screen and (max-width:768px) {
+    .v-card-body {
+        padding: 1rem;
+    }
+}

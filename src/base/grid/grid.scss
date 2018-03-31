@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+.v-box {
+    padding: $grid-gap;
+}
+
+.v-grid,
+.v-grid-fluid {
+    padding-left: $grid-gap;
+    padding-right: $grid-gap;
+    margin-left: auto;
+    margin-right: auto;
+
+    > .v-row {
+        margin-bottom: $grid-rows-margin-bottom;
+        margin-left: -$grid-gap*2;
+        margin-right: -$grid-gap*2;
+
+        >[class*='v-col-'] {
+            padding-left: $grid-gap;
+            padding-right: $grid-gap;
+        }
+    }
+}
+
+.v-grid,
+.v-grid-fluid,
+.v-row,
+[class*='v-col-'] {
+    @include clearFloat();
+	position: relative;
+}

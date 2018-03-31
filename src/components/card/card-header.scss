@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+.v-card-header {
+    padding: $card-header-padding;
+}
+
+.v-card-title {
+    margin: $card-title-margin;
+    font-size: $card-title-font-size;
+}
+
+.v-card-subtitle {
+    display: block;
+    margin-top: $card-subtitle-margin-top;
+    color: $card-subtitle-color;
+    font-size: $card-subtitle-font-size;
+}

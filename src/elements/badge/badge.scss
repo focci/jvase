@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.v-badge {
+    display: inline-block; // IE9
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+    position: relative;
+    height: $badge-height;
+    
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    line-height: $line-height;
+    border-radius: $border-radius;
+    padding-left: $badge-padding-hor;
+    padding-right: $badge-padding-hor;
+    font-weight: 500;
+}

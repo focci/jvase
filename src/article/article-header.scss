@@ -1,9 +1,0 @@
-@charset 'utf-8';
-
-.v-article-header {
-    @extend .v-block;
-
-    font-size: $article-header-font-size;
-    margin-bottom: $article-header-margin-bottom;
-    color: $article-header-color;
-}

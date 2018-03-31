@@ -1,0 +1,6 @@
+@charset 'utf-8';
+
+.v-layout-header {
+    height: $layout-header-height;
+    transition: margin-left .3s;
+}

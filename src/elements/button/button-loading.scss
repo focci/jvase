@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.v-btn.v-loading {
+    color: transparent !important;
+    pointer-events: none;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        border: solid 2px rgba(0,0,0,.2);
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        left: calc(50% - (1em / 2));
+        top: calc(50% - (1em / 2));
+        animation: rounds .5s linear infinite;
+    }
+}

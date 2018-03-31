@@ -1,0 +1,7 @@
+@charset 'utf-8';
+
+@each $index, $name in $sizes {
+    $size: nth($icon-adjust-size, $index);
+
+    @include setIconSize($name, $size);
+}

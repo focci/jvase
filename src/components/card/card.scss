@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+.v-card {
+    position: relative;
+    box-shadow: $card-box-shadow;
+    margin: $card-margin;
+    background-color: $card-background-color;
+    border-radius: $border-radius;
+}
+
+.v-card-header~.v-card-body {
+    padding-top: 0;
+}

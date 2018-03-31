@@ -1,0 +1,51 @@
+@charset 'utf-8';
+
+@mixin setBtnStyle (
+    $name: '',
+    $bgc: '',
+    $color: '',
+    $border-color: transparent
+) {
+    .v-btn#{$name} {
+        background-color: $bgc;
+        color: $color;
+        border-color: $border-color;
+
+        @if ($border-color == transparent) {
+            &.v-outlined {
+                background-color: $border-color;
+                border-color: $bgc;
+                color: $bgc;
+
+                &:not(:disabled):hover,
+                &:not(:disabled):active {
+                    color: lighten($bgc, 50%);
+                    border-color: transparent;
+                }
+            }
+        }
+
+        &:not(:disabled):hover {
+            border-color: darken($border-color, 10%);
+            @if ($border-color == transparent) {
+                background-color: darken($bgc, 5%);
+            }
+        }
+
+        &:not(:disabled):active {
+            border-color: darken($border-color, 30%);
+            @if ($border-color == transparent) {
+                background-color: darken($bgc, 10%);
+            }
+        }
+    }
+}
+
+@mixin setBtnSize (
+    $name: '',
+    $font-size: $btn-font-size
+) {
+    .v-btn#{$name} {
+        font-size: $font-size;
+    }
+}

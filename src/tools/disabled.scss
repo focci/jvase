@@ -1,8 +1,6 @@
 @charset 'utf-8';
 
+[disabled],
 .v-disabled {
-    @extend .v-opacity-5;
-
-    pointer-events: none;
-    cursor: not-allowed;
+    @include disabled;
 }

@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+$sizes: (
+    1: '.v-small',
+    2: '.v-medium',
+    3: '.v-large'
+);
+
+$auxiliary: (
+    1: '.v-success' $success $success-light,
+    2: '.v-danger' $danger $danger-light,
+    3: '.v-warn' $warn $warn-light,
+    4: '.v-info' $info $info-light
+);
+
+$color-maps: (
+    'primary':          $primary,
+    'danger':           $danger,
+    'warn':             $warn,
+    'info':             $info,
+    'success':          $success,
+    'success-light':    $success-light,
+    'warn-light':       $warn-light,
+    'danger-light':     $danger-light,
+    'info-light':       $info-light,
+    'black':            $black,
+    'black-light':      $black-light,
+    'black-dark':       $black-dark,
+    'steel':            $steel,
+    'steel-light':      $steel-light,
+    'steel-dark':       $steel-dark,
+    'gray':             $gray,
+    'gray-light':       $gray-light,
+    'gray-dark':        $gray-dark,
+    'silver-dark':      $silver-dark,
+    'silver':           $silver,
+    'white':            $white
+);
+
+$resposive-maps: (
+    xs  $grid-screen-xs $grid-gap,
+    sm  $grid-screen-sm $grid-gap,
+    md  $grid-screen-md $grid-gap,
+    lg  $grid-screen-lg $grid-gap
+);

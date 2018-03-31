@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+.v-table.v-border {
+    border-top: $table-cell-border;
+    border-left: $table-cell-border;
+
+    >thead >tr >th,
+    >tbody >tr >td {
+        border-right: $table-cell-border;
+    }
+
+    >thead >tr >th {
+        background-color: $table-header-background-color;
+        border-bottom-width: 1px;
+        color: $table-cell-color;
+    }
+}

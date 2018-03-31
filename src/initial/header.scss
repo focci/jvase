@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+// h1 ~ h6
+h1,h2,h3,h4,h5,h6,
+.v-h1,.v-h2,.v-h3,.v-h4,.v-h5,.v-h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: $black;
+}
+
+@for $i from 1 through 6 {
+    h#{$i},
+    .v-h#{$i} {
+        font-size: nth($header-size, $i);
+    }
+}
+
+// v-display-* (*: 1 ~ 4)
+h1[class*='v-display-'] {
+    font-weight: 300;
+}
+
+@for $i from 1 through 4 {
+    .v-display-#{$i} {
+        font-size: nth($header-display-size, $i);
+    }
+}

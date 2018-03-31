@@ -1,8 +1,0 @@
-@charset 'utf-8';
-
-@each $key, $item in $sizes {
-    @include setDeleteSize(
-        nth($item, 1), 
-        nth($del-adjust-size, $key)
-    );
-}

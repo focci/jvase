@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+// default
+@include setBtnStyle ('', $btn-background-color, $btn-color, $btn-border-color);
+
+// .v-black
+@include setBtnStyle ('.v-black', $black, $white);
+
+// .v-dark
+@include setBtnStyle ('.v-dark', $steel, $white);
+
+// .v-white
+@include setBtnStyle ('.v-white',$white, $steel);
+
+// .v-info, .v-warn, .v-danger, .v-success
+@each $index, $item in $auxiliary {
+    $name: nth($item, 1);
+    $color: nth($item, 2);
+
+    @include setBtnStyle ($name, $color, $white);
+}

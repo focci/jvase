@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+.v-layout-aside {
+    position: absolute;
+    transition: width .3s;
+    top: 0;
+    bottom: 0;
+
+    .v-layout-header~& {
+        top: $layout-header-height;
+    }
+}

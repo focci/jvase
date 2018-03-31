@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.v-gapless,
+.v-row-gapless {
+    .v-row {
+        margin-bottom: 0;
+    }
+}
+
+.v-gapless,
+.v-col-gapless {
+    >.v-row {
+        margin-left: -$grid-gap;
+        margin-right: -$grid-gap;
+        
+        >[class*='v-col-'] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

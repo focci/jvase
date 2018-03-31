@@ -1,0 +1,24 @@
+// @charset 'utf-8';
+
+.v-btn {
+    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+
+    padding: $btn-padding-ver $btn-padding-hor;
+    font-size: nth($btn-size, 4);
+    height: $btn-height;
+    line-height: $line-height;
+
+    border-radius: $border-radius;
+    border: solid 1px transparent;
+
+    cursor: pointer;
+    user-select: none;
+    transition: border-color .2s, background-color .2s;
+}

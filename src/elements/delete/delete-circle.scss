@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+.v-del.v-circle {
+    background-color: $del-circle-bgc;
+    border-radius: 50%;
+
+    &:before,
+    &:after {
+        background-color: #fff;
+    }
+
+    &:before {
+        width: 50%;
+    }
+
+    &:after {
+        height: 50%;
+    }
+}

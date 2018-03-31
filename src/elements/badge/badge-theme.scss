@@ -1,0 +1,14 @@
+@charset 'utf-8';
+
+@include setBadgeStyle();
+@include setBadgeStyle('.v-primary', $primary, $white);
+@include setBadgeStyle('.v-black', $black, $white);
+@include setBadgeStyle('.v-dark', $steel, $white);
+@include setBadgeStyle('.v-white', $white, $steel);
+
+@each $index, $item in $auxiliary {
+    $name:  nth($item, 1);
+    $bgc:   nth($item, 2);
+
+    @include setBadgeStyle($name, $bgc, $white);
+}

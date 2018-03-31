@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+// Opacity ($value: 0-10)
+@mixin setOpacity ($val) {
+    opacity: $val / 10;
+    filter: alpha(opacity=($val * 10)); // for IE6,7,8
+}
+
+// Clear float
+@mixin clearFloat () {
+    &:after {
+		content: '';
+        display: block;
+        clear: both;
+	}
+}
+
+// Disabled
+@mixin disabled () {
+    @include setOpacity(5);
+    cursor: not-allowed;
+}

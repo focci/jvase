@@ -1,0 +1,9 @@
+@charset 'utf-8';
+
+@include setTableSize();
+
+@each $index, $name in $sizes {
+    $size: nth($table-size, $index);
+
+    @include setTableSize($name, $size);
+}

@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+@each $item in $resposive-maps {
+
+	$name:		nth($item, 1);
+	$size:		nth($item, 2);
+	$gap:		nth($item, 3);
+	$total:		$grid-total-column;
+
+	@if( $name == xs ) {
+		[class*='v-col-xs-']{
+			float: left;
+		}
+
+		@for $i from 1 through $total {
+			.v-col-#{$name}-#{$i} {
+				width:  percentage($i / $total);
+			}
+			.v-col-#{$name}-offset-#{$i} {
+				margin-left:  percentage($i / $total);
+			}
+		}
+	}
+	@else {
+		@media screen and (min-width: $size) {
+			.v-grid {
+				width: $size;
+			}
+			[class*='v-col-#{$name}-'] {
+				float: left;
+			}
+			@for $i from 1 through $total {
+				.v-col-#{$name}-#{$i} {
+					width:  percentage($i / $total);
+				}
+				.v-col-#{$name}-offset-#{$i} {
+					margin-left:  percentage($i / $total);
+				}
+			}
+		}
+	}
+}

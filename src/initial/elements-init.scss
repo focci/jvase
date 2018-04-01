@@ -4,8 +4,6 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 body{
@@ -39,6 +37,7 @@ a {
 
 img {
     display: inline-block;
+    max-width: 100%;
     
     @at-root
     :link &,

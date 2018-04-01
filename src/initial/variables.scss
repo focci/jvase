@@ -81,7 +81,7 @@ $card-body-padding: $card-header-padding;
 // menu
 // =============================================
 $menu-label-color: $steel-light;
-$menu-label-font-size: .875rem;
+$menu-label-font-size: .75rem;
 $menu-label-margin-bottom: .75rem;
 
 $menu-list-item-padding: .375rem .75rem;
@@ -112,7 +112,7 @@ $badge-height: 1.5em;
 $badge-background-color: $silver-dark;
 $badge-color: $steel;
 // medium, large, default
-$badge-font-size: 1.25rem, 1.5rem, 1rem;
+$badge-size: 1rem, 1.25rem, .875rem;
 
 // delete
 // =============================================
@@ -158,24 +158,22 @@ $article-body-padding: .75rem;
 $article-body-font-size: .875rem;
 
 
-// button
+// button & input
 // =============================================
-$btn-size: .75rem, 1.25rem, 1.5rem, 1rem;
-$btn-padding-ver: calc(.375em - 1px);
-$btn-padding-hor: .75em;
-$btn-height: 2.25em;
-$btn-color: $steel-dark;
-$btn-border-color: #dbdbdb;
-$btn-background-color: $white;
+// small, medium, large, default
+$bi-size: .75rem, 1rem, 1.25rem, .875rem;
 
-$btn-hover-color: $steel-dark;
-$btn-hover-border-color: $gray;
+$bi-padding-ver: calc(.5em - 1px);
+$bi-padding-hor: .8em;
+$bi-height: 2.5em;
+$bi-color: $steel-dark;
+$bi-border-color: #dbdbdb;
+$bi-background-color: $white;
 
-$btn-active-border-color: $gray-light;
-
-// 
+// form
 // =============================================
-
+$form-select-padding-right: 2em;
+$form-label-width: 5rem;
 
 // 
 // =============================================

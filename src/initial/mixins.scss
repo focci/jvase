@@ -1,12 +1,12 @@
 @charset 'utf-8';
 
-// Opacity ($value: 0-10)
+// common
+// ======================================
 @mixin setOpacity ($val) {
     opacity: $val / 10;
     filter: alpha(opacity=($val * 10)); // for IE6,7,8
 }
 
-// Clear float
 @mixin clearFloat () {
     &:after {
 		content: '';
@@ -15,8 +15,259 @@
 	}
 }
 
-// Disabled
 @mixin disabled () {
     @include setOpacity(5);
     cursor: not-allowed;
 }
+
+@mixin setBgc($name, $color) {
+    .v-bgc-#{$name} {
+        background-color: $color;
+    }
+}
+
+@mixin setFontColor($name, $color) {
+    .v-#{$name} {
+        color: $color;
+    }
+}
+
+// Plublic parts for input & button
+@mixin bi-public () {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    white-space: nowrap;
+    appearance: none;
+    box-shadow: none;
+
+    padding: $bi-padding-ver $bi-padding-hor;
+    font-size: nth($bi-size, 4);
+    height: $bi-height;
+    line-height: $line-height;
+
+    border-radius: $border-radius;
+    border: solid 1px transparent;
+
+    user-select: none;
+    transition: 
+        border-color .2s,
+        box-shadow .2s,
+        background-color .2s;
+    
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:focus {
+        box-shadow: 0 0 2px 2px rgba(0,177,249,.2);
+    }
+}
+
+// layout
+// ======================================
+@mixin setLayoutAsideSize (
+    $name: '',
+    $size: nth($layout-aside-size, 4)
+) {
+    .v-layout#{$name} {
+        > .v-layout-aside {
+            width: $size;
+        }
+        > .v-layout-aside ~ .v-layout-content {
+            left: $size;
+        }
+        > .v-layout-aside + .v-layout-header {
+            margin-left: $size;
+        }
+    }
+}
+
+// badge
+// ======================================
+@mixin setBadgeStyle(
+    $name: '',
+    $bg: $badge-background-color,
+    $color: $badge-color
+) {
+    .v-badge#{$name} {
+        background-color: $bg;
+        color: $color;
+    }
+}
+
+@mixin setBadgeSize(
+    $name: '',
+    $font-size: nth($badge-size, 3)
+) {
+    .v-badge#{$name},
+    .v-badges#{$name} > .v-badge {
+        font-size: $font-size;
+    }
+}
+
+// button
+// ======================================
+@mixin setBtnStyle (
+    $name: '',
+    $bgc: '',
+    $color: '',
+    $border-color: transparent
+) {
+    .v-btn#{$name} {
+        background-color: $bgc;
+        color: $color;
+        border-color: $border-color;
+
+        @if ($border-color == transparent) {
+            &.v-outlined {
+                background-color: $border-color;
+                border-color: $bgc;
+                color: $bgc;
+
+                &:not(:disabled):hover,
+                &:not(:disabled):active {
+                    color: lighten($bgc, 50%);
+                    border-color: transparent;
+                }
+            }
+        }
+
+        &:not(:disabled):hover {
+            border-color: darken($border-color, 10%);
+            @if ($border-color == transparent) {
+                background-color: darken($bgc, 5%);
+            }
+        }
+
+        &:not(:disabled):active {
+            border-color: darken($border-color, 30%);
+            @if ($border-color == transparent) {
+                background-color: darken($bgc, 10%);
+            }
+        }
+    }
+}
+
+@mixin setBtnSize (
+    $name: '',
+    $font-size: $btn-font-size
+) {
+    .v-btn#{$name},
+    .v-btns#{$name} > .v-btn {
+        font-size: $font-size;
+    }
+}
+
+// icon
+// ======================================
+@mixin setIconSize(
+    $name: '',
+    $size: ''
+) {
+    .v-icon#{$name} {
+        width: $size;
+        height: $size;
+
+        >i {
+            font-size: $size;
+        }
+    }
+}
+
+// table
+// ======================================
+@mixin setTableSize(
+    $name: '',
+    $font-size: nth($table-size, 4)
+) {
+    .v-table#{$name} {
+        >thead >tr >th,
+        >tbody >tr >td {
+            font-size: $font-size;
+        }
+    }
+}
+
+
+// form
+// ======================================
+// Public parts for radio & checkbox
+@mixin rc-public () {
+    padding-left: 1.5em;
+    position: relative;
+    padding-right: .25rem;
+
+    >input {
+        display: none;
+        &:checked + span:before {
+            border-color: $primary;
+        }
+    }
+
+    > span {
+        user-select: none;
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .3s;
+        }
+
+        &:before {
+            width: 1.2em;
+            height:  1.2em;
+            left: 0;
+            border: solid 1px $bi-border-color;
+        }
+    }
+}
+
+// layout
+// ======================================
+
+// layout
+// ======================================
+
+// layout
+// ======================================
+
+// layout
+// ======================================
+
+// layout
+// ======================================
+
+
+// layout
+// ======================================
+
+
+// layout
+// ======================================
+
+
+// layout
+// ======================================
+
+
+// layout
+// ======================================
+
+
+// layout
+// ======================================
+
+
+// layout
+// ======================================
+
+
+// layout
+// ======================================
+

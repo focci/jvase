@@ -1,2 +1,35 @@
 @charset 'utf-8';
 
+.v-form,
+.v-form-row,
+.v-form-col {
+    display: block;
+    @include clearFloat();
+}
+
+.v-form-col {
+    padding: .4rem 1rem .4rem 0;
+    display: inline-block;
+}
+
+.v-form-label {
+    color: $steel-light;
+    display: inline-block;
+    padding: .25rem .875rem .25rem 0;
+}
+
+.v-form-inline {
+    > .v-form-label,
+    > .v-region {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    > .v-form-label {
+        width: $form-label-width;
+    }
+
+    > .v-region {
+        width: calc(100% - #{$form-label-width});
+    }
+}

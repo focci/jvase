@@ -1,2 +1,25 @@
 @charset 'utf-8';
 
+.v-radio {
+    @include rc-public();
+}
+
+.v-radio {
+    >input {
+        &:checked + span:after {
+            background-color: $primary;
+        }
+    }
+    > span {
+        &:before,
+        &:after {
+            border-radius: 50%;
+        }
+        &:after {
+            width: .48em;
+            height:  .48em;
+            background-color: transparent;
+            left: .36em;
+        }
+    }
+}

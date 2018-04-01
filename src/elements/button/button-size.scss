@@ -1,7 +1,7 @@
 // @charset 'utf-8';
 
 @each $index, $name in $sizes {
-    $size: nth($btn-size, $index);
+    $size: nth($bi-size, $index);
 
     @include setBtnSize($name, $size);
 }

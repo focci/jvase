@@ -1,2 +1,28 @@
 @charset 'utf-8';
 
+.v-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &:after {
+        content: '';
+        display: block;
+        width: .5em;
+        height: .5em;
+        border: solid .1em $primary;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        right: .8em;
+        top: calc(50% - (.7em / 2));
+        transform: rotate(45deg);
+        pointer-events: none;
+    }
+    > select {
+        @include bi-public();
+        border-color: $bi-border-color;
+        padding-right: $form-select-padding-right;
+        width: 100%;
+    }
+}

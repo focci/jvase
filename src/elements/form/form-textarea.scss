@@ -1,2 +1,7 @@
 @charset 'utf-8';
 
+textarea.v-input {
+    height: auto;
+    width: 100% !important;
+    min-height: 80px;
+}

@@ -1,2 +1,27 @@
 @charset 'utf-8';
 
+.v-checkbox {
+    @include rc-public();
+}
+
+.v-checkbox {
+    >input:checked + span {
+        &:before {
+            background-color: $primary;
+        }
+
+        &:after {
+            border-left-color: $white;
+            border-bottom-color: $white;
+        }
+    }
+
+    >span:after {
+        width: .8em;
+        height: .4em;
+        border: solid 2px transparent;
+        transform: rotate(-45deg);
+        margin-top: -.3em;
+        margin-left: .2em;
+    }
+}

@@ -1,2 +1,11 @@
 @charset 'utf-8';
 
+.v-input {
+    @include bi-public();
+    width: 100%;
+    border-color: $bi-border-color;
+
+    &:focus {
+        border-color: $primary;
+    }
+}

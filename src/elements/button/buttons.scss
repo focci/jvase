@@ -2,17 +2,23 @@
 
 .v-btns {
     display: inline-block;
-    display: inline-flex;
+    vertical-align: top;
     font-size: 0;
     position: relative;
     padding-left: 1px;
+
+    &.v-fullwidth >.v-btn {
+        width: 100%;
+    }
 
     >.v-btn {
         margin-left: -1px;
         z-index: 0;
         border-radius: 0;
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &:active {
             z-index: 1;
         }
 
@@ -40,7 +46,6 @@
     }
 
     &.v-vertical {
-        flex-direction: column;
         padding-top: 1px;
         >.v-btn {
             display: block;

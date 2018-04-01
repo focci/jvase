@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+.v-region[class*='v-has-icon'] {
+    position: relative;
+    > .v-icon {
+        position: absolute;
+        top: 0;
+        width: $bi-height;
+        height: $bi-height;
+        line-height: $bi-height;
+        pointer-events: none;
+        color: $gray;
+    }
+
+    >.v-input:focus ~ .v-icon {
+        color: $steel;
+    }
+}
+
+.v-has-icon-left {
+    > .v-input,
+    > .v-select > select {
+        padding-left: $bi-height;
+    }
+
+    > .v-icon-left {
+        left: 0;
+    }
+}
+
+.v-has-icon-right {
+    > .v-input {
+        padding-right: $bi-height;
+    }
+
+    >.v-icon-right {
+        right: 0;
+    }
+
+    > .v-select {
+        > select {
+            padding-right: $bi-height + $form-select-padding-right;
+        }
+        & ~ .v-icon-right {
+            right: $form-select-padding-right;
+        }
+    }
+}

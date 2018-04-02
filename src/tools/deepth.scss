@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+[class*='z-depth-'] {
+	transition: box-shadow 0.3s;
+}
+
+@for $i from 1 through length($shadows-top-data) {
+	@each $pos in ("-bottom", "-top", "") {
+		.z-depth-#{$i}#{$pos} {
+			@if ($pos == "-bottom") {
+				box-shadow: nth($shadows-bottom-data, $i);
+			}
+			@else if ($pos == "-top") {
+				box-shadow: nth($shadows-top-data, $i);
+			}
+			@else {
+				box-shadow: nth($shadows-top-data, $i), nth($shadows-bottom-data, $i);
+			}
+		}
+	}
+}

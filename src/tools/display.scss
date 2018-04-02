@@ -1,37 +1,21 @@
 @charset 'utf-8';
 
 .v-hide {
-    display: none;
+    display: none !important;
 }
 
 .v-block {
-    display: block;
+    display: block !important;
 }
 
 .v-inline {
-    display: inline;
+    display: inline !important;
 }
 
 .v-inline-block {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .v-invisible {
-    visibility: hidden;
+    visibility: hidden !important;
 }
-
-// .v-flex-inline {
-//     display: inline-flex;
-// }
-
-// .v-flex {
-//     display: flex;
-// }
-
-// .v-flex-middle {
-//     align-items: center;
-// }
-
-// .v-flex-center {
-//     justify-content: center;
-// }

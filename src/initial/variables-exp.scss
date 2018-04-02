@@ -43,3 +43,19 @@ $resposive-maps: (
     md  $grid-screen-md $grid-gap,
     lg  $grid-screen-lg $grid-gap
 );
+
+$shadows-top-data: (
+	(0 torem(2px) torem(10px) rgba(0, 0, 0, 0.12)),
+	(0 torem(7px) torem(21px) rgba(0, 0, 0, 0.19)),
+	(0 torem(17px) torem(49px) rgba(0, 0, 0, 0.19)),
+	(0 torem(25px) torem(56px) rgba(0, 0, 0, 0.21)),
+	(0 torem(42px) torem(77px) rgba(0, 0, 0, 0.22))
+);
+
+$shadows-bottom-data: (
+	(0 torem(2px) torem(5px) rgba(0, 0, 0, 0.16)),
+	(0 torem(7px) torem(17px) rgba(0, 0, 0, 0.20)),
+	(0 torem(12px) torem(15px) rgba(0, 0, 0, 0.24)),
+	(0 torem(16px) torem(28px) rgba(0, 0, 0, 0.22)),
+	(0 torem(28px) torem(35px) rgba(0, 0, 0, 0.20))
+);

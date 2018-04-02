@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+.v-hover:hover {
+    .v-hover-inline {
+        display: inline!important;
+    }
+
+    .v-hover-block {
+        display: block!important;
+    }
+
+    .v-hover-inline-block {
+        display: inline-block!important;
+    }
+
+    .v-hover-hidden {
+        display: none!important;
+    }
+}

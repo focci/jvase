@@ -5,7 +5,7 @@
 }
 
 .v-radio {
-    >input {
+    > input {
         &:checked + span:after {
             background-color: $primary;
         }
@@ -15,6 +15,7 @@
         &:after {
             border-radius: 50%;
         }
+        
         &:after {
             width: .48em;
             height:  .48em;

@@ -5,7 +5,7 @@
 }
 
 .v-checkbox {
-    >input:checked + span {
+    > input:checked + span {
         &:before {
             background-color: $primary;
         }
@@ -16,7 +16,7 @@
         }
     }
 
-    >span:after {
+    > span:after {
         width: .8em;
         height: .4em;
         border: solid 2px transparent;

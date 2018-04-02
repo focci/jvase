@@ -1,35 +1,41 @@
 @charset 'utf-8';
 
-.v-form,
-.v-form-row,
-.v-form-col {
-    display: block;
+.v-form-item {
     @include clearFloat();
-}
 
-.v-form-col {
-    padding: .4rem 1rem .4rem 0;
-    display: inline-block;
-}
+    display: inline-table;
+    table-layout: auto;
+    width: 100%;
+    padding: $form-item-padding;
+    vertical-align: bottom;
 
-.v-form-label {
-    color: $steel-light;
-    display: inline-block;
-    padding: .25rem .875rem .25rem 0;
-}
+    > .v-form-item {
+        display: table-cell;
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
 
-.v-form-inline {
-    > .v-form-label,
-    > .v-region {
-        display: inline-block;
-        vertical-align: middle;
+        &:last-child {
+            padding-right: 0;
+        }
     }
 
     > .v-form-label {
-        width: $form-label-width;
+        color: $steel-light;
+        display: inline-block;
+        padding: $form-label-padding;
     }
 
-    > .v-region {
-        width: calc(100% - #{$form-label-width});
+    &.v-horizontal > .v-form-label {
+        width: $form-label-width;
+        vertical-align: middle;
+        display: table-cell;
+    }
+}
+
+@media screen and (max-width: $grid-screen-xs) {
+    .v-form-item {
+        display: block !important;
+        width: 100%;
     }
 }

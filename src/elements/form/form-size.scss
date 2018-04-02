@@ -2,13 +2,12 @@
 
 @each $index,$name in $sizes {
     $size: nth($bi-size, $index);
-
-    .v-region#{$name} {
-        &,
-        > .v-select,
-        > .v-select > select,
-        > .v-input {
-            font-size: $size;
-        }
+    .v-select#{$name},
+    .v-select#{$name} > select,
+    .v-input#{$name},
+    .v-select#{$name} ~ [class*='v-icon-'],
+    .v-select#{$name} ~ [class*='v-icon-'],
+    .v-input#{$name} ~ [class*='v-icon-'] {
+        font-size: $size;
     }
 }

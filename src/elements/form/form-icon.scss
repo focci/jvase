@@ -1,7 +1,12 @@
 @charset 'utf-8';
 
-.v-region[class*='v-has-icon'] {
+.v-region {
+    font-size: 1rem;
     position: relative;
+    text-align: left;
+}
+
+.v-region[class*='v-has-icon'] {
     > .v-icon {
         position: absolute;
         top: 0;
@@ -9,11 +14,11 @@
         height: $bi-height;
         line-height: $bi-height;
         pointer-events: none;
-        color: $gray;
+        color: $gray-light;
     }
 
     >.v-input:focus ~ .v-icon {
-        color: $steel;
+        color: $steel-dark;
     }
 }
 

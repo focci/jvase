@@ -4,6 +4,7 @@
     @include setOpacity(7);
     position: relative;
     display: inline-block;
+    margin-bottom: -2px;
     line-height: $line-height;
 
     background-color: transparent;
@@ -17,7 +18,7 @@
     &:before,
     &:after {
         content: '';
-        height: 0;
+        font-style: normal;
         position: absolute;
         left: 50%;
         top: 50%;

@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+.v-version {
+    display: block;
+    min-height: 1em;
+    
+    &:after {
+        content: 'v2.0.0';
+        font-size: inherit;
+        color: $gray-light;
+    }
+}

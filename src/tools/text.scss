@@ -1,27 +1,27 @@
 @charset 'utf-8';
 
 .v-bold {
-    font-weight: 700;
+    font-weight: 700!important;
 }
 
 .v-left {
-    text-align: left;
+    text-align: left!important;
 }
 
 .v-center {
-    text-align: center;
+    text-align: center!important;
 }
 
 .v-right {
-    text-align: right;
+    text-align: right!important;
 }
 
 .v-top {
-    vertical-align: top;
+    vertical-align: top!important;
 }
 
 .v-baseline {
-    vertical-align: baseline;
+    vertical-align: baseline!important;
 }
 
 .v-middle {
@@ -31,7 +31,7 @@
 }
 
 .v-overflow-hidden {
-    overflow: hidden;
+    overflow: hidden!important;
 }
 
 .v-justify {
@@ -46,7 +46,7 @@
 }
 
 .v-nowrap {
-    white-space: nowrap;
+    white-space: nowrap!important;
 }
 
 .v-ellipsis {
@@ -56,15 +56,15 @@
 }
 
 .v-capitalize {
-    text-transform: capitalize;
+    text-transform: capitalize!important;
 }
 
 .v-lowercase {
-    text-transform: lowercase;
+    text-transform: lowercase!important;
 }
 
 .v-uppercase {
-    text-transform: uppercase;
+    text-transform: uppercase!important;
 }
 
 .v-lead {

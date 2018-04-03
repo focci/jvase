@@ -1,0 +1,46 @@
+@charset 'utf-8';
+
+.v-tag {
+    position: relative;
+    font-size: .875rem;
+    height: 2.5em;
+    display: inline-block;
+    padding: .5em 1em;
+}
+
+.v-ribbon-left,
+.v-ribbon-right {
+    position: absolute;
+}
+
+.v-ribbon-left {
+    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+}
+
+.v-ribbon-right {
+    box-shadow: -2px 2px 3px rgba(0,0,0,.1);
+}
+
+.v-ribbon-left:before,
+.v-ribbon-right:before {
+    content: '';
+    display: inline-block;
+    font-size: inherit;
+    border: solid .5em transparent;
+    top: 2.5em;
+    position: absolute;
+}
+
+.v-ribbon-left {
+    left: -1em;
+    &:before {
+        left: 0;
+    }
+}
+
+.v-ribbon-right {
+    right: -1em;
+    &:before {
+        right: 0;
+    }
+}

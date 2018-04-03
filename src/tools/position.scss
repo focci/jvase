@@ -1,13 +1,13 @@
 @charset 'utf-8';
 
 .v-absolute {
-    position: absolute;
+    position: absolute!important;
 }
 
 .v-relative {
-    position: relative;
+    position: relative!important;
 }
 
 .v-fixed {
-    position: fixed;
+    position: fixed!important;
 }

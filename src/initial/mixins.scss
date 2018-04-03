@@ -228,8 +228,28 @@
     }
 }
 
-// layout
+// tag
 // ======================================
+@mixin setRibbonStyle(
+    $name: '',
+    $bgc: $ribbon-bgc,
+    $color: $ribbon-color
+) {
+    $res-color: darken($bgc, 15%);
+    .v-tag#{$name} {
+        background-color: $bgc;
+        color: $color;
+
+        &.v-ribbon-left:before {
+            border-top-color: $res-color;
+            border-right-color: $res-color;
+        }
+        &.v-ribbon-right:before {
+            border-top-color: $res-color;
+            border-left-color: $res-color;
+        }
+    }
+}
 
 // layout
 // ======================================

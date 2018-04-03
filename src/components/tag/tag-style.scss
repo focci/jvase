@@ -1,0 +1,8 @@
+@charset 'utf-8';
+
+@include setRibbonStyle();
+@each $index,$item in $auxiliary {
+    $name: nth($item, 1);
+    $color: nth($item, 2);
+    @include setRibbonStyle($name, $color);
+}

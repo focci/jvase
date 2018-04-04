@@ -1,11 +1,11 @@
 @charset 'utf-8';
 
 // px to rem
-@function torem($px) {
-	@return ( $px / $font-size) * 1rem;
-}
+// @function torem($px) {
+// 	@return ( $px / $font-size) * 1rem;
+// }
 
-// rem to px
-@function topx($rem) {
-	@return $rem * $font-size;
-}
+// // rem to px
+// @function topx($rem) {
+// 	@return $rem * $font-size;
+// }

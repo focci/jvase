@@ -1,9 +1,9 @@
 @charset 'utf-8';
 
 $sizes: (
-    1: '.v-small',
-    2: '.v-medium',
-    3: '.v-large'
+    1: '.v-small' .75rem,
+    2: '.v-medium' 1rem,
+    3: '.v-large' 1.25rem
 );
 
 $auxiliary: (

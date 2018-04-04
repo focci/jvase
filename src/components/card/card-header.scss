@@ -5,7 +5,7 @@
 }
 
 .v-card-title {
-    margin: $card-title-margin;
+    margin: 0;
     font-size: $card-title-font-size;
 }
 
@@ -13,5 +13,5 @@
     display: block;
     margin-top: $card-subtitle-margin-top;
     color: $card-subtitle-color;
-    font-size: $card-subtitle-font-size;
+    font-size: $font-size;
 }

@@ -1,7 +1,9 @@
 @charset 'utf-8';
 
-@each $index,$name in $sizes {
-    $size: nth($bi-size, $index);
+@each $index, $item in $sizes {
+    $name: nth($item, 1);
+    $size: nth($item, 2);
+    
     .v-select#{$name},
     .v-select#{$name} > select,
     .v-input#{$name},

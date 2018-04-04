@@ -4,11 +4,4 @@
 @include setLayoutAsideSize();
 
 // Narrow
-@include setLayoutAsideSize('.v-narrow', nth($layout-aside-size, 5));
-
-// Small, medium, large
-@each $index, $name in $sizes {
-    $size: nth($layout-aside-size, $index);
-
-    @include setLayoutAsideSize($name, $size);
-}
+@include setLayoutAsideSize('.v-narrow', $layout-aside-narrow-size);

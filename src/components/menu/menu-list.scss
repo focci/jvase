@@ -10,7 +10,7 @@
         ul {
             padding-left: $menu-list-child-padding-left;
             margin: $menu-list-child-margin;
-            border-left: solid 1px $menu-list-child-border-color;
+            border-left: $menu-list-child-border-left;
         }
     }
 
@@ -22,7 +22,7 @@
         color: $menu-list-item-color;
         padding: $menu-list-item-padding;
         border-radius: $border-radius;
-        font-size: $menu-list-item-font-size;
+        font-size: $font-size;
         transition: background-color .3s;
 
         &:not([disabled]):hover,

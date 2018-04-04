@@ -1,15 +1,18 @@
 @charset 'utf-8';
 html {
-    font: unquote('#{$font-size}/#{$line-height}') $font-family;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: 100%;
 }
 
 body{
+    box-sizing: border-box;
+    font-family: $font-family;
     background-color: $background-color;
     color: $font-color;
-    box-sizing: border-box;
+    font-size: $font-size;
+    line-height: $line-height;
+
 }
 
 html,

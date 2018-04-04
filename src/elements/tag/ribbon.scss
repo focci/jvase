@@ -18,20 +18,20 @@
     content: '';
     display: inline-block;
     font-size: inherit;
-    border: solid .5em transparent;
-    top: 2.5em;
+    border: solid $tag-height / 5 transparent;
+    top: $tag-height;
     position: absolute;
 }
 
 .v-ribbon-left {
-    left: -1em;
+    left: -($tag-height / 5 * 2);
     &:before {
         left: 0;
     }
 }
 
 .v-ribbon-right {
-    right: -1em;
+    right: -($tag-height / 5 * 2);
     &:before {
         right: 0;
     }

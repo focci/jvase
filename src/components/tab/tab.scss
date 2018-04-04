@@ -1,2 +1,31 @@
 @charset 'utf-8';
 
+.v-tab {
+	display: block;
+	padding: 0;
+    border-bottom: solid $tab-border-size $tab-border-color;
+    
+	>li {
+        position: relative;
+		display: inline-block;
+		vertical-align: bottom;
+		text-decoration: none;
+        padding: $tab-item-padding;
+
+        font-size: $font-size;
+        color: $tab-item-color;
+        margin-bottom: -$tab-border-size;
+        transition: color .2s;
+
+        &:not([disabled]):hover {
+            color: $tab-item-actived-color;
+            cursor: pointer;
+        }
+
+		&.v-active {
+			cursor: default;
+			border-bottom: solid $tab-border-size $tab-item-actived-border-color;
+			color: $tab-item-actived-color;
+		}
+	}
+}

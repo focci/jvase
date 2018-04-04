@@ -1,2 +1,10 @@
 @charset 'utf-8';
 
+.v-tag {
+    position: relative;
+    font-size: $font-size;
+    line-height: $line-height;
+    display: inline-block;
+    height: $tag-height;
+    padding: $tag-padding;
+}

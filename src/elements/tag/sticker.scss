@@ -7,27 +7,27 @@
     content: '';
     display: inline-block;
     font-size: inherit;
-    border: solid 1.25em transparent;
+    border: solid $tag-height / 2 transparent;
     top: 0;
     position: absolute;
 }
 
 .v-sticker-left {
-    margin-left: 1.25em;
+    margin-left: $tag-height / 2;
 }
 .v-sticker-right {
-    margin-right: 1.25em;
+    margin-right: $tag-height / 2;
 }
 .v-sticker-left:before {
-    left: -2.5em;
+    left: -$tag-height;
 }
 .v-sticker-right:before {
-    right: -2.5em;
+    right: -$tag-height;
 }
 
 .v-sticker-left:after,
 .v-sticker-right:after {
-    border-width: .25em;
+    border-width: $tag-height / 10;
     border-color: $white;
     background-color: #fff;
     border-radius: 50%;
@@ -37,9 +37,9 @@
 }
 
 .v-sticker-left:after {
-    left: -.5em;
+    left: -($tag-height / 5);
 }
 
 .v-sticker-right:after {
-    right: -.5em;
+    right: -($tag-height / 5);
 }

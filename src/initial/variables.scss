@@ -32,10 +32,10 @@ $white:             #ffffff !default;
 
 // global
 // =============================================
-$line-height: 1.5 !default;
 $background-color: #fff !default;
-$font-size: 16px !default;
-$font-color: $black-light;
+$font-color: $black-light!default;
+$font-size: .875rem !default;
+$line-height: 1.5 !default;
 $font-family: 
     ProximaNova,
     BlinkMacSystemFont,
@@ -60,8 +60,8 @@ $header-display-size: 6rem, 5rem, 4rem, 3rem;
 // layout
 // =============================================
 $layout-header-height: 3.75rem;
-// aside(small, medium, large, default, narrow)
-$layout-aside-size: 12rem, 20rem, 24rem, 16rem, 4rem;
+$layout-aside-size: 20rem;
+$layout-aside-narrow-size: 4rem;
 
 // card
 // =============================================
@@ -70,11 +70,9 @@ $card-margin: 0 0 2rem;
 $card-background-color: #fff;
 
 $card-header-padding: 1.5rem;
-$card-title-margin: 0;
 $card-title-font-size: 1.125rem;
 $card-subtitle-color: $steel-light;
 $card-subtitle-margin-top: .5rem;
-$card-subtitle-font-size: .875rem;
 
 $card-body-padding: $card-header-padding;
 
@@ -82,18 +80,17 @@ $card-body-padding: $card-header-padding;
 // =============================================
 $menu-label-color: $steel-light;
 $menu-label-font-size: .75rem;
-$menu-label-margin-bottom: .75rem;
+$menu-label-margin-bottom: .875rem;
 
 $menu-list-item-padding: .375rem .75rem;
 $menu-list-item-color: $black-light;
-$menu-list-item-font-size: .875rem;
 $menu-list-item-hover-bgc: $silver-dark;
 $menu-list-item-active-bgc: $primary;
 $menu-list-item-active-color: #fff;
 
 $menu-list-child-padding-left: .75rem;
 $menu-list-child-margin: .5rem .75rem;
-$menu-list-child-border-color: #e9e9e9;
+$menu-list-child-border-left: solid 1px #e9e9e9;
 
 // grid
 // =============================================
@@ -111,36 +108,26 @@ $badge-padding-hor: .5rem;
 $badge-height: 1.5em;
 $badge-background-color: $silver-dark;
 $badge-color: $steel;
-// medium, large, default
-$badge-size: 1rem, 1.25rem, .875rem;
 
 // delete
 // =============================================
 $del-color: $steel-light;
-// small, medium, large, default
-$del-size: 1rem, 1.5rem, 2rem, 1.25rem;
 $del-circle-bgc: rgba(0,0,0,.3);
 
 // icon
 // =============================================
 $icon-adjust-size: 1rem, 1.5rem, 2rem, 2.5rem;
-$icon-line-height: 1;
 
 // table
 // =============================================
 $table-background-color: $white;
 
-$table-header-border-bottom-width: 3px;
+$table-header-border-bottom-width: 2px;
 $table-header-color: $steel;
-$table-header-background-color: $silver;
 
 $table-cell-border: 1px solid $silver-dark;
 $table-cell-color: $black;
 $table-cell-padding: .5rem;
-$table-cell-height: 2.75em;
-
-// small medium large default
-$table-size: .75rem, 1.25rem, 1.5rem, .875rem;
 
 // article
 // =============================================
@@ -150,19 +137,14 @@ $article-header-font-size: 1.5rem;
 $article-header-margin-bottom: .75rem;
 $article-header-color: $black;
 
-$article-meta-font-size: .875rem;
 $article-meta-margin-bottom: .75rem;
 $article-meta-color: $steel-light;
 
 $article-body-padding: .75rem;
-$article-body-font-size: .875rem;
 
 
 // button & input
 // =============================================
-// small, medium, large, default
-$bi-size: .75rem, 1rem, 1.25rem, .875rem;
-
 $bi-padding-ver: calc(.5em - 1px);
 $bi-padding-hor: .8em;
 $bi-height: 2.5em;
@@ -187,14 +169,19 @@ $tooltip-box-shadow: 1px 1px .5rem rgba(0,0,0,0.3);
 
 // tag
 // =============================================
-$ribbon-bgc: $primary;
-$ribbon-color: $white;
-// small,medium,large,default
-$ribbon-size: .75rem, 1rem, 1.25rem, .875rem;
+$tag-height: 2.5em;
+$tag-padding: .5em 1em;
+$tag-bgc: $primary;
+$tag-color: $white;
 
-// 
+// tab
 // =============================================
-
+$tab-border-color: #d4d4d5;
+$tab-border-size: 2px;
+$tab-item-padding: .75rem 1.25rem;
+$tab-item-color: $steel;
+$tab-item-actived-color: $primary;
+$tab-item-actived-border-color: $primary;
 
 // 
 // =============================================

@@ -1,8 +1,5 @@
 @charset 'utf-8';
 
-// common
-// ======================================
-
 // Clear float
 @mixin clearFloat () {
     &:after {
@@ -28,7 +25,7 @@
     box-shadow: none;
 
     padding: $bi-padding-ver $bi-padding-hor;
-    font-size: nth($bi-size, 4);
+    font-size: $font-size;
     height: $bi-height;
     line-height: $line-height;
 
@@ -56,7 +53,7 @@
 // ======================================
 @mixin setLayoutAsideSize (
     $name: '',
-    $size: nth($layout-aside-size, 4)
+    $size: $layout-aside-size
 ) {
     .v-layout#{$name} {
         > .v-layout-aside {
@@ -81,16 +78,6 @@
     .v-badge#{$name} {
         background-color: $bg;
         color: $color;
-    }
-}
-
-@mixin setBadgeSize(
-    $name: '',
-    $font-size: nth($badge-size, 3)
-) {
-    .v-badge#{$name},
-    .v-badges#{$name} > .v-badge {
-        font-size: $font-size;
     }
 }
 
@@ -139,7 +126,7 @@
 
 @mixin setBtnSize (
     $name: '',
-    $font-size: $btn-font-size
+    $font-size: $font-size
 ) {
     .v-btn#{$name},
     .v-btns#{$name} > .v-btn {
@@ -167,7 +154,7 @@
 // ======================================
 @mixin setTableSize(
     $name: '',
-    $font-size: nth($table-size, 4)
+    $font-size: $font-size
 ) {
     .v-table#{$name} {
         >thead >tr >th,
@@ -217,8 +204,8 @@
 // ======================================
 @mixin setRibbonStyle(
     $name: '',
-    $bgc: $ribbon-bgc,
-    $color: $ribbon-color
+    $bgc: $tag-bgc,
+    $color: $tag-color
 ) {
     $res-color: darken($bgc, 15%);
     .v-tag#{$name} {

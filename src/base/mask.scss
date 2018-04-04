@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+.v-mask {
+    @extend .v-covered;
+
+    opacity: .3;
+    z-index: 999;
+    background-color: #000;
+    transition: all 0.4s;
+}

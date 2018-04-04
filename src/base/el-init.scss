@@ -148,10 +148,9 @@ pre {
     display: block;
     padding: 1rem;
     margin: 0 0 1rem;
-    color: $black-light;
     word-break: break-all;
     word-wrap: break-word;
-    background-color: #ff85af;
+    background-color: #f8f8f8;
 }
 
 blockquote {
@@ -159,10 +158,10 @@ blockquote {
     margin-left: 0;
     margin-right: 0;
     padding: .5rem 0 .5rem 1rem;
-    font-size: .875rem;
+    font-size: 1rem;
 
     footer {
-        font-size: 1rem;
+        font-size: .875rem;
         color: $steel-light;
 
         &:before {

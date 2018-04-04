@@ -1,6 +1,20 @@
 @charset 'utf-8';
 
-@import './color/_';
 @import './grid/_';
 @import './layout/_';
-@import './position/_';
+@import './color';
+@import './covered';
+@import './deepth';
+@import './disabled';
+@import './display';
+@import './el-init';
+@import './float';
+@import './header';
+@import './margin';
+@import './mask';
+@import './opacity';
+@import './padding';
+@import './position';
+@import './shape';
+@import './size';
+@import './text';

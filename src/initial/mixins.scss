@@ -2,11 +2,8 @@
 
 // common
 // ======================================
-@mixin setOpacity ($val) {
-    opacity: $val / 10;
-    filter: alpha(opacity=($val * 10)); // for IE6,7,8
-}
 
+// Clear float
 @mixin clearFloat () {
     &:after {
 		content: '';
@@ -15,21 +12,10 @@
 	}
 }
 
+// Disabled
 @mixin disabled () {
-    @include setOpacity(5);
-    cursor: not-allowed;
-}
-
-@mixin setBgc($name, $color) {
-    .v-bgc-#{$name} {
-        background-color: $color;
-    }
-}
-
-@mixin setFontColor($name, $color) {
-    .v-#{$name} {
-        color: $color;
-    }
+    opacity: .5!important;
+    cursor: not-allowed!important;
 }
 
 // Plublic parts for input & button
@@ -191,7 +177,6 @@
     }
 }
 
-
 // form
 // ======================================
 // Public parts for radio & checkbox
@@ -247,6 +232,14 @@
         &.v-ribbon-right:before {
             border-top-color: $res-color;
             border-left-color: $res-color;
+        }
+
+        &.v-sticker-left:before {
+            border-right-color: $bgc;
+        }
+
+        &.v-sticker-right:before {
+            border-left-color: $bgc;
         }
     }
 }

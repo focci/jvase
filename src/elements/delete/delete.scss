@@ -1,11 +1,11 @@
 @charset 'utf-8';
 
 .v-del {
-    @include setOpacity(7);
     position: relative;
     display: inline-block;
     margin-bottom: -2px;
     line-height: $line-height;
+    opacity: .7;
 
     background-color: transparent;
     border: none;
@@ -37,10 +37,10 @@
     }
 
     &:hover {
-        @include setOpacity(8);
+        opacity: .8;
     }
 
     &:active {
-        @include setOpacity(10);
+        opacity: 1;
     }
 }

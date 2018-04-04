@@ -1,12 +1,9 @@
 @charset 'utf-8';
 
-@import './mixins';
-@import './functions';
 @import './animations';
+@import './functions';
+@import './mixins';
+@import './normalize';
 @import './variables';
 @import './variables-exp';
-@import './normalize';
-@import './elements-init';
-@import './header';
-@import './deepth';
-@import './opacity';
+

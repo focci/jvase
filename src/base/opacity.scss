@@ -2,6 +2,6 @@
 
 @for $i from 0 through 10 {
     .v-opacity-#{$i} {
-        @include setOpacity($i);
+        opacity: $i / 10 !important;
     }
 }

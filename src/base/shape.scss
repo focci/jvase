@@ -11,3 +11,10 @@
 .v-circle {
     border-radius: 50%!important;
 }
+
+.v-thumb {
+    @extend .v-radius;
+    padding: .25rem;
+    border:solid 1px $border-color;
+    background-color: $white;
+}

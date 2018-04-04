@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+@for $i from 2 through 60 {
+    @each $direction in $directions {
+        @if ($i <= 10 and $i % 2 == 0) {
+            .v-pad#{$direction}-#{$i} {
+                padding#{$direction}: #{$i}px!important;
+            }
+        }
+        @else if ($i > 10 and $i % 5 == 0) {
+            .v-pad#{$direction}-#{$i} {
+                padding#{$direction}: #{$i}px!important;
+            }
+        }
+    }
+}

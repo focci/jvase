@@ -1,2 +1,45 @@
 @charset 'utf-8';
 
+.v-sticker-left:before,
+.v-sticker-right:before,
+.v-sticker-left:after,
+.v-sticker-right:after {
+    content: '';
+    display: inline-block;
+    font-size: inherit;
+    border: solid 1.25em transparent;
+    top: 0;
+    position: absolute;
+}
+
+.v-sticker-left {
+    margin-left: 1.25em;
+}
+.v-sticker-right {
+    margin-right: 1.25em;
+}
+.v-sticker-left:before {
+    left: -2.5em;
+}
+.v-sticker-right:before {
+    right: -2.5em;
+}
+
+.v-sticker-left:after,
+.v-sticker-right:after {
+    border-width: .25em;
+    border-color: $white;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,.1);
+}
+
+.v-sticker-left:after {
+    left: -.5em;
+}
+
+.v-sticker-right:after {
+    right: -.5em;
+}

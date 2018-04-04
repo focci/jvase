@@ -44,6 +44,8 @@ $resposive-maps: (
     lg  $grid-screen-lg $grid-gap
 );
 
+$directions: '', '-top', '-right', '-bottom', '-left';
+
 $shadows-top-data: (
 	(0 torem(2px) torem(10px) rgba(0, 0, 0, 0.12)),
 	(0 torem(7px) torem(21px) rgba(0, 0, 0, 0.19)),

@@ -7,8 +7,7 @@
     >tbody >tr >td {
         text-align: left;
         border-bottom: $table-cell-border;
-        padding-left: $table-cell-padding-hor;
-        padding-right: $table-cell-padding-hor;
+        padding: $table-cell-padding;
         height: $table-cell-height;
     }
 

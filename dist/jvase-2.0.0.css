@@ -1877,6 +1877,7 @@ h1[class*='v-display-'] {
        box-shadow: none;
   padding: -moz-calc(.5em - 1px) 0.8em;
   padding: calc(.5em - 1px) 0.8em;
+  font-family: ProximaNova, BlinkMacSystemFont, "Microsoft Yahei", "Helvetica Neue", "Segoe UI", Roboto, Tahoma, Arial, sans-serif;
   font-size: 0.875rem;
   height: 2.5em;
   line-height: 1.5;
@@ -2210,6 +2211,7 @@ h1[class*='v-display-'] {
        box-shadow: none;
   padding: -moz-calc(.5em - 1px) 0.8em;
   padding: calc(.5em - 1px) 0.8em;
+  font-family: ProximaNova, BlinkMacSystemFont, "Microsoft Yahei", "Helvetica Neue", "Segoe UI", Roboto, Tahoma, Arial, sans-serif;
   font-size: 0.875rem;
   height: 2.5em;
   line-height: 1.5;
@@ -2271,6 +2273,7 @@ textarea.v-input {
          box-shadow: none;
     padding: -moz-calc(.5em - 1px) 0.8em;
     padding: calc(.5em - 1px) 0.8em;
+    font-family: ProximaNova, BlinkMacSystemFont, "Microsoft Yahei", "Helvetica Neue", "Segoe UI", Roboto, Tahoma, Arial, sans-serif;
     font-size: 0.875rem;
     height: 2.5em;
     line-height: 1.5;

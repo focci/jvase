@@ -2765,25 +2765,51 @@ textarea.v-input {
 .v-tab {
   display: block;
   padding: 0;
-  border-bottom: solid 2px #d4d4d5; }
+  border-bottom: solid 1px #dadada; }
+  .v-tab li, .v-tab a {
+    font-size: 0.875rem;
+    color: #7e869e; }
   .v-tab > li {
     position: relative;
     display: inline-block;
     vertical-align: bottom;
     text-decoration: none;
-    padding: 0.75rem 1.25rem;
-    font-size: 0.875rem;
-    color: #7e869e;
-    margin-bottom: -2px;
-    -moz-transition: color .2s;
-    transition: color .2s; }
-    .v-tab > li:not([disabled]):hover {
-      color: #00b1f9;
-      cursor: pointer; }
-    .v-tab > li.v-active {
-      cursor: default;
-      border-bottom: solid 2px #00b1f9;
+    padding: 0.7em 1.25em; }
+    .v-tab > li.v-active, .v-tab > li.v-active a {
       color: #00b1f9; }
+    .v-tab > li:not([disabled]):after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 0%;
+      left: 50%;
+      bottom: -1px;
+      border-bottom: solid 1px transparent;
+      -moz-transition: all .4s;
+      transition: all .4s; }
+    .v-tab > li.v-active:after, .v-tab > li:not([disabled]):hover:after {
+      border-bottom-color: #00b1f9;
+      left: 0;
+      width: 100%; }
+
+.v-tab.v-boxed > li {
+  -moz-border-radius-topleft: 3px;
+       border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+       border-top-right-radius: 3px;
+  -moz-transition: background-color .3s;
+  transition: background-color .3s; }
+  .v-tab.v-boxed > li.v-active {
+    border: solid 1px #dadada;
+    border-bottom: none; }
+  .v-tab.v-boxed > li:not(.v-active):not([disabled]):hover {
+    background-color: #f4f4f4; }
+  .v-tab.v-boxed > li.v-active:after, .v-tab.v-boxed > li:not([disabled]):after, .v-tab.v-boxed > li:not([disabled]):hover:after {
+    border-bottom-color: transparent;
+    left: 0;
+    width: 100%; }
+  .v-tab.v-boxed > li.v-active:after {
+    background-color: #fff; }
 
 .v-tooltip {
   display: inline-block;

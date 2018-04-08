@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+.v-tab.v-boxed {
+    > li {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        transition: background-color .3s;
+
+        &.v-active {
+            border: solid $tab-border-width $tab-border-color;
+            border-bottom: none;
+        }
+
+        &:not(.v-active):not([disabled]):hover {
+            background-color: lighten($tab-border-color, 10%);
+        }
+
+        &.v-active:after,
+        &:not([disabled]):after,
+        &:not([disabled]):hover:after {
+            border-bottom-color: transparent;
+            left: 0;
+            width: 100%;
+        }
+
+        &.v-active:after {
+            background-color: #fff;
+        }
+    }
+}

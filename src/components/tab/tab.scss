@@ -3,29 +3,41 @@
 .v-tab {
 	display: block;
 	padding: 0;
-    border-bottom: solid $tab-border-size $tab-border-color;
-    
+    border-bottom: solid $tab-border-width $tab-border-color;
+	
+	li, a {
+		font-size: $font-size;
+		color: $tab-item-color;
+	}
+	
 	>li {
         position: relative;
 		display: inline-block;
 		vertical-align: bottom;
 		text-decoration: none;
-        padding: $tab-item-padding;
+		padding: $tab-item-padding;
 
-        font-size: $font-size;
-        color: $tab-item-color;
-        margin-bottom: -$tab-border-size;
-        transition: color .2s;
-
-        &:not([disabled]):hover {
-            color: $tab-item-actived-color;
-            cursor: pointer;
-        }
-
-		&.v-active {
-			cursor: default;
-			border-bottom: solid $tab-border-size $tab-item-actived-border-color;
+		&.v-active,
+		&.v-active a {
 			color: $tab-item-actived-color;
+		}
+		
+		&:not([disabled]):after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 0%;
+			left: 50%;
+			bottom: -$tab-border-width;
+			border-bottom: solid $tab-border-width transparent;
+			transition: all .4s;
+		}
+
+		&.v-active:after,
+		&:not([disabled]):hover:after {
+			border-bottom-color: $tab-item-actived-color;
+			left: 0;
+			width: 100%;
 		}
 	}
 }

@@ -26,6 +26,42 @@
         <img src="https://raw.githubusercontent.com/focci/asset/master/pay/wechat.jpg" width="100" />
     </div>
     <img src="https://s.hougarden.com/image/a2/a2/a2a207e6d4e20646601c0391539dfdb5.jpg" style="max-width:100%">
+
+    <script>
+        var tit = '页面标题a';
+        var img = 'https://s.hougarden.com/image/af/d8/afd821a6f6a51a6e3a12627173b06bf8.jpg?x-oss-process=image/quality,q_80';
+        var con = '页面描述b';
+        var link = 'http://jvase.com/test/share.html';
+        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        // 发送给好友 
+        WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+            WeixinJSBridge.invoke('sendAppMessage', {
+            "appid": "123",
+            "img_url": img,
+            "img_width": "160",
+            "img_height": "160",
+            "link": link,
+            "desc": con,
+            "title": tit
+            }, function (res) {
+            _report('send_msg', res.err_msg);
+            })
+        });
+        // 分享到朋友圈 
+        WeixinJSBridge.on('menu:share:timeline', function (argv) {
+            WeixinJSBridge.invoke('shareTimeline', {
+            "img_url": img,
+            "img_width": "160",
+            "img_height": "160",
+            "link": link,
+            "desc": con,
+            "title": tit
+            }, function (res) {
+            _report('timeline', res.err_msg);
+            });
+        });
+        }, false)
+    </script>
 </body>
 </html>
 

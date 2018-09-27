@@ -1,44 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>Jvase</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta content="Jvase" name="keywords" />
+    <meta content="Jvase" name="description" />
 </head>
 <body>
-<script>
-function format(date, format) {
-    if( typeof date === 'string' ) {
-        date = new Date( date.replace(/-/g, '/') );
-    }
-    else if( !(date && date.getMilliseconds) ) {
-        throw 'The date format is incorrect.';
-    }
-    var refs = {
-        0x79: ['FullYear',2,4],
-        0x4d: ['Month',1,2],
-        0x64: ['Date',1,2],
-        0x68: ['Hours',1,2],
-        0x6d: ['Minutes',1,2],
-        0x73: ['Seconds',1,2],
-        0x53: ['Milliseconds',1,1]
-    }
-    return (format + '').replace(/([yMdhmsS]+)/g, function(word) {
-        var code = word.charCodeAt(0),
-            ref = refs[code],
-            res = date[ 'get' + ref[0] ](),
-            len = word.length;
-
-        res = (code === 0x4d ? res + 1: res) + '';
-        len = len <= ref[1] ? ref[1] : (len >= ref[2] ? ref[2]: ref[1]);
-        return res.length >= len ? res.substr(res.length - len) : '0' + res;
-    });
-}
-
-
-// console.log( new Date().Format('yyyy-MM-dd') );
-var d = format('2017-9-2 17:44:3', 'yy-MMMMM-dd hh:mm:ssss SSSS');
-console.log(d);
-</script>
-    
+    <h2>捐赠 (Donation)</h2>
+    <img src="https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/logo-bgc.jpg" width="0" height="0">
+    <img src="https://raw.githubusercontent.com/focci/asset/master/pay/wechat.jpg" width="100">
+    <img src="https://raw.githubusercontent.com/focci/asset/master/pay/alipay.jpg" width="100">
 </body>
 </html>
+

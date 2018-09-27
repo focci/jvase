@@ -28,29 +28,29 @@
     <img src="https://s.hougarden.com/image/a2/a2/a2a207e6d4e20646601c0391539dfdb5.jpg" style="max-width:100%">
 
     <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
-  <script>
-    wx.config({
-      debug: false,
-      appId: 'wx51fa741fda15f345',
-      timestamp: '1498633007',
-      nonceStr: 'tnZJBsdrUo88MFiB',
-      signature: 'cae67a0a883822e1087cba091321b14b73152210',
-      jsApiList: ['updateAppMessageShareData', 'updateTimelineShareData']
-    });
-    wx.ready(function () {
-      wx.updateAppMessageShareData({ 
-        title: 'title',
-        desc: 'description',
-        link: 'http://jvase.com',
-        imgUrl: 'https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/logo-bgc.jpg',
-      }, function(res) {});
-      wx.updateTimelineShareData({ 
-        title: 'title',
-        link: 'http://jvase.com',
-        imgUrl: 'https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/logo-bgc.jpg',
-      }, function(res) {});
-    });
-  </script>
+    <script>
+        wx.config({
+        debug: false,
+        appId: 'wx51fa741fda15f345',
+        timestamp: '1498633007',
+        nonceStr: 'tnZJBsdrUo88MFiB',
+        signature: 'cae67a0a883822e1087cba091321b14b73152210',
+        jsApiList: ['updateAppMessageShareData', 'updateTimelineShareData']
+        });
+        wx.ready(function () {
+        wx.updateAppMessageShareData({ 
+            title: 'title',
+            desc: 'description',
+            link: 'http://jvase.com',
+            imgUrl: 'https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/logo-bgc.jpg',
+        }, function(res) {});
+        wx.updateTimelineShareData({ 
+            title: 'title',
+            link: 'http://jvase.com',
+            imgUrl: 'https://raw.githubusercontent.com/focci/asset/master/img/jvase/logo/logo-bgc.jpg',
+        }, function(res) {});
+        });
+    </script>
 </body>
 </html>
 

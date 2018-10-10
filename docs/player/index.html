@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>播放器</title>
+	<script src="neplayer.min.js"></script>
+	<script>neplayer.setSWF('player/video-js.swf')</script>
+	<link href="neplayer.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<video id="video" class="video-js" webkit-playsinline playsinline x5-video-player-type="h5" x5-video-player-fullscreen="false" x5-video-orientation="portrait"></video>
+	<div id="msg"></div>
+
+	<script>
+		var retry = true; // 拉流失败，是否自动重试
+		var maxRetryDuration = 1000 * 120; // 拉流重试的最大时长，单位为毫秒
+		var streamTimeoutTime = 1000 * 30; // 拉流超时时间，单位为毫秒，默认30秒
+		var defaultVideoSrc = "https://jdvodsdijkq00.vod.126.net/jdvodsdijkq00/qCBKiVmd_2024327459_sd.mp4";
+
+		var streamType = "vod"; // 流类型：live/vod，默认为vod
+		var streamDuration = 0; // 保存流总时长的变量
+		var currentPosition = 0; // 保存当前播放位置的变量
+		var historyPosition = 0; // 保存最后播放位置的变量
+		var minTime = 1000 * 3; // 定义最后播放位置的最小值
+		var refreshTimes = 0; // 刷新计数器
+		
+		// 播放器参数
+		var playerOption = {
+			autoplay: false,
+			controls: true,
+			width: 960,
+			height: 540,
+			loop: false,
+			muted: false,
+			poster: "https://s.hougarden.com/image/6e/3f/6e3f457bf5997c2404d4ad6eebea5211.jpg?x-oss-process=image/quality,q_80",
+			preload: "auto",
+
+			techOrder: ["html5"],
+			streamTimeoutTime: streamTimeoutTime,
+			loadingSpinner: true,
+			bigPlayButton: true,
+			controlBar: {
+				currentTimeDisplay: true,
+				timeDivider: true,
+				durationDisplay: true,
+				remainingTimeDisplay: true,
+				playToggle: true,
+				volumeMenuButton: true,
+				liveDisplay: true,
+				fullscreenToggle: true,
+				errorDisplay: false,
+				progressControl: {
+					seekBar: {
+						loadProgressBar: true,
+						mouseTimeDisplay: true,
+						playProgressBar: true
+					}
+				}
+			}
+		}
+
+		// 播放器
+		var player = neplayer("video", playerOption, function () {
+			player.setDataSource([{
+				type: checkVideoType(defaultVideoSrc),
+				src: defaultVideoSrc
+			}]);
+		})
+		
+		// 检测视频类型
+		function checkVideoType(videoSrc) {
+			var temp = videoSrc.toLocaleLowerCase();
+			if (temp.indexOf(".m3u8") > 0) {
+				return "application/x-mpegURL";
+			}
+			else if (temp.indexOf(".mp4") > 0) {
+				return "video/mp4";
+			}
+			return "unsupported";
+		}
+
+		// 显示和记录消息的函数
+		function showMsg(msg) {
+			document.getElementById("msg").innerHTML = msg;
+		}
+
+		player.on("canplay", function () {
+			showMsg("播放准备就绪，点击播放按钮开始播放");
+		});
+
+		// 由于网络、缓存、浏览器等原因，总时长可能会发生变化，因此需要相应地调整流类型，以最后得到的为准
+		player.on("durationchange", function () {
+			streamDuration = player.getDuration();
+			if (streamDuration === Infinity) {
+				streamType = "live";
+			} else {
+				streamType = "vod";
+			};
+		});
+
+		player.on("playing", function () {
+			refreshTimes = 0;
+			currentPosition = player.getCurrentPosition();
+			showMsg("正在播放");
+		});
+
+		player.on("waiting", function () {
+			showMsg("正在等待数据");
+		});
+
+		player.onPlayState(1, function () {
+			showMsg("尝试播放");
+		});
+
+		player.onPlayState(2, function () {
+			showMsg("暂停播放");
+		});
+
+		player.onPlayState(3, function () {
+			showMsg("播放已结束");
+		});
+
+		player.onError(function (err) {
+			if (retry) {
+				showMsg("播放出现错误，错误代码：" + err.errCode + "，错误信息：" + err.errMsg);
+				
+				// 获得当前播放时长
+				if (currentPosition >= minTime) {
+					historyPosition = currentPosition;
+					currentPosition = 0;
+				}
+
+				// 计算拉流次数
+				if (refreshTimes < (maxRetryDuration / streamTimeoutTime)) {
+					++refreshTimes;
+
+					// 如果是点播并且记录了最后播放位置，则刷新后跳转到该位置进行播放
+					if (streamType === "vod" && historyPosition !== 0) {
+						showMsg("最后播放位置：第" + historyPosition + "毫秒，当前进行第 " + refreshTimes + " 次刷新重试");
+						player.refresh();
+						player.seekTo(historyPosition);
+						player.play();
+					}
+					else {
+						showMsg("当前进行第 " + refreshTimes + " 次刷新重试");
+						player.refresh();
+					}
+				}
+				else {
+					showMsg("达到最大重试次数，放弃重试，停止播放");
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>
